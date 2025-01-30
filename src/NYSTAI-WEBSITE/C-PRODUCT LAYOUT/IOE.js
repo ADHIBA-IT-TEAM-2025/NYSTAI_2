@@ -2,12 +2,13 @@ import React, { useState, useEffect } from 'react';
 import './sample.css'
 import { products } from '../C-PRODUCT LAYOUT/datass.js';
 import Footerproduct from "../A-LAYOUT/footer";
-import laningbanner from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/Nystai-icons & resize images/HYBRID NVR.png'
+import laningbanner from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/Nystai-icons & resize images/IOE-Communiation-Banner.png'
 import icon1 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/cloud-storage.png'
 import icon3 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/hd_subscription.png'
 import icon7 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/motion_senstivity_control.png'
 import icon8 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/peri-zoning.png'
 import icon9 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/person_detection.png'
+import { Link } from 'react-router-dom';
 
 export default function IOECOMMUNICATION() {
 
@@ -129,8 +130,11 @@ export default function IOECOMMUNICATION() {
                                             </ul>
                                         </div>
                                         <div class="purchase-info ">
-                                            <button type="button me-2" class="btn ">Add to Cart <i class="fas fa-shopping-cart"></i></button>
-                                            <button type="button" class="btn ms-3">Shop now <i class="fas fa-shopping-cart"></i></button>
+                                            <Link to="/ioedet">
+                                                <button type="button" class="btn ms-3">
+                                                    Know More<i class="fas fa-shopping-cart"></i>
+                                                </button>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

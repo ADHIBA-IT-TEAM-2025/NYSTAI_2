@@ -19,11 +19,10 @@ import icon9 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/person_detection.
 import overicon1 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/ware-img-solu(1).png'
 import overicon2 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/ware-img-solu(2).png'
 import overicon3 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/ware-img-solu(3).png'
-import indusvideo from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/warehouse-banner.png'
-// icons
+import indusvideo from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/warebanner.png'
+// 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight, faBuildingColumns, faCarBurst, faCircleInfo, faHandshake, faHome, faHouseSignal, faIndustry, faPlaceOfWorship, faSchool, faWarehouse } from '@fortawesome/free-solid-svg-icons';
-import Tabsliderpro from '../C-PRODUCT LAYOUT/tab product.js';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Warehouse() {

@@ -110,31 +110,31 @@ export default function Footerproduct() {
                   <div className="col-6 mt-4">
                     <ul style={{ listStyle: "none" }}>
                       <li>
-                        <p target="_blank" rel="noreferrer">
+                      <a href="http://www.youtube.com/@NYSTAI" target="-blank">
                           <FontAwesomeIcon
                             icon={faYoutube}
                             className="me-3 mb-3"
                             style={{ fontSize: "25px", color: "#FF0000" }}
                           />
-                        </p>
+                        </a>
                       </li>
                       <li>
-                        <p target="_blank" rel="noreferrer">
+                      <a href="https://www.facebook.com/share/1BmNDtcsuY/" target="_blank">
                           <FontAwesomeIcon
                             icon={faFacebook}
                             className="me-3 mb-3"
                             style={{ fontSize: "25px", color: "#1877F2" }}
                           />
-                        </p>
+                        </a>
                       </li>
                       <li>
-                        <p target="_blank" rel=" noreferrer">
+                      <a href="https://www.instagram.com/nystaiiot?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
                           <FontAwesomeIcon
                             icon={faInstagram}
                             className="me-3 mb-3"
                             style={{ fontSize: "25px", color: "#E4405F" }}
                           />
-                        </p>
+                        </a>
                       </li>
 
                     </ul>
@@ -143,13 +143,13 @@ export default function Footerproduct() {
                     <ul style={{ listStyle: "none" }}>
 
                       <li>
-                        <p target="_blank" rel=" noreferrer">
+                      <a href="https://x.com/Nystai_iot?t=fFMeQXZ3W5-2T95uZ_iQHg&s=09" target="_blank">
                           <FontAwesomeIcon
                             icon={faXTwitter}
                             className="me-3 mb-3"
                             style={{ fontSize: "25px", color: "#fff" }}
                           />
-                        </p>
+                        </a>
                       </li>
                       <li>
                         <p target="_blank" rel=" noreferrer">
@@ -161,13 +161,13 @@ export default function Footerproduct() {
                         </p>
                       </li>
                       <li>
-                        <p target="_blank" rel=" noreferrer">
+                      <a href="https://www.linkedin.com/in/nystai-iot-leading-aiot-security-solutions-a18a07339" target="_blank">
                           <FontAwesomeIcon
                             icon={faLinkedin}
                             className="me-3 mb-3"
                             style={{ fontSize: "25px", color: "#0077B5" }}
                           />
-                        </p>
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -344,13 +344,13 @@ export default function Footerproduct() {
           <div className="text-center">
 
             <div className=" justify-content-center align-items-center social-icons">
-              <p>
+            <a href="https://www.instagram.com/nystaiiot?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
                 <FontAwesomeIcon
                   icon={faInstagram}
                   style={{ color: "#E1306C" }}
                   className="icon-scocial-text-nystai"
                 />
-              </p>
+              </a>
               <p>
                 <FontAwesomeIcon
                   icon={faWhatsapp}
@@ -393,6 +393,13 @@ export default function Footerproduct() {
                   className="icon-scocial-text-nystai"
                 />
               </p>
+              <a href="https://www.linkedin.com/in/nystai-iot-leading-aiot-security-solutions-a18a07339" target="_blank">
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  style={{ color: "#FFA500" }}
+                  className="icon-scocial-text-nystai"
+                />
+              </a>
               <p>
                 <FontAwesomeIcon
                   icon={faEnvelope}

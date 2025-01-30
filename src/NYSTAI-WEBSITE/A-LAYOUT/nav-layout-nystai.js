@@ -3,10 +3,10 @@ import './navbar-layout.css'
 import { Outlet, Link } from "react-router-dom";
 import { useState } from "react";
 import $ from 'jquery'
-import { faTelegramPlane } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faTelegramPlane } from "@fortawesome/free-brands-svg-icons";
 import { faBuildingColumns, faCarBurst, faCircleInfo, faHandshake, faAngleDown, faHouseSignal, faIndustry, faPlaceOfWorship, faSchool, faWarehouse } from '@fortawesome/free-solid-svg-icons';
 import { faAngleDoubleUp, faMagnifyingGlass, faPersonWalkingLuggage, faPhone, faRightToBracket, faBagShopping } from "@fortawesome/free-solid-svg-icons"
-import nystailogo from '../IMAGES-VIDEOS/A-IMG-HOME-LAYOUT/logoooo 1.png'
+import nystailogo from '../IMAGES-VIDEOS/A-IMG-HOME-LAYOUT/common/nys-6683ef681f2c5.png'
 import nyslogo from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/Nystai-icons & resize images/full-logo-nys.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingBasket, faSearch } from '@fortawesome/free-solid-svg-icons';
@@ -160,13 +160,15 @@ const Layout = () => {
               <div className=" icon-number-div-nystai-main">
                 <div className=" icon-number-div-nystai">
                   <div className="social-icon-nav-nystai">
-                    <p><FontAwesomeIcon icon={faInstagram} style={{ color: '#E1306C' }} className="icon-scocial-text-nystai" /></p>
-                    <p><FontAwesomeIcon icon={faWhatsapp} style={{ color: '#25D366' }} className="icon-scocial-text-nystai" /></p>
-                    <p><FontAwesomeIcon icon={faYoutube} style={{ color: '#FF0000' }} className="icon-scocial-text-nystai" /></p>
-                    <p><FontAwesomeIcon icon={faFacebook} style={{ color: '#1877F2' }} className="icon-scocial-text-nystai" /></p>
+                    <a href="https://www.instagram.com/nystaiiot?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><FontAwesomeIcon icon={faInstagram} style={{ color: '#E1306C' }} className="icon-scocial-text-nystai" /></a>
+                    <a href="https://wa.me/+918189977700" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faWhatsapp} style={{ color: '#25D366' }} className="icon-scocial-text-nystai" /></a>
+                    <a href="http://www.youtube.com/@NYSTAI" target="-blank"><FontAwesomeIcon icon={faYoutube} style={{ color: '#FF0000' }} className="icon-scocial-text-nystai" /></a>
+                    <a href="https://www.linkedin.com/in/nystai-iot-leading-aiot-security-solutions-a18a07339" target="_blank"><FontAwesomeIcon icon={faLinkedin} className="icon-scocial-text-nystai" /></a>
+                    <a href="https://www.facebook.com/share/1BmNDtcsuY/" target="_blank"><FontAwesomeIcon icon={faFacebook} style={{ color: '#1877F2' }} className="icon-scocial-text-nystai" /></a>
                     <p><FontAwesomeIcon icon={faTelegramPlane} style={{ color: '#0088CC' }} className="icon-scocial-text-nystai icon-telegram" /></p>
-                    <p><FontAwesomeIcon icon={faXTwitter} style={{ color: '#000' }} className="icon-scocial-text-nystai" /></p>
-                    <p><FontAwesomeIcon icon={faBlog} style={{ color: '#FFA500' }} className="icon-scocial-text-nystai" /></p>
+                    <a href="https://x.com/Nystai_iot?t=fFMeQXZ3W5-2T95uZ_iQHg&s=09" target="_blank"><FontAwesomeIcon icon={faXTwitter} style={{ color: '#000' }} className="icon-scocial-text-nystai" /></a>
+                    <p>
+                      <Link to="blog"><FontAwesomeIcon icon={faBlog} style={{ color: '#FFA500' }} className="icon-scocial-text-nystai" /></Link></p>
                     <p><FontAwesomeIcon icon={faEnvelope} style={{ color: '#3e65cf' }} className="icon-scocial-text-nystai" /></p>
                   </div>
                 </div>
@@ -195,7 +197,9 @@ const Layout = () => {
                           <a className="dropdown-content-a" ><FontAwesomeIcon icon={faSchool} className="me-3" />
                             <Link to="nystai-solution-education" className={` ${isActive('/nystai-solution-education')}`}>EDUCATION</Link></a>
                           <div class="dropdown-divider ms-3 me-3"></div>
-                          <a className="dropdown-content-a" ><FontAwesomeIcon icon={faPlaceOfWorship} className="me-3" />WORSHIP</a>
+                          <a className="dropdown-content-a" >  <FontAwesomeIcon icon={faPlaceOfWorship} className="me-3" />
+                            <Link to="nystai-solution-worship" className={` ${isActive('nystai-solution-worship')}`}>WORSHIP</Link>
+                          </a>
                           <div class="dropdown-divider ms-3 me-3"></div>
                           <a className="dropdown-content-a" ><FontAwesomeIcon icon={faCarBurst} className="me-3" />
                             <Link to="nystai-solution-vms" className={` ${isActive('/nystai-solution-vms')}`}>VMS</Link></a>
@@ -208,9 +212,11 @@ const Layout = () => {
                             <Link to="nystai-solution-Hospital" className={` ${isActive('/nystai-solution-Hospital')}`}>HOSPITAL</Link>
                           </a>
                           <div class="dropdown-divider ms-3 me-3"></div>
-                          <a className="dropdown-content-a" ><FontAwesomeIcon icon={faBuildingColumns} className="me-3" />BANKING</a>
+                          <a className="dropdown-content-a" ><FontAwesomeIcon icon={faBuildingColumns} className="me-3" />
+                          <Link to="nystai-solution-banking" className={` ${isActive('/nystai-solution-banking')}`}>BANKING</Link></a>
                           <div class="dropdown-divider ms-3 me-3"></div>
-                          <a className="dropdown-content-a" ><FontAwesomeIcon icon={faCircleInfo} className="me-3" />RETAIL</a>
+                          <a className="dropdown-content-a" > <FontAwesomeIcon icon={faCircleInfo} className="me-3" />
+                          <Link to="nystai-solution-retail" className={` ${isActive('/nystai-solution-retail')}`}>RETAIL</Link></a>
                           <div class="dropdown-divider ms-3 me-3"></div>
                           <a className="dropdown-content-a" ><FontAwesomeIcon icon={faHandshake} className="me-3" />
                             <Link to="nystai-solution-parking" className={` ${isActive('/nystai-solution-parking')}`}>PARKING IOT SOLUTION</Link></a>
@@ -309,7 +315,9 @@ const Layout = () => {
                             <a className="dropdown-content-a" ><FontAwesomeIcon icon={faSchool} className="me-3" />
                               <Link to="nystai-solution-education" className={` ${isActive('/nystai-solution-education')}`}>EDUCATION</Link></a>
                             <div class="dropdown-divider ms-3 me-3"></div>
-                            <a className="dropdown-content-a" ><FontAwesomeIcon icon={faPlaceOfWorship} className="me-3" />WORSHIP</a>
+                            <a className="dropdown-content-a" >  <FontAwesomeIcon icon={faPlaceOfWorship} className="me-3" />
+                              <Link to="nystai-solution-worship" className={` ${isActive('/nystai-solution-education')}`}>WORSHIP</Link>
+                            </a>
                             <div class="dropdown-divider ms-3 me-3"></div>
                             <a className="dropdown-content-a" ><FontAwesomeIcon icon={faCarBurst} className="me-3" />
                               <Link to="nystai-solution-vms" className={` ${isActive('/nystai-solution-vms')}`}>VMS</Link></a>
@@ -318,12 +326,14 @@ const Layout = () => {
                               <Link to="nystai-solution-Warehouse" className={` ${isActive('/nystai-solution-education')}`}>WAREHOUSE</Link>
                             </a>
                             <div class="dropdown-divider ms-3 me-3"></div>
-                          
+
                             <a className="dropdown-content-a" ><FontAwesomeIcon icon={faIndustry} className="me-3" />  <Link to="nystai-solution-Hospital" className={` ${isActive('/nystai-solution-Hospital')}`}>HOSPITAL</Link></a>
                             <div class="dropdown-divider ms-3 me-3"></div>
-                            <a className="dropdown-content-a" ><FontAwesomeIcon icon={faBuildingColumns} className="me-3" />BANKING</a>
+                            <a className="dropdown-content-a"><FontAwesomeIcon icon={faBuildingColumns} className="me-3" />
+                            <Link to="nystai-solution-banking" className={` ${isActive('/nystai-solution-banking')}`}>BANKING</Link></a>
                             <div class="dropdown-divider ms-3 me-3"></div>
-                            <a className="dropdown-content-a" ><FontAwesomeIcon icon={faCircleInfo} className="me-3" />RETAIL</a>
+                            <a className="dropdown-content-a" ><FontAwesomeIcon icon={faCircleInfo} className="me-3" />
+                            <Link to="nystai-solution-retail" className={` ${isActive('/nystai-solution-retail')}`}>RETAIL</Link></a>
                             <div class="dropdown-divider ms-3 me-3"></div>
                             <a className="dropdown-content-a" ><FontAwesomeIcon icon={faHandshake} className="me-3" />
                               <Link to="nystai-solution-parking" className={` ${isActive('/nystai-solution-parking')}`}>PARKING IOT SOLUTION</Link></a>

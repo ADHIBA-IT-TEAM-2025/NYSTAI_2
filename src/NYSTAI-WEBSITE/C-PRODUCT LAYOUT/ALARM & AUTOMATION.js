@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './sample.css'
-import { products } from '../C-PRODUCT LAYOUT/datass.js';
-import Footerproduct from "../A-LAYOUT/footer";
-import laningbanner from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/Nystai-icons & resize images/Alarm-and-automation.png'
+import { products } from './datass.js';
+import Footerproduct from "../A-LAYOUT/footer.js";
+import laningbanner from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/Nystai-icons & resize images/ai-vms.png'
 import icon1 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/cloud-storage.png'
 import icon2 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/download.png'
 import icon3 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/hd_subscription.png'
@@ -13,13 +13,14 @@ import icon8 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/peri-zoning.png'
 import icon9 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/person_detection.png'
 import icon10 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/record_live.png'
 import icon11 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/simultaneous_viewing.png'
+import { Link } from 'react-router-dom';
 
-export default function Alarmautomation() {
+export default function AIVMS() {
 
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState(null);
 
-    const filteredProducts = products.filter(product => [3].includes(product.category));
+    const filteredProducts = products.filter(product => [9].includes(product.category));
 
     const handleCardClick = (product) => {
         setSelectedProduct(product);
@@ -37,119 +38,8 @@ export default function Alarmautomation() {
                 <img src={laningbanner} className="img-fluid" />
             </section>
 
-            {/* <section className="icons-pro-des">
-                <h1>Smart features included</h1>
-                <div className="rrmc-rich-text-divider-line"></div>
-                <div className="mb-5 mt-4">
-                    <div class="icons-row-card-nys">
-                        <div class="icons-column-card-nys">
-                            <div class="card">
-                                <img src={icon1} class="card-img-top" alt="..." />
-                                <div class="text-center">
-                                    <small class="">Cloud storage </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="icons-column-card-nys">
-                            <div class="card">
-                                <img src={icon2} class="card-img-top" alt="..." />
-                                <div class="text-center">
-                                    <small class="">Download & share video clips </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="icons-column-card-nys">
-                            <div class="card">
-                                <img src={icon3} class="card-img-top" alt="..." />
-                                <div class="text-center">
-                                    <small class="">Full HD video </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="icons-column-card-nys">
-                            <div class="card">
-                                <img src={icon4} class="card-img-top" alt="..." />
-                                <div class="text-center">
-                                    <small class="">In built device alarm</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="icons-column-card-nys">
-                            <div class="card">
-                                <img src={icon5} class="card-img-top" alt="..." />
-                                <div class="text-center">
-                                    <small class="">Lifetime call & field support</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="icons-column-card-nys">
-                            <div class="card">
-                                <img src={icon5} class="card-img-top" alt="..." />
-                                <div class="text-center">
-                                    <small class="">Lifetime call & field support</small>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div className="">
-                    <div class=" icons-row-card-nys">
-                        <div class="icons-column-card-nys">
-                            <div class="card">
-                                <img src={icon7} class="card-img-top" alt="..." />
-                                <div class="text-center">
-                                    <small class="">Motion senstivity control </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="icons-column-card-nys">
-                            <div class="card">
-                                <img src={icon8} class="card-img-top" alt="..." />
-                                <div class="text-center">
-                                    <small class="">Perimeter zoning</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="icons-column-card-nys">
-                            <div class="card">
-                                <img src={icon9} class="card-img-top" alt="..." />
-                                <div class="text-center">
-                                    <small class="">Person detection </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="icons-column-card-nys">
-                            <div class="card">
-                                <img src={icon10} class="card-img-top" alt="..." />
-                                <div class="text-center">
-                                    <small class="">Record live</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="icons-column-card-nys">
-                            <div class="card">
-                                <img src={icon11} class="card-img-top" alt="..." />
-                                <div class="text-center">
-                                    <small class="">Simultaneous viewing</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="icons-column-card-nys">
-                            <div class="card">
-                                <img src={icon11} class="card-img-top" alt="..." />
-                                <div class="text-center">
-                                    <small class="">Simultaneous viewing</small>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section> */}
-
             <div className="mt-4 mb-5">
-                <h3 className='mb-4' style={{ color: "#1b6763", fontWeight: "bolder" }}>ALARM & AUTOMATION</h3>
+                <h3 className='mb-4' style={{ color: "#1b6763", fontWeight: "bolder" }}>AI-VMS</h3>
                 <div className="prod-row-card-nys">
                     {filteredProducts.map((product) => (
                         <div className="prod-column-card-nys mb-2" key={product.id}>
@@ -230,8 +120,11 @@ export default function Alarmautomation() {
                                             </ul>
                                         </div>
                                         <div class="purchase-info ">
-                                            <button type="button me-2" class="btn ">Add to Cart <i class="fas fa-shopping-cart"></i></button>
-                                            <button type="button" class="btn ms-3">Shop now <i class="fas fa-shopping-cart"></i></button>
+                                            <Link to="/vmsde">
+                                                <button type="button" class="btn ms-3">
+                                                    Know More<i class="fas fa-shopping-cart"></i>
+                                                </button>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
