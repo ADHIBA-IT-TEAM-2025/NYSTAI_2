@@ -1,6 +1,7 @@
 
 import './edusolution.css'
 import Bankimg1 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/banksol-banner.png'
+import Bankimg from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/banksol-banner.png'
 import Bankicon1 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/banking5cardicon (2).png'
 import Bankicon2 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/banking5cardicon (3).png'
 import Bankicon3 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/banking5cardicon (4).png'
@@ -22,18 +23,16 @@ import icon9 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/person_detection.
 import overicon1 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/hospital-icon (1).png'
 import overicon2 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/hospital-icon (2).png'
 import overicon3 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/hospital-icon (3).png'
+
+import clickcardimg1 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/Banking images/1.png'
+import clickcardimg2 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/Banking images/2.png'
+import clickcardimg3 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/Banking images/3.png'
 import { Link } from "react-router-dom";
 // icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight, faBuildingColumns, faCarBurst, faCircleInfo, faHandshake, faHome, faHouse, faHouseSignal, faIndustry, faPlaceOfWorship, faSchool, faThunderstorm, faWarehouse, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
+import { faAngleRight, faBuildingColumns, faCarBurst, faCircleInfo, faHandshake, faHome, faHouse, faHouseSignal, faIndustry, faPlaceOfWorship, faSchool, faWarehouse, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 
-const cardsData = [
-    "https://drscdn.500px.org/photo/1037580924/q%3D80_m%3D2000/v2?sig=9cf4ef5752f546834f24d9b04773cc62febbfc3c5dfcc7a51c387421ed5861ba",
-    "https://drscdn.500px.org/photo/1037567905/q%3D80_m%3D2000/v2?sig=2422f7fcd9988639e0269bbf0a70904890abd2aa85b0b8df0370c446a6c7798f",
-    "https://drscdn.500px.org/photo/1037580924/q%3D80_m%3D2000/v2?sig=9cf4ef5752f546834f24d9b04773cc62febbfc3c5dfcc7a51c387421ed5861ba",
-    "https://drscdn.500px.org/photo/1037576293/q%3D80_m%3D2000/v2?sig=79cda443bb7620d49370612139a84f44e88419eb0943a8fc54d9856cd1f9200e",
-    "https://drscdn.500px.org/photo/1037580924/q%3D80_m%3D2000/v2?sig=9cf4ef5752f546834f24d9b04773cc62febbfc3c5dfcc7a51c387421ed5861ba",
-];
+
 
 export default function Banking() {
 
@@ -105,7 +104,7 @@ export default function Banking() {
     };
 
     // click cards
-    const [activeIndex, setActiveIndex] = useState(2);
+    const [activeIndex, setActiveIndex] = useState(0);
 
     const handleNext = () => {
         setActiveIndex((prevIndex) => (prevIndex < 4 ? prevIndex + 1 : 0)); // Move forward, loop to the start if at the end
@@ -270,49 +269,39 @@ export default function Banking() {
                     <div className="d-flex">
                         <div
                             className={`card click-cards-five-nys ${activeIndex === 0 ? "active" : "inactive"}`}
-                            style={{
-                                backgroundImage: `url('https://drscdn.500px.org/photo/1037576293/q%3D80_m%3D2000/v2?sig=79cda443bb7620d49370612139a84f44e88419eb0943a8fc54d9856cd1f9200e')`,
-                            }}
+                            style={{ backgroundImage: `url(${clickcardimg1})` }}
                             onClick={() => handleCardClicks(0)}
                         >
                             <h3>Explore the world</h3>
                         </div>
                         <div
                             className={`card click-cards-five-nys ${activeIndex === 1 ? "active" : "inactive"}`}
-                            style={{
-                                backgroundImage: `url('https://drscdn.500px.org/photo/1037580924/q%3D80_m%3D2000/v2?sig=9cf4ef5752f546834f24d9b04773cc62febbfc3c5dfcc7a51c387421ed5861ba')`,
-                            }}
+                            style={{ backgroundImage: `url(${clickcardimg2})` }}
                             onClick={() => handleCardClicks(1)}
                         >
                             <h3>Explore the world</h3>
                         </div>
                         <div
                             className={`card click-cards-five-nys ${activeIndex === 2 ? "active" : "inactive"}`}
-                            style={{
-                                backgroundImage: `url('https://drscdn.500px.org/photo/1037567905/q%3D80_m%3D2000/v2?sig=2422f7fcd9988639e0269bbf0a70904890abd2aa85b0b8df0370c446a6c7798f')`,
-                            }}
+                           style={{ backgroundImage: `url(${clickcardimg3})` }}
                             onClick={() => handleCardClicks(2)}
                         >
                             <h3>Explore the world</h3>
                         </div>
-                        <div
+                        {/* <div
                             className={`card click-cards-five-nys ${activeIndex === 3 ? "active" : "inactive"}`}
-                            style={{
-                                backgroundImage: `url('https://drscdn.500px.org/photo/1037576293/q%3D80_m%3D2000/v2?sig=79cda443bb7620d49370612139a84f44e88419eb0943a8fc54d9856cd1f9200e')`,
-                            }}
+                           style={{ backgroundImage: `url(${Bankimg1})` }}
                             onClick={() => handleCardClicks(3)}
                         >
                             <h3>Explore the world</h3>
                         </div>
                         <div
                             className={`card click-cards-five-nys ${activeIndex === 4 ? "active" : "inactive"}`}
-                            style={{
-                                backgroundImage: `url('https://drscdn.500px.org/photo/1037567905/q%3D80_m%3D2000/v2?sig=2422f7fcd9988639e0269bbf0a70904890abd2aa85b0b8df0370c446a6c7798f')`,
-                            }}
+                           style={{ backgroundImage: `url(${Bankimg1})` }}
                             onClick={() => handleCardClicks(4)}
                         >
                             <h3>Explore the world</h3>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 

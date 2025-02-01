@@ -120,7 +120,7 @@ export default function AIVMS() {
                                             </ul>
                                         </div>
                                         <div class="purchase-info ">
-                                            <Link to="/vmsde">
+                                            <Link to="/Alarmdet">
                                                 <button type="button" class="btn ms-3">
                                                     Know More<i class="fas fa-shopping-cart"></i>
                                                 </button>

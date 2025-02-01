@@ -9,9 +9,6 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from "react-router-dom";
 // images
 import worshipbanner from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/worshipbanner.png';
-import edubanner from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/solu-education-banner-1.png';
-import stickyedu2 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/sticky-edu-2.png';
-import stickyedu3 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/sticky-edu-3.png';
 import icon1 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/cloud-storage.png'
 import icon3 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/hd_subscription.png'
 import icon7 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/motion_senstivity_control.png'
@@ -20,8 +17,9 @@ import icon9 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/person_detection.
 import overicon1 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/worshipicon1 (2).png'
 import overicon2 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT//worshipicon1 (3).png'
 import overicon3 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT//worshipicon1 (1).png'
-import dividediv1 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/divide-div-edu 1 (1).png'
-import dividediv2 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/divide-div-edu 1 (3).png'
+import dividediv1 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/Worship images/1.jpg'
+import dividediv2 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/Worship images/2.jpg'
+import dividediv3 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/Worship images/3.png'
 import worshipcard1 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/worshipcardicon1 (2).png'
 import worshipcard2 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/worshipcardicon1 (3).png'
 import worshipcard3 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/worshipcardicon1 (4).png'
@@ -29,7 +27,7 @@ import worshipcard4 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/worshipcardicon
 import worshipcard5 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/worshipcardicon1 (1).png'
 // icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight, faBuildingColumns, faCarBurst, faCircleInfo, faHandshake, faHome, faHouseSignal, faIndustry, faPlaceOfWorship, faSchool, faUsers, faWarehouse } from '@fortawesome/free-solid-svg-icons';
+import { faAngleRight, faBuildingColumns, faCarBurst, faCircleInfo, faHandshake, faHome, faHouseSignal, faIndustry, faPlaceOfWorship, faSchool, faWarehouse } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function WORSHIP() {
@@ -232,7 +230,7 @@ export default function WORSHIP() {
                         </div>
                         <div class="col">
                             <div class="card">
-                                <img src={dividediv1} class="card-img-top" alt="..." />
+                                <img src={dividediv2} class="card-img-top" alt="..." />
                                 <div class="card-body">
                                     <h2 class="card-title">Solution</h2>
                                     <p class="card-text">Innovative technologies can address these challenges effectively. Advanced surveillance systems enhance security, while smart lighting and climate control solutions reduce energy wastage. Digital platforms simplify operations by streamlining donations, volunteer management, and event planning. Together, these tools create a safe, efficient, and harmonious environment for worshippers and administrators to focus on their spiritual goals. </p>
@@ -244,7 +242,7 @@ export default function WORSHIP() {
                     <div class="card  mt-5 mb-5">
                         <div class="row g-0" style={{ display: "flex", justifyContent: "center", alignItems: "center", textAlign: "justify" }}>
                             <div class="col-md-4">
-                                <img src={dividediv1} class="img-fluid rounded-start" alt="..." />
+                                <img src={dividediv3} class="img-fluid rounded-start" alt="..." />
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">

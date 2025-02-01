@@ -3,8 +3,12 @@ import "./A-detailspage.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBlog, faCompass, faHeadset, faMicrochip, faPeopleArrows, faServer, faShieldVirus } from "@fortawesome/free-solid-svg-icons";
 import Footerproduct from "../A-LAYOUT/footer"
-import Blogimg1 from "../IMAGES-VIDEOS/A-IMG-HOME-LAYOUT/common/blog-img-1.png"
-import singleproimg from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/singleproimg.png"
+import banner from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/HYBRID-NVR/Banner.png"
+import Blogimg1 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/Bank.png"
+import Blogimg2 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/Jewelry.png"
+import Blogimg3 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/Church.png"
+import Blogimg4 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/House.png"
+import singleproimg from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/HYBRID-NVR/NVR features.png"
 
 export default function Hybriddetails() {
 
@@ -16,25 +20,13 @@ export default function Hybriddetails() {
         <>
             <body className="design1details">
 
-                <section>
-                    {/* <!-- Background video --> */}
-                    <div class="video-background-holder">
-                        <div class="video-background-overlay"></div>
-                        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                            <source src="https://huykhong.com/codepen/landing.video.mp4" type="video/mp4" />
-                        </video>
-                        <div class="video-background-content container h-100">
-                            <div class="d-flex h-100 text-center align-items-center">
-                                <div class="w-100 text-white">
-                                    <h1 class="display-4">Landing Page with video background</h1>
-                                    <p class="lead mb-0">Made with HTML5 and Bootstrap 4</p>
-                                    <p class="lead">
-                                        <a href="#" class="btn btn-light">Click Here to Enter</a>
-                                    </p>
-                                </div>
-                            </div>
+            <section>
+                    <section>
+                        <div class="video-background-holder">
+                            <div class="video-background-overlay"></div>
+                            <img src={banner} class="img-fluid w-100" alt="Banner Image" />
                         </div>
-                    </div>
+                    </section>
                 </section>
 
                 <div class="flex-container-nystai-scroll">
@@ -189,17 +181,17 @@ export default function Hybriddetails() {
                             </div>
                             <div class="col">
                                 <div class="card">
-                                    <img src={Blogimg1} class="card-img-top" alt="..." />
+                                    <img src={Blogimg2} class="card-img-top" alt="..." />
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="card">
-                                    <img src={Blogimg1} class="card-img-top" alt="..." />
+                                    <img src={Blogimg3} class="card-img-top" alt="..." />
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="card">
-                                    <img src={Blogimg1} class="card-img-top" alt="..." />
+                                    <img src={Blogimg4} class="card-img-top" alt="..." />
                                 </div>
                             </div>
                         </div>

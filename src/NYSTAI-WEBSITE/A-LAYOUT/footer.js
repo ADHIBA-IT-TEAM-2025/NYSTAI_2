@@ -421,7 +421,7 @@ export default function Footerproduct() {
             </div>
             <hr className="container hr-mobile-foo" />
             <div className="text-white">Privacy Policy </div>
-            <div className="text-white">Warrenty</div>
+            <div className="text-white">Warranty</div>
             <div className="text-white">TERMS & SERVICE</div>
             <hr className="container hr-mobile-foo" />
             <div className="text-white mb-3">Copyright © 2024<br /> All Rights Reserved by <br />ADHIBA TECHNOLOGIES PRIVATE LIMITED</div>

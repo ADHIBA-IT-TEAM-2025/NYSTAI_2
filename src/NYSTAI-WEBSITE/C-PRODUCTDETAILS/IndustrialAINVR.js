@@ -6,7 +6,10 @@ import 'swiper/css/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBlog, faCompass, faHeadset, faMicrochip, faPeopleArrows, faServer, faShieldVirus } from "@fortawesome/free-solid-svg-icons";
 import Footerproduct from "../A-LAYOUT/footer"
-import Blogimg1 from "../IMAGES-VIDEOS/A-IMG-HOME-LAYOUT/common/blog-img-1.png"
+import Blogimg1 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/MAnufacturin-Companies.png"
+import Blogimg2 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/Warehouse.png"
+import Blogimg3 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/Corporates.png"
+import Blogimg4 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/Companies.png"
 import singleproimg from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/singleproimg.png"
 
 
@@ -190,17 +193,17 @@ export default function Industrialdet() {
                             </div>
                             <div class="col">
                                 <div class="card">
-                                    <img src={Blogimg1} class="card-img-top" alt="..." />
+                                    <img src={Blogimg2} class="card-img-top" alt="..." />
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="card">
-                                    <img src={Blogimg1} class="card-img-top" alt="..." />
+                                    <img src={Blogimg3} class="card-img-top" alt="..." />
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="card">
-                                    <img src={Blogimg1} class="card-img-top" alt="..." />
+                                    <img src={Blogimg4} class="card-img-top" alt="..." />
                                 </div>
                             </div>
                         </div>

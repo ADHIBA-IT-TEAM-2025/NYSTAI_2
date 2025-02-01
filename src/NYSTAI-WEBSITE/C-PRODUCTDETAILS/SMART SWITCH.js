@@ -3,8 +3,13 @@ import "./A-detailspage.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBlog, faCompass, faHeadset, faMicrochip, faPeopleArrows, faServer, faShieldVirus } from "@fortawesome/free-solid-svg-icons";
 import Footerproduct from "../A-LAYOUT/footer"
-import Blogimg1 from "../IMAGES-VIDEOS/A-IMG-HOME-LAYOUT/common/blog-img-1.png"
+import Blogimg1 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/Bank.png"
+import Blogimg2 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/Jewelry.png"
+import Blogimg3 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/House.png"
+import Blogimg4 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/Corporates.png"
 import singleproimg from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/singleproimg.png"
+
+
 export default function Smartdet() {
 
     useEffect(() => {
@@ -189,17 +194,17 @@ export default function Smartdet() {
                             </div>
                             <div class="col">
                                 <div class="card">
-                                    <img src={Blogimg1} class="card-img-top" alt="..." />
+                                    <img src={Blogimg2} class="card-img-top" alt="..." />
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="card">
-                                    <img src={Blogimg1} class="card-img-top" alt="..." />
+                                    <img src={Blogimg3} class="card-img-top" alt="..." />
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="card">
-                                    <img src={Blogimg1} class="card-img-top" alt="..." />
+                                    <img src={Blogimg4} class="card-img-top" alt="..." />
                                 </div>
                             </div>
                         </div>

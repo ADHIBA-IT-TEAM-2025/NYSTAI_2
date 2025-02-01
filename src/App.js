@@ -38,7 +38,7 @@ import Kitchendet from './NYSTAI-WEBSITE/C-PRODUCTDETAILS/KITCHENSAFETY';
 import Ioedet from './NYSTAI-WEBSITE/C-PRODUCTDETAILS/IOE';
 import Waredet from './NYSTAI-WEBSITE/C-PRODUCTDETAILS/WAREHOUSE';
 import WORSHIP from './NYSTAI-WEBSITE/D-SOLUTION LAYOUT/worship';
-import Retail from './NYSTAI-WEBSITE/D-SOLUTION LAYOUT/retail';
+import Retailcategory from './NYSTAI-WEBSITE/D-SOLUTION LAYOUT/Retail';
 import Banking from './NYSTAI-WEBSITE/D-SOLUTION LAYOUT/Banking';
 
 function App() {
@@ -55,7 +55,7 @@ function App() {
           <Route path="nystai-solution-worship" element={<WORSHIP />} />
           <Route path="nystai-solution-home" element={<Smarthomesolu />} />
           <Route path="nystai-solution-banking" element={<Banking />} />
-          <Route path="nystai-solution-retail" element={<Retail />} />
+          <Route path="nystai-solution-retail" element={<Retailcategory />} />
           <Route path="nystai-solution-Industrial" element={<Industrial />} />
           <Route path="nystai-solution-Warehouse" element={<Warehouse />} />
           <Route path="nystai-solution-VMS" element={<Vms />} />

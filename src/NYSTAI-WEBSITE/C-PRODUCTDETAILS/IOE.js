@@ -3,17 +3,11 @@ import "./A-detailspage.css"
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleLeft, faAngleRight, faBlog, faCompass, faHeadset, faMicrochip, faPeopleArrows, faServer, faShieldVirus } from "@fortawesome/free-solid-svg-icons";
-import { faTint, faBroadcastTower, faMobileAlt, faShieldAlt, faHome } from '@fortawesome/free-solid-svg-icons';
+import { faBlog, faCompass, faHeadset, faMicrochip, faPeopleArrows, faServer, faShieldVirus } from "@fortawesome/free-solid-svg-icons";
 import Footerproduct from "../A-LAYOUT/footer"
-import rigimghyb from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/Hybrid AIoT NVR.png"
-import Blogimg1 from "../IMAGES-VIDEOS/A-IMG-HOME-LAYOUT/common/blog-img-1.png"
-import Blogimg2 from "../IMAGES-VIDEOS/A-IMG-HOME-LAYOUT/common/green-innovation-in-commercial-displays-banner 1.png"
-import Blogimg3 from "../IMAGES-VIDEOS/A-IMG-HOME-LAYOUT/common/logistics-management-&-hikvision-white-paper 1.png"
-import Blogimg4 from "../IMAGES-VIDEOS/A-IMG-HOME-LAYOUT/common/non-visible-light-technologies-in-security-1280x444 1.png"
-import Blogimg5 from "../IMAGES-VIDEOS/A-IMG-HOME-LAYOUT/common/top-5-trends-for-the-aiot-industry-in-2025 1.png"
+import Blogimg1 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/Apartments.png"
+import Blogimg2 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/Gated-Communities.png"
 import Prodcatimg1 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/prod-cate-img-1.png"
 import Prodcatimg2 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/prod-cate-img-2.png"
 import Prodcatimg3 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/prod-cate-img-3.png"
@@ -273,19 +267,10 @@ export default function Ioedet() {
                             </div>
                             <div class="col">
                                 <div class="card">
-                                    <img src={Blogimg1} class="card-img-top" alt="..." />
+                                    <img src={Blogimg2} class="card-img-top" alt="..." />
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src={Blogimg1} class="card-img-top" alt="..." />
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src={Blogimg1} class="card-img-top" alt="..." />
-                                </div>
-                            </div>
+                         
                         </div>
                     </div>
                 </section>

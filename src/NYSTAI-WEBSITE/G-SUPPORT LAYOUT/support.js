@@ -70,7 +70,9 @@ export default function Support() {
                             </div>
 
                             <div className="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center ">
-                                <img src={CHATWITHUS} className="whats-icon-support-nystai" style={{ height: '10vh', width: 'fit-content', cursor: "pointer" }} onClick={openChatbot} />
+                                <a href="https://wa.me/+918189977700" target="_blank">
+                                    <img src={CHATWITHUS} className="whats-icon-support-nystai" style={{ height: '10vh', width: 'fit-content', cursor: "pointer" }} onClick={openChatbot} />
+                                </a>
                             </div>
 
                         </div>
