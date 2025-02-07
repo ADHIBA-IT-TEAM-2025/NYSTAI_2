@@ -791,7 +791,7 @@
   z-index: 0;
 }
 
-/* 
+
 #section-1 .content-slider .slider #top-banner-1 {
   background: url('../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/warehouse-1\ \(1\).png') no-repeat center center;
   background-size: cover;
@@ -805,7 +805,7 @@
 #section-1 .content-slider .slider #top-banner-3 {
   background: url('../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/warehouse-1\ \(3\).png') no-repeat center center;
   background-size: cover;
-} */
+}
 
 
 
@@ -950,216 +950,222 @@
   font-size: 20px;
 }
 
-
 @media only screen and (min-width: 1920px) {
   .hover-tab-body-nystai {
     font-size: 22px;
   }
-
+ 
   .main-header .header-wrapper {
     width: 57%;
   }
-
+ 
   #section-1 {
     height: 46em;
   }
-
+ 
   #section-1 .content-slider .slider .banner .banner-inner-wrapper {
     padding-top: 5em;
-
+ 
   }
 }
-
+ 
 @media only screen and (max-width: 1919px) {
   .hover-tab-body-nystai {
     font-size: 20px;
   }
-
+ 
   .main-header .header-wrapper {
     width: 60%;
   }
-
+ 
   #section-1 {
     height: 43em;
   }
-
+ 
   #section-1 .content-slider .slider .banner .banner-inner-wrapper {
     padding-top: 11em;
   }
 }
-
+ 
 @media only screen and (max-width: 1680px) {
   .hover-tab-body-nystai {
     font-size: 18px;
   }
-
+ 
   .main-header .header-wrapper {
     width: 65%;
   }
-
+ 
   #section-1 {
     height: 31em;
   }
-
+ 
   #section-1 .content-slider .slider .banner .banner-inner-wrapper {
     padding-top: 10em;
   }
 }
-
+ 
 @media only screen and (max-width: 1366px) {
   .hover-tab-body-nystai {
     font-size: 16px;
   }
-
+ 
   .main-header .header-wrapper {
     width: 70%;
   }
 }
-
+ 
 @media only screen and (max-width: 1120px) {
   .main-header .header-wrapper .main-menu li {
     padding: 0.75em 1.4em;
   }
-
+ 
   #section-1 {
     height: 35em;
   }
-
+ 
   #section-1 .content-slider div {
     bottom: -0.2em;
   }
-
+ 
   #section-1 .content-slider .slider .banner .banner-inner-wrapper {
     padding-top: 7em;
   }
-
+ 
   #section-1 .content-slider .slider .banner .banner-inner-wrapper .line {
     margin: 2em auto;
   }
 }
-
+ 
 @media only screen and (max-width: 1024px) {
   .hover-tab-body-nystai {
     font-size: 14px;
   }
-
+ 
   .main-header .header-wrapper .main-menu li {
     padding: 0.75em 1.3em;
   }
-
+ 
   #section-1 .content-slider div {
     bottom: 0;
   }
-
+ 
   #section-1 .content-slider div .controls {
     width: 80%;
   }
 }
-
+ 
 @media only screen and (max-width: 860px) {
   .main-header .header-wrapper .main-menu li {
     padding: 0.75em 0.9em;
   }
-
+ 
   #section-1 {
     height: 29em;
   }
-
+ 
   #section-1 .content-slider div {
     bottom: -1em;
   }
-
+ 
   #section-1 .content-slider div .controls {
     width: 90%;
   }
-
+ 
   #section-1 .content-slider .slider .banner .banner-inner-wrapper h2 {
     font-size: 2em;
   }
-
+ 
   #section-1 .content-slider .slider .banner .banner-inner-wrapper h1 {
     font-size: 4.5em;
   }
-
+ 
   #section-1 .content-slider .slider .banner .banner-inner-wrapper {
     padding-top: 5em;
   }
 }
-
+ 
 @media only screen and (max-width: 768px) {
   .main-header .header-wrapper .main-menu li {
     padding: 0.75em 0.5em;
   }
-
+ 
   #section-1 {
     height: 27em;
   }
-
+ 
   #section-1 .content-slider div .controls {
     width: 100%;
   }
-
+ 
   #section-1 .content-slider div .controls label {
     width: 19%;
     font-size: 0.8em;
   }
-
+ 
   #section-1 .content-slider .slider .banner .banner-inner-wrapper .line {
     margin: 1.7em auto;
   }
 }
-
+ 
 @media only screen and (max-width: 650px) {
   .main-header .header-wrapper {
     width: 95%;
   }
 }
-
+ 
 @media only screen and (max-width: 480px) {
   .main-header .header-wrapper {
-    width: 97%;
+    width: 100%;
   }
-
+ 
   .main-header .header-wrapper .main-logo {
     display: none;
   }
-
+ 
   .main-header .header-wrapper .main-menu li {
     padding: 0.2em 0.3em;
   }
-
+ 
   .main-header .header-wrapper .main-menu li:last-child,
   .main-header .header-wrapper .main-menu li:nth-child(6) {
     padding: 0.2em 0.7em;
   }
-
+ 
   #section-1 {
-    height: 35em;
+    height: 30em;
+    padding: 10px;
   }
-
+ 
   #section-1 .content-slider div {
     bottom: -0.5em;
   }
-
+ 
   #section-1 .content-slider div .controls label {
-    width: 40%;
-    font-size: 0.7em;
+    display: none;
   }
-
+ 
   #section-1 .content-slider .slider .banner .banner-inner-wrapper h2 {
     font-size: 1.5em;
+    text-align: start;
   }
-
+ 
   #section-1 .content-slider .slider .banner .banner-inner-wrapper h1 {
     font-size: 1em;
   }
-
+ 
   #section-1 .content-slider .slider .banner .banner-inner-wrapper .line {
     margin: 1.7em auto;
   }
+  #section-1 .content-slider .slider .banner .banner-inner-wrapper p {
+    text-align: start;
+  }
+  .line-tab-solu{
+    display: none;
+  }
 }
-
-
+ 
+has context menu
 
 /* warehosue */
 /* btn */
@@ -1303,3 +1309,4 @@
     top: -21px;
   }
 }
+

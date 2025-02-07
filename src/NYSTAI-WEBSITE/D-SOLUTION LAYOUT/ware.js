@@ -5,10 +5,8 @@ import { products } from '../C-PRODUCT LAYOUT/datass.js';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Link } from "react-router-dom";
 // images
 import edubannerlanding from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/warehouse-1 (4).png';
 import icon1 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/cloud-storage.png'
@@ -16,15 +14,15 @@ import icon3 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/hd_subscription.p
 import icon7 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/motion_senstivity_control.png'
 import icon8 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/peri-zoning.png'
 import icon9 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/person_detection.png'
-import overicon1 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/ware-img-solu(1).png'
-import overicon2 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/ware-img-solu(2).png'
-import overicon3 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/ware-img-solu(3).png'
-import indusvideo from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/warehouse-banner.png'
+import overicon1 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/ware - 1 (4).png'
+import overicon2 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/ware - 1 (5).png'
+import overicon3 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/ware - 1 (2).png'
+import indusvideo from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/waresolufu.jpg'
+
 // icons
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight, faBuildingColumns, faCarBurst, faCircleInfo, faHandshake, faHome, faHouseSignal, faIndustry, faPlaceOfWorship, faSchool, faWarehouse } from '@fortawesome/free-solid-svg-icons';
 import Tabsliderpro from '../C-PRODUCT LAYOUT/tab product.js';
 gsap.registerPlugin(ScrollTrigger);
+
 
 export default function Warehouse() {
 
@@ -32,10 +30,11 @@ export default function Warehouse() {
         window.scrollTo(0, 0);
     }, []);
 
+
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState(null);
 
-    const filteredProducts = products.filter(product => [2].includes(product.category));
+    const filteredProducts = products.filter(product => [2,3,4].includes(product.category));
 
     const handleCardClick = (product) => {
         setSelectedProduct(product);
@@ -45,6 +44,7 @@ export default function Warehouse() {
     const handleCloseModal = () => {
         setModalOpen(false);
     };
+
 
     const [activeSection, setActiveSection] = useState('Overview');
 
@@ -83,6 +83,8 @@ export default function Warehouse() {
         }
     };
 
+
+
     return (
         <>
 
@@ -98,7 +100,7 @@ export default function Warehouse() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
 
-                        <Nav className="me-auto">
+                        <Nav className="m-auto">
                             <Nav.Link >
                                 <a className={`menu-item-link ${activeSection === 'Overview' ? 'active' : ''}`}
                                     onClick={() => handleScrollToSection('Overview')}>
@@ -118,46 +120,11 @@ export default function Warehouse() {
                                 </a>
                             </Nav.Link>
                             <Nav.Link >
-                                <a className={`menu-item-link ${activeSection === 'Where we use' ? 'active' : ''}`}
-                                    onClick={() => handleScrollToSection('Where we use')}>
-                                    Where we use
-                                </a>
-                            </Nav.Link>
-                            <Nav.Link >
                                 <a className={`menu-item-link ${activeSection === 'Product display' ? 'active' : ''}`}
                                     onClick={() => handleScrollToSection('Product display')}>
                                     Product display
                                 </a>
                             </Nav.Link>
-                        </Nav>
-
-
-                        <Nav className='brodcrumbs-text-solu'>
-                            <Nav.Link className='text-brod' ><FontAwesomeIcon icon={faHome} /></Nav.Link>
-                            <Nav.Link > <FontAwesomeIcon icon={faAngleRight} /></Nav.Link>
-                            <NavDropdown title="INTEGRATED SOLUTIONS" id="collapsible-nav-dropdown">
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faHouseSignal} className="me-3" /><Link to="/nystai-solution-home" >SMARTHOME</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faIndustry} className="me-3" />   <Link to="/nystai-solution-Industrial" >INDUSTRIAL</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faSchool} className="me-3" />   <Link to="/nystai-solution-education" >EDUCATION</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faPlaceOfWorship} className="me-3" />WORSHIP</NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faCarBurst} className="me-3" /> <Link to="/nystai-solution-vms" >VMS</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faWarehouse} className="me-3" />  <Link to="/nystai-solution-Warehouse" c>WAREHOUSE</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faIndustry} className="me-3" />HOSPITAL</NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faBuildingColumns} className="me-3" />BANKING</NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faCircleInfo} className="me-3" />RETAIL</NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faHandshake} className="me-3" /><Link to="/nystai-solution-parking" >PARKING IOT SOLUTION</Link></NavDropdown.Item>
-                            </NavDropdown>
-                            <Nav.Link >  <FontAwesomeIcon icon={faAngleRight} /></Nav.Link>
-                            <Nav.Link className='text-brod'>WAREHOUSE</Nav.Link>
                         </Nav>
 
                     </Navbar.Collapse>
@@ -166,54 +133,60 @@ export default function Warehouse() {
 
             <section id="main-content" className="page-sections">
 
-                <section className="page-section  mb-5" id="Overview">
+                <section className="page-section mb-5 container" id="Overview">
 
-                    <div className="mini-block-statement w-clearfix">
-                        <p className="text-block-60" >
-                            Overview
-                        </p>
-                        <h3 className="heading-34">NYSTAI’S WAREHOUSE SOLUTIONS </h3>
+                    <div className="mini-block-statement w-clearfix mt-3">
+                        {/* <h3 className="heading-34">NYSTAI’S&nbsp;<span style={{ color: "#1b6763" }}>WAREHOUSE</span>&nbsp;SOLUTIONS </h3> */}
+                        <h3 className="heading-34">Nystai’s&nbsp;<span style={{color:"#1b6763"}}> warehouse</span>&nbsp;solutions</h3>
                         <p className="text-block-60" >
                             In warehouses, safety is paramount as heavy machinery and fast-paced operations pose risks to workers and equipment. NYSTAI’s warehouse solutions offer essential products like anti-collision devices, forklift safety lights, alert systems, cameras, and 4G helmets with walkie-talkies. These solutions enhance visibility, communication, and accident prevention, ensuring safer and more efficient work environments. Additionally, emergency lights and virtual signage provide crucial guidance in emergencies, improving overall safety protocols. By integrating these technologies, warehouses can minimize accidents and optimize their operations.
                         </p>
                     </div>
 
-                    <div class="card-deck " >
-                        <div class="card">
+                    <div class="card-deck row">
+                        <div class="card col-lg-4">
                             <center>
                                 <img class="card-img-top" src={overicon1} alt="Card image cap" style={{ height: "85px", width: "fit-content" }} />
                             </center>
                             <div class="card-body">
-                                <h5 class="card-title">Enhances visibility and safety </h5>
-                                <p class="card-text">Ensures clear sightlines and awareness. </p>
+                                <h5 class="card-title" style={{ textTransform: "uppercase", color: "#1b6763", fontWeight: "bolder" }}>Enhances visibility and safety </h5>
+                                <p class="card-text" style={{ color: "#8c8c8c" }}>Ensures clear sightlines and awareness. </p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card col-lg-4">
                             <center>
                                 <img class="card-img-top" src={overicon3} alt="Card image cap" style={{ height: "85px", width: "fit-content" }} />
                             </center>
                             <div class="card-body">
-                                <h5 class="card-title">Prevents warehouse accidents efficiently </h5>
-                                <p class="card-text">Reduces risks with smart technology. </p>
+                                <h5 class="card-title" style={{ textTransform: "uppercase", color: "#1b6763", fontWeight: "bolder" }}>Prevents warehouse accidents efficiently </h5>
+                                <p class="card-text" style={{ color: "#8c8c8c" }}>Reduces risks with smart technology. </p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card col-lg-4">
                             <center>
                                 <img class="card-img-top" src={overicon2} alt="Card image cap" style={{ height: "85px", width: "fit-content" }} />
                             </center>
                             <div class="card-body">
-                                <h5 class="card-title">Real-time communication for workers </h5>
-                                <p class="card-text">Keeps teams connected and informed. </p>
+                                <h5 class="card-title" style={{ textTransform: "uppercase", color: "#1b6763", fontWeight: "bolder" }}>Real-time communication for workers </h5>
+                                <p class="card-text" style={{ color: "#8c8c8c" }}>Keeps teams connected and informed. </p>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <center className="page-section  mb-4" id="Where we use">
+                <section className="page-section Whatweoffer " id="What we offer">
+                    <div className='text-center'>
+                        <h3 class="rrmc-article-desc-title" >What we offer</h3>
+                    </div>
+
+                    <section className='tab-indut-solu mt-5'>
+                        <Tabsliderpro />
+                    </section>
+
+                </section>
+
+                <center className="page-section  mb-4" id="Features">
                     <div className="mini-block-statement w-clearfix mb-5">
-                        <p className="text-block-60" >
-                            Features
-                        </p>
                         <h6 className="heading-34">Features Provided by <br />our Warehouse Automation</h6>
                     </div>
                     <img src={indusvideo} className='img-fluid col-lg-8' />
@@ -221,8 +194,7 @@ export default function Warehouse() {
 
                 <main className="container page-section Product-display mb-5" id="Product display">
                     <div className="text-center">
-                        <h3 class="rrmc-article-desc-title" >PRODUCT DISPLAY</h3>
-                        <p class="rrmc-article-desc-intro">Our innovative IFPDs (Interactive Flat Panel Displays) provide crystal-clear visuals, intuitive touch functionality, and seamless integration,<br /> revolutionizing presentations, learning, and collaboration across various industries.</p>
+                        <h3 class="rrmc-article-desc-title mt-5 mb-5" >PRODUCT DISPLAY</h3>
                     </div>
                     <div className="prod-row-card-nys">
                         {filteredProducts.map((product) => (

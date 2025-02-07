@@ -447,7 +447,7 @@ const HeadingForm = () => {
                     />
                     <p>
                         I consent to receive emails about news, marketing & product
-                        updates from Delta in accordance with the
+                        updates from Adhiba Technologies Private Limited
                     </p>
                 </label>
             </div>

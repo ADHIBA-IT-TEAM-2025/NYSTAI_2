@@ -263,7 +263,7 @@ export default function Trial() {
                             loader={<div style={{ background: '#888' }} />} />
                         <div className="content">
                             <div className='bar-item-text-line'></div>
-                            <div className="description">FIRE Alarm</div>
+                            <div className="description">FIRE ALARM</div>
                         </div>
                     </div>
                     <div className="item">

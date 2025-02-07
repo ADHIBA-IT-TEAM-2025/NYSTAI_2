@@ -41,224 +41,6 @@ export default function Nystaihome() {
   return (
     <>
 
-      <center>
-        <div className="row  col-12 elementor-container elementor-column-gap-default ">
-          <div
-            className="col-md-4 elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-aa575bf"
-            data-id="aa575bf"
-            data-element_type="column"
-          >
-            <div className="elementor-widget-wrap elementor-element-populated">
-              <div id="ctm-banner">
-                <Swiper
-                  slidesPerView={1}
-                  loop={true}
-                  autoplay={{
-                    delay: 1000, // Time in milliseconds between slides
-                    disableOnInteraction: false, // Ensures autoplay doesn't stop after interactions
-                  }}
-                  speed={500}
-                  className="elementor-image-carousel-wrapper"
-                >
-                  <SwiperSlide>
-                    <a href="#">
-                      <figure className="swiper-slide-inner">
-                        <img
-                          decoding="async"
-                          className="swiper-slide-image"
-                          src="https://trueview.co.in/wp-content/uploads/2024/06/4G-Linkage-Solar-Mini-PT-Camera.webp"
-                          alt="4G Linkage Solar Mini PT Camera"
-                          title="Home 1"
-                        />
-                      </figure>
-                    </a>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <a href="#">
-                      <figure className="swiper-slide-inner">
-                        <img
-                          decoding="async"
-                          className="swiper-slide-image"
-                          src="https://trueview.co.in/wp-content/uploads/2024/05/A-Type-Digital-Signage.webp"
-                          alt="A-Type Digital Signage"
-                          title="Home 2"
-                        />
-                      </figure>
-                    </a>
-                  </SwiperSlide>
-                </Swiper>
-              </div>
-            </div>
-          </div>
-          <div
-            className="col-md-4 elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-d3d65f8"
-            data-id="d3d65f8"
-            data-element_type="column"
-          >
-            <div className="elementor-widget-wrap elementor-element-populated">
-              <section
-                className="elementor-section elementor-inner-section elementor-element elementor-element-aa731d9 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                data-id="aa731d9"
-                data-element_type="section"
-              >
-                <div className="elementor-container elementor-column-gap-default">
-                  <div
-                    className="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1bd0797"
-                    data-id="1bd0797"
-                    data-element_type="column"
-                  >
-                    <div className="elementor-widget-wrap elementor-element-populated">
-                      <div id="ctm-banner">
-                        <Swiper
-                          slidesPerView={1}
-                          loop={true}
-                          autoplay={{
-                            delay: 1000, // Time in milliseconds between slides
-                            disableOnInteraction: false, // Ensures autoplay doesn't stop after interactions
-                          }}
-                          speed={500}
-                          className="elementor-image-carousel-wrapper"
-                        >
-                          <SwiperSlide>
-                            <a href="#">
-                              <figure className="swiper-slide-inner">
-                                <img
-                                  decoding="async"
-                                  className="swiper-slide-image"
-                                  src="https://trueview.co.in/wp-content/uploads/2024/05/2K-4K-Fixed-Webcam.webp"
-                                  alt="4G Linkage Solar Mini PT Camera"
-                                  title="Home 1"
-                                />
-                              </figure>
-                            </a>
-                          </SwiperSlide>
-                          <SwiperSlide>
-                            <a href="#">
-                              <figure className="swiper-slide-inner">
-                                <img
-                                  decoding="async"
-                                  className="swiper-slide-image"
-                                  src="https://trueview.co.in/wp-content/uploads/2024/05/2K-4K-Fixed-Webcam.webp"
-                                  alt="A-Type Digital Signage"
-                                  title="Home 2"
-                                />
-                              </figure>
-                            </a>
-                          </SwiperSlide>
-                        </Swiper>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <section
-                className="elementor-section elementor-inner-section elementor-element elementor-element-93bb310 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                data-id="93bb310"
-                data-element_type="section"
-              >
-                <div className="elementor-container elementor-column-gap-default">
-                  <div
-                    className="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-f322da6"
-                    data-id="f322da6"
-                    data-element_type="column"
-                  >
-                    <div className="elementor-widget-wrap elementor-element-populated">
-                      <div id="ctm-banner">
-                        <Swiper
-                          slidesPerView={1}
-                          loop={true}
-                          autoplay={{
-                            delay: 1000, // Time in milliseconds between slides
-                            disableOnInteraction: false, // Ensures autoplay doesn't stop after interactions
-                          }}
-                          speed={500}
-                          className="elementor-image-carousel-wrapper"
-                        >
-                          <SwiperSlide>
-                            <a href="#">
-                              <figure className="swiper-slide-inner">
-                                <img
-                                  decoding="async"
-                                  className="swiper-slide-image"
-                                  src="https://trueview.co.in/wp-content/uploads/2024/05/2K-4K-Fixed-Webcam.webp"
-                                  alt="4G Linkage Solar Mini PT Camera"
-                                  title="Home 1"
-                                />
-                              </figure>
-                            </a>
-                          </SwiperSlide>
-                          <SwiperSlide>
-                            <a href="#">
-                              <figure className="swiper-slide-inner">
-                                <img
-                                  decoding="async"
-                                  className="swiper-slide-image"
-                                  src="https://trueview.co.in/wp-content/uploads/2024/05/2K-4K-Fixed-Webcam.webp"
-                                  alt="A-Type Digital Signage"
-                                  title="Home 2"
-                                />
-                              </figure>
-                            </a>
-                          </SwiperSlide>
-                        </Swiper>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </div>
-          </div>
-          <div
-            className="col-md-4 elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-76e3f66"
-            data-id="76e3f66"
-            data-element_type="column"
-          >
-            <div className="elementor-widget-wrap elementor-element-populated">
-              <div id="ctm-banner">
-                <Swiper
-                  slidesPerView={1}
-                  loop={true}
-                  autoplay={{
-                    delay: 1000, // Time in milliseconds between slides
-                    disableOnInteraction: false, // Ensures autoplay doesn't stop after interactions
-                  }}
-                  speed={500}
-                  className="elementor-image-carousel-wrapper"
-                >
-                  <SwiperSlide>
-                    <a href="#">
-                      <figure className="swiper-slide-inner">
-                        <img
-                          decoding="async"
-                          className="swiper-slide-image"
-                          src="https://trueview.co.in/wp-content/uploads/2024/06/4G-Linkage-Solar-Mini-PT-Camera.webp"
-                          alt="4G Linkage Solar Mini PT Camera"
-                          title="Home 1"
-                        />
-                      </figure>
-                    </a>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <a href="#">
-                      <figure className="swiper-slide-inner">
-                        <img
-                          decoding="async"
-                          className="swiper-slide-image"
-                          src="https://trueview.co.in/wp-content/uploads/2024/05/A-Type-Digital-Signage.webp"
-                          alt="A-Type Digital Signage"
-                          title="Home 2"
-                        />
-                      </figure>
-                    </a>
-                  </SwiperSlide>
-                </Swiper>
-              </div>
-            </div>
-          </div>
-        </div>
-      </center>
-
-
       <body className="body-nystai" >
 
         <Trial />
@@ -325,18 +107,16 @@ export default function Nystaihome() {
         <section className="container">
           <div className="common-top-div">
             <h6 className="head-h-divtopic" >
-              <span style={{ color: "#1b6763" }}>NYST</span>AI-IoT
+              <span style={{ color: "#1b6763" }}>Automated</span>  Water Level Controller
             </h6>
             <h6 className="sechead-h-divtop" >
-              Automated Water Level Controller
+              Smart monitoring, precise control, prevents overflow, saves water efficiently.
             </h6>
           </div>
-
           <center className="page-section " id="Where we use">
             {/* <img src={waterlc} className="img-fluid" style={{ height: "45vh", width: "fit-content", marginLeft: "7%" }} /> */}
             <img src={wlc} className="img-fluid" style={{ height: "25vh", width: "fit-content" }} />
           </center>
-
           <div className="row " style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
             <div className="col-lg-12" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
               <div className="" style={{ textAlign: "center" }}>
@@ -1004,20 +784,14 @@ const Card = () => {
         <section className="pt-5 pb-5" style={{ overflow: "hidden", backgroundColor: "#151515", color: "#f5f5f5" }} >
           <div className="container common-top-div">
             <h6 className="head-h-divtopic " >
-              <span style={{ color: "#1b6763" }}>NYST</span>AI-IoT
+              <span style={{ color: "#1b6763" }}>NYST</span>AI-IoT PRODUCTS
             </h6>
             <h6 className="sechead-h-divtop  " >
-              The Maiden Unified platform for  Video + Alarm and Access control Solutions
+              Smart, Connected, Secure Solutions for a Smarter World!
             </h6>
 
           </div>
           <div className="slider main-slider-nys" >
-
-            <div className="  mt-5 mb-3 " style={{ backgroundColor: "#151515" }}>
-              <h1 className="text-white" style={{ marginLeft: "12%" }}>Explore us</h1>
-              <h6 className="" style={{ marginLeft: "12%", color: "grey" }}>Project-oriented devices for intrusion protection</h6>
-            </div>
-
             <Slider
               ref={sliderRef}
               {...settings}

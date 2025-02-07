@@ -13,7 +13,7 @@ import icon8 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/peri-zoning.png'
 import icon9 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/person_detection.png'
 import icon10 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/record_live.png'
 import icon11 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/simultaneous_viewing.png'
-
+import { Link } from 'react-router-dom';
 
 export default function FIRESAFETY() {
 
@@ -34,7 +34,7 @@ export default function FIRESAFETY() {
     return (
         <>
 
-            <section className='mt-4'>
+            <section className='mt-2'>
                 <img src={laningbanner} className="img-fluid" alt="laningbanner" />
             </section>
 
@@ -149,8 +149,8 @@ export default function FIRESAFETY() {
                 </div>
             </section> */}
 
-<div className="mt-4 mb-5">
-<h3 className='mb-4' style={{color:"#1b6763", fontWeight:"bolder"}}>FIRE SAFETY</h3>
+            <div className="mt-4 mb-5">
+                <h3 className='mb-4' style={{ color: "#1b6763", fontWeight: "bolder" }}>FIRE SAFETY</h3>
                 <div className="prod-row-card-nys">
                     {filteredProducts.map((product) => (
                         <div className="prod-column-card-nys mb-2" key={product.id}>
@@ -213,11 +213,11 @@ export default function FIRESAFETY() {
                                         <h2 class="product-title">{selectedProduct.title}</h2>
                                         <h5 className='mt-4'>Smart Features: </h5>
                                         <div class="social-links">
-                                            <a><img src={icon1} className='img-fluid' alt="shoe image /"/></a>
-                                            <a><img src={icon8} className='img-fluid' alt="shoe image /"/></a>
-                                            <a><img src={icon3} className='img-fluid' alt="shoe image /"/></a>
-                                            <a><img src={icon7} className='img-fluid' alt="shoe image /"/></a>
-                                            <a><img src={icon9} className='img-fluid' alt="shoe image /"/></a>
+                                            <a><img src={icon1} className='img-fluid' alt="shoe image /" /></a>
+                                            <a><img src={icon8} className='img-fluid' alt="shoe image /" /></a>
+                                            <a><img src={icon3} className='img-fluid' alt="shoe image /" /></a>
+                                            <a><img src={icon7} className='img-fluid' alt="shoe image /" /></a>
+                                            <a><img src={icon9} className='img-fluid' alt="shoe image /" /></a>
                                         </div>
                                         <div class="product-detail">
                                             <p>{selectedProduct.modalDescriptionp}</p>
@@ -231,8 +231,11 @@ export default function FIRESAFETY() {
                                             </ul>
                                         </div>
                                         <div class="purchase-info ">
-                                            <button type="button me-2" class="btn ">Add to Cart <i class="fas fa-shopping-cart"></i></button>
-                                            <button type="button" class="btn ms-3">Shop now <i class="fas fa-shopping-cart"></i></button>
+                                            <Link to="/Kitchendet">
+                                                <button type="button" class="btn ms-3">
+                                                    Know More<i class="fas fa-shopping-cart"></i>
+                                                </button>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

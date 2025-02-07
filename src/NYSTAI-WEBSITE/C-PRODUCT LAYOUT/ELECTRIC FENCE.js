@@ -15,7 +15,7 @@ import icon9 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/person_detection.
 import icon10 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/record_live.png'
 import icon11 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/simultaneous_viewing.png'
 import icon12 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/two_way.png'
-
+import { Link } from 'react-router-dom';
 
 export default function ELECTRICFENCE() {
 
@@ -56,7 +56,7 @@ export default function ELECTRICFENCE() {
     return (
         <>
 
-            <section className='mt-4'>
+            <section className='mt-2'>
                 <img src={laningbanner} className="img-fluid" />
             </section>
 
@@ -171,9 +171,8 @@ export default function ELECTRICFENCE() {
                 </div>
             </section> */}
 
-
-<div className="mt-4 mb-5">
-<h3 className='mb-4' style={{color:"#1b6763", fontWeight:"bolder"}}>ELECTRICFENCE</h3>
+            <div className="mt-4 mb-5">
+                <h3 className='mb-4' style={{ color: "#1b6763", fontWeight: "bolder" }}>ELECTRIC FENCE</h3>
                 <div className="prod-row-card-nys">
                     {filteredProducts.map((product) => (
                         <div className="prod-column-card-nys mb-2" key={product.id}>
@@ -255,8 +254,11 @@ export default function ELECTRICFENCE() {
                                             </ul>
                                         </div>
                                         <div class="purchase-info ">
-                                            <button type="button me-2" class="btn ">Add to Cart <i class="fas fa-shopping-cart"></i></button>
-                                            <button type="button" class="btn ms-3">Shop now <i class="fas fa-shopping-cart"></i></button>
+                                            <Link to="/electricdet">
+                                                <button type="button" class="btn ms-3">
+                                                    Know More<i class="fas fa-shopping-cart"></i>
+                                                </button>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

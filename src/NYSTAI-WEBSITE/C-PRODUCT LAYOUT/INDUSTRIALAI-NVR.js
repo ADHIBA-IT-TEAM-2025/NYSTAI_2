@@ -8,6 +8,7 @@ import icon3 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/hd_subscription.p
 import icon7 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/motion_senstivity_control.png'
 import icon8 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/peri-zoning.png'
 import icon9 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/person_detection.png'
+import { Link } from 'react-router-dom';
 
 export default function Indutrial() {
 
@@ -45,11 +46,12 @@ export default function Indutrial() {
     return (
         <>
 
-            <section className='mt-4'>
+            <section className='mt-2'>
                 <img src={laningbanner} className="img-fluid" />
             </section>
 
             <div className="mt-4 mb-5">
+                
                 <h3 className='mb-4' style={{ color: "#1b6763", fontWeight: "bolder" }}>INDUSTRIAL AI NVR</h3>
                 <div className="prod-row-card-nys">
                     {filteredProducts.map((product) => (
@@ -131,8 +133,11 @@ export default function Indutrial() {
                                             </ul>
                                         </div>
                                         <div class="purchase-info ">
-                                            <button type="button me-2" class="btn ">Add to Cart <i class="fas fa-shopping-cart"></i></button>
-                                            <button type="button" class="btn ms-3">Shop now <i class="fas fa-shopping-cart"></i></button>
+                                            <Link to="/indudet">
+                                                <button type="button" class="btn ms-3">
+                                                    Know More<i class="fas fa-shopping-cart"></i>
+                                                </button>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

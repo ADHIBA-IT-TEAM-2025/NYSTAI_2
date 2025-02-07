@@ -13,7 +13,9 @@ import protect1 from '../IMAGES-VIDEOS/D-IMG-PLAN-LAYOUT/protectplan-1 (1).png'
 import protect2 from '../IMAGES-VIDEOS/D-IMG-PLAN-LAYOUT/protectplan-1 (3).png'
 import protect3 from '../IMAGES-VIDEOS/D-IMG-PLAN-LAYOUT/protectplan-1 (2).png'
 import Footerproduct from "../A-LAYOUT/footer";
-import $ from 'jquery'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
+
 
 export default function Protectplan() {
 
@@ -146,7 +148,7 @@ export default function Protectplan() {
                     </section>
                 </section>
 
-                <section>
+                {/* <section>
                     <div className="services-types-head text-center mt-5">
                         <p>Get with it</p>
                         <h2>Shop popular kits</h2>
@@ -249,6 +251,81 @@ export default function Protectplan() {
                     </main>
 
 
+                </section> */}
+
+                {/* PLAN COMPARISSION */}
+                <section className="mb-5 container-fluid pb-5 pt-5">
+                    <div id="vehicle-details">
+                        <div className="proComparisionContainer">
+                            <h2 className="mb-5 text-center" style={{textTransform:"uppercase",fontSize:"38px",color:"#8c8c8c",fontWeight:"bolder"}}>Review our<span style={{color:"#1b6763"}}> Protect plans.</span></h2>
+                            <div className="proComparisionTable">
+                                <table id="proComparisionTable" className="comparisionTable">
+                                    <tbody>
+                                        <tr>
+                                            <th className="proHeading" style={{ fontSize: "17px", fontWeight: "300", borderRight: "1px solid #ddd" }}></th>
+                                            <td className="p-5" style={{ fontSize: "20px", fontWeight: "500", color: "#1b6763" }}>BASIC</td>
+                                            <td className="p-5" style={{ fontSize: "20px", fontWeight: "500", color: "#1b6763" }}>PLUS</td>
+                                            <td className="p-5" style={{ fontSize: "20px", fontWeight: "500", color: "#1b6763" }}>PRO</td>
+                                        </tr>
+                                        <tr>
+                                            <th className="proHeading" style={{ fontSize: "17px", fontWeight: "300", borderRight: "1px solid #ddd" }}>PRICE</th>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                        </tr>
+                                        <tr>
+                                            <th className="proHeading" style={{ fontSize: "17px", fontWeight: "300", borderRight: "1px solid #ddd" }}>Snapshot Capture</th>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                        </tr>
+                                        <tr>
+                                            <th className="proHeading" style={{ fontSize: "17px", fontWeight: "300", borderRight: "1px solid #ddd" }}>Video History for up to 180 Days</th>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                        </tr>
+                                        <tr>
+                                            <th className="proHeading" style={{ fontSize: "17px", fontWeight: "300", borderRight: "1px solid #ddd" }}>Person and Package Alerts</th>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                        </tr>
+                                        <tr>
+                                            <th className="proHeading" style={{ fontSize: "17px", fontWeight: "300", borderRight: "1px solid #ddd" }}>Rich Notification</th>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                        </tr>
+                                        <tr>
+                                            <th className="proHeading" style={{ fontSize: "17px", fontWeight: "300", borderRight: "1px solid #ddd" }}>Download up to 50 Videos At Once</th>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                        </tr>
+                                        <tr>
+                                            <th className="proHeading" style={{ fontSize: "17px", fontWeight: "300", borderRight: "1px solid #ddd" }}>24/7 Alarm Professional Monitoring</th>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                        </tr>
+                                        <tr>
+                                            <th className="proHeading" style={{ fontSize: "17px", fontWeight: "300", borderRight: "1px solid #ddd" }}>Alarm Cellular Backup</th>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                        </tr>
+                                        <tr>
+                                            <th className="proHeading" style={{ fontSize: "17px", fontWeight: "300", borderRight: "1px solid #ddd" }}>Digital Security</th>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                            <td><FontAwesomeIcon icon={faCheck} style={{fontSize:"18px", color:"#1b6763"}}/></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 <section className="mb-5 build-ur-systems-nys">

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import './sample.css'
 import { products } from '../C-PRODUCT LAYOUT/datass.js';
 import Footerproduct from "../A-LAYOUT/footer";
-import Tabsliderpro from "../C-PRODUCT LAYOUT/tab product.js";
 import laningbanner from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/Nystai-icons & resize images/HYBRID-AIoT-NVR-Banner.png'
 import icon1 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/cloud-storage.png'
 import icon2 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/download.png'
@@ -15,13 +14,14 @@ import icon9 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/person_detection.
 import icon10 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/record_live.png'
 import icon11 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/simultaneous_viewing.png'
 import nvrpdf from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/NYSTAI AI-IoT Hybrid NVR.pdf'
+import { Link } from 'react-router-dom';
 
 export default function Sample1() {
 
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState(null);
 
-    const filteredProducts = products.filter(product => [1,4].includes(product.category));
+    const filteredProducts = products.filter(product => [1, 4].includes(product.category));
 
     const handleCardClick = (product) => {
         setSelectedProduct(product);
@@ -48,7 +48,7 @@ export default function Sample1() {
     return (
         <>
 
-            <section className='mt-4'>
+            <section className='mt-2'>
                 <img src={laningbanner} className="img-fluid" />
             </section>
 
@@ -170,8 +170,7 @@ export default function Sample1() {
 
             {/* <Tabsliderpro /> */}
             <div className="mt-4 mb-5">
-            <h3 className='mb-4' style={{color:"#1b6763", fontWeight:"bolder"}}>HYBRID AIoT NVR</h3>
-
+                <h3 className='mb-4' style={{ color: "#1b6763", fontWeight: "bolder" }}>HYBRID AIoT NVR</h3>
                 <div className="prod-row-card-nys">
                     {filteredProducts.map((product, index) => (
                         <div className="prod-column-card-nys mb-2" key={product.id}
@@ -325,12 +324,12 @@ export default function Sample1() {
                                             </ul>
                                         </div>
                                         <div class="purchase-info ">
-
-                                            <button type="button ms-2" class="btn "> <a href={nvrpdf} download={selectedProduct.title}>  Download Brochure
-                                            </a></button>
-                                            <button type="button ms-3 " class="btn ">Add to Cart <i class="fas fa-shopping-cart"></i></button>
-                                            <button type="button" class="btn ms-3">Shop now <i class="fas fa-shopping-cart"></i></button>
-                                        </div  >
+                                            <Link to="/hybriddet">
+                                                <button type="button" class="btn ms-3">
+                                                    Know More<i class="fas fa-shopping-cart"></i>
+                                                </button>
+                                            </Link>
+                                        </div>
                                     </div >
                                 </div>
                             </div>

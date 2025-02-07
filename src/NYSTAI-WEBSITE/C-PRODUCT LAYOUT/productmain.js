@@ -272,7 +272,9 @@ const AdminHub = () => {
                               <a className="dropdown-content-a" ><FontAwesomeIcon icon={faSchool} className="me-3" />
                                 <Link to="/nystai-solution-education" className={` ${isActive('/nystai-solution-education')}`}>EDUCATION</Link></a>
                               <div class="dropdown-divider ms-3 me-3"></div>
-                              <a className="dropdown-content-a" ><FontAwesomeIcon icon={faPlaceOfWorship} className="me-3" />WORSHIP</a>
+                              <a className="dropdown-content-a" >  <FontAwesomeIcon icon={faPlaceOfWorship} className="me-3" />
+                                <Link to="/nystai-solution-worship" className={` ${isActive('/nystai-solution-education')}`}>WORSHIP</Link>
+                              </a>
                               <div class="dropdown-divider ms-3 me-3"></div>
                               <a className="dropdown-content-a" ><FontAwesomeIcon icon={faCarBurst} className="me-3" />
                                 <Link to="/nystai-solution-vms" className={` ${isActive('/nystai-solution-vms')}`}>VMS</Link></a>
@@ -281,11 +283,13 @@ const AdminHub = () => {
                                 <Link to="/nystai-solution-Warehouse" className={` ${isActive('/nystai-solution-education')}`}>WAREHOUSE</Link>
                               </a>
                               <div class="dropdown-divider ms-3 me-3"></div>
-                              <a className="dropdown-content-a" > <Link to="/nystai-solution-Hospital"><FontAwesomeIcon icon={faIndustry} className="me-3" />HOSPITAL</Link></a>
+                              <a className="dropdown-content-a" ><FontAwesomeIcon icon={faIndustry} className="me-3" />  <Link to="nystai-solution-Hospital" className={` ${isActive('/nystai-solution-Hospital')}`}>HOSPITAL</Link></a>
                               <div class="dropdown-divider ms-3 me-3"></div>
-                              <a className="dropdown-content-a" ><FontAwesomeIcon icon={faBuildingColumns} className="me-3" />BANKING</a>
+                              <a className="dropdown-content-a"><FontAwesomeIcon icon={faBuildingColumns} className="me-3" />
+                                <Link to="/nystai-solution-banking" className={` ${isActive('/nystai-solution-banking')}`}>BANKING</Link></a>
                               <div class="dropdown-divider ms-3 me-3"></div>
-                              <a className="dropdown-content-a" ><FontAwesomeIcon icon={faCircleInfo} className="me-3" />RETAIL</a>
+                              <a className="dropdown-content-a" ><FontAwesomeIcon icon={faCircleInfo} className="me-3" />
+                                <Link to="/nystai-solution-retail" className={` ${isActive('/nystai-solution-retail')}`}>RETAIL</Link></a>
                               <div class="dropdown-divider ms-3 me-3"></div>
                               <a className="dropdown-content-a" ><FontAwesomeIcon icon={faHandshake} className="me-3" />
                                 <Link to="/nystai-solution-parking" className={` ${isActive('/nystai-solution-parking')}`}>PARKING IOT SOLUTION</Link></a>
@@ -307,14 +311,14 @@ const AdminHub = () => {
                 </li>
               </ul>
 
-              <ul class="navbar-nav mr-auto ">
+              <ul class="navbar-nav m-auto ">
                 <li class="nav-item me-2">
                   <a className="nav-link">
                     <input type="checkbox" id="switch-mode" hidden onChange={(e) => setIsDarkMode(e.target.checked)} />
                     <label htmlFor="switch-mode" className="switch-mode"></label>
                   </a>
                 </li>
-                <li class="nav-item me-4">
+                {/* <li class="nav-item me-4">
                   <a className="nav-link">  <FontAwesomeIcon icon={faWhatsapp} className="icon-pro-font" /><Tooltip id="my-tooltip" place="bottom" className="tooltip" /></a>
                 </li>
                 <li class="nav-item me-4">
@@ -322,7 +326,7 @@ const AdminHub = () => {
                 </li>
                 <li class="nav-item">
                   <a className="nav-link"><FontAwesomeIcon icon={faShoppingBasket} className="icon-pro-font " /></a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </nav>

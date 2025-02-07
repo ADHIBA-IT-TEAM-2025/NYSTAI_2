@@ -13,9 +13,9 @@ import Footerproduct from "../A-LAYOUT/footer";
 
 export default function Services() {
 
-    // useEffect(() => {
-    //     window.scrollTo(0, 0);
-    // }, []);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <>
@@ -221,11 +221,9 @@ export default function Services() {
                         </div>
                 </section>
 
-                <section className="mt-5 mb-5">
+                <section className="mt-5 ">
                     <Faqs />
                 </section>
-
-                <Footerproduct />
 
             </body>
 
