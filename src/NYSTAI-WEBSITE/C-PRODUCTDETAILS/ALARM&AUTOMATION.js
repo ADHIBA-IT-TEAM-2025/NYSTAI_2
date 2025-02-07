@@ -75,16 +75,20 @@ export default function Alarmdet() {
                     </div>
                 </div>
 
-                <div className="mt-5 mb-5">
-                    <h1 style={{ textAlign: "center" }}>ALARM   <span style={{ color: "#1b6763" }}> & </span>AUTOMATION</h1>
+                <div className="common-top-div">
+                    <h6 className="head-h-divtopic" >
+                        <span style={{ color: "#1b6763" }}>ALARM & </span> AUTOMATION
+                    </h6>
+                    <h6 className="sechead-h-divtop" style={{color:"#8c8c8c"}} >
+                    Real-time monitoring, AI-powered automation, remote access, enhanced safety.
+                    </h6>
                 </div>
 
-
                 {/* LEFT RIGHT CARDS */}
-                <section className="parallal-text-card-nys pt-5 pb-3">
+                <section className="container-fluid parallal-text-card-nys pt-5 pb-3">
                     <div className="container">
-                        <div className="col-9 parallal-text-card-heading-nys">
-                            <h2><span>Robust industries design  </span>with advanced AI powered</h2>
+                        <div className="col-lg-9 col-md-12 col-sm-12  parallal-text-card-heading-nys">
+                            <h2><span>Robust industries design </span>with advanced AI powered</h2>
                         </div>
                         <div className="text-img-nys">
                             <div className="row">
@@ -93,7 +97,7 @@ export default function Alarmdet() {
                                         <h6>The "ALARM & AUTOMATION" category includes integrated security solutions like the Alarm Panel + Access Control Gateway, NYSTAI Alarm Panel with Display, and NYSTAI WiFi Alarm Panel. These systems offer real-time monitoring, automation, remote control, and seamless integration, providing customizable, flexible security for residential and commercial environments.  </h6>
                                     </div>
                                 </div>
-                                <div className="col-lg-6 img-right-nys">
+                                <div className="col-lg-6 img-right-nys"style={{ marginTop: 0 }} >
                                     <img src={singleproimg} className="img-fluid w-100" />
                                 </div>
                             </div>
@@ -111,21 +115,21 @@ export default function Alarmdet() {
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Cloud storage</h5>
+                                        <h5 class="card-title">Smart Intrusion Detection</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Full HD video</h5>
+                                        <h5 class="card-title">AI-Powered Automation</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">In built device alarm</h5>
+                                        <h5 class="card-title">Wireless Connectivity</h5>
                                     </div>
                                 </div>
                             </div>
@@ -134,21 +138,21 @@ export default function Alarmdet() {
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Motion senstivity control</h5>
+                                        <h5 class="card-title">Customizable Scenarios</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Perimeter Alarm</h5>
+                                        <h5 class="card-title">Remote Access & Control</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Person detection</h5>
+                                        <h5 class="card-title">Multi-Layer Security</h5>
                                     </div>
                                 </div>
                             </div>
@@ -158,7 +162,7 @@ export default function Alarmdet() {
                                 <div className="col-lg-4">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h5 class="card-title">Record live</h5>
+                                            <h5 class="card-title">IoT & NVR Integration</h5>
                                         </div>
                                     </div>
                                 </div>

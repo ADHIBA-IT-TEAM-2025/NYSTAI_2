@@ -34,7 +34,7 @@ export default function FIRESAFETY() {
     return (
         <>
 
-            <section className='mt-4'>
+            <section className='mt-2'>
                 <img src={laningbanner} className="img-fluid" alt="laningbanner" />
             </section>
 

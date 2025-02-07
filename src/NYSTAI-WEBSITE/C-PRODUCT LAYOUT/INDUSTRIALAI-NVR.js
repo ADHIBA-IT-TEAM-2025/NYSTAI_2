@@ -46,11 +46,12 @@ export default function Indutrial() {
     return (
         <>
 
-            <section className='mt-4'>
+            <section className='mt-2'>
                 <img src={laningbanner} className="img-fluid" />
             </section>
 
             <div className="mt-4 mb-5">
+                
                 <h3 className='mb-4' style={{ color: "#1b6763", fontWeight: "bolder" }}>INDUSTRIAL AI NVR</h3>
                 <div className="prod-row-card-nys">
                     {filteredProducts.map((product) => (

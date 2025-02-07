@@ -6,7 +6,7 @@ import $ from 'jquery'
 import { faLinkedin, faTelegramPlane } from "@fortawesome/free-brands-svg-icons";
 import { faBuildingColumns, faCarBurst, faCircleInfo, faHandshake, faAngleDown, faHouseSignal, faIndustry, faPlaceOfWorship, faSchool, faWarehouse } from '@fortawesome/free-solid-svg-icons';
 import { faAngleDoubleUp, faMagnifyingGlass, faPersonWalkingLuggage, faPhone, faRightToBracket, faBagShopping } from "@fortawesome/free-solid-svg-icons"
-import nystailogo from '../IMAGES-VIDEOS/A-IMG-HOME-LAYOUT/common/nys-6683ef681f2c5.png'
+import nystailogo from '../IMAGES-VIDEOS/A-IMG-HOME-LAYOUT/common/nystai-main-logo.webp'
 import nyslogo from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/Nystai-icons & resize images/full-logo-nys.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingBasket, faSearch } from '@fortawesome/free-solid-svg-icons';
@@ -165,7 +165,6 @@ const Layout = () => {
                     <a href="http://www.youtube.com/@NYSTAI" target="-blank"><FontAwesomeIcon icon={faYoutube} style={{ color: '#FF0000' }} className="icon-scocial-text-nystai" /></a>
                     <a href="https://www.linkedin.com/in/nystai-iot-leading-aiot-security-solutions-a18a07339" target="_blank"><FontAwesomeIcon icon={faLinkedin} className="icon-scocial-text-nystai" /></a>
                     <a href="https://www.facebook.com/share/1BmNDtcsuY/" target="_blank"><FontAwesomeIcon icon={faFacebook} style={{ color: '#1877F2' }} className="icon-scocial-text-nystai" /></a>
-                    <p><FontAwesomeIcon icon={faTelegramPlane} style={{ color: '#0088CC' }} className="icon-scocial-text-nystai icon-telegram" /></p>
                     <a href="https://x.com/Nystai_iot?t=fFMeQXZ3W5-2T95uZ_iQHg&s=09" target="_blank"><FontAwesomeIcon icon={faXTwitter} style={{ color: '#000' }} className="icon-scocial-text-nystai" /></a>
                     <p>
                       <Link to="blog"><FontAwesomeIcon icon={faBlog} style={{ color: '#FFA500' }} className="icon-scocial-text-nystai" /></Link></p>
@@ -213,10 +212,10 @@ const Layout = () => {
                           </a>
                           <div class="dropdown-divider ms-3 me-3"></div>
                           <a className="dropdown-content-a" ><FontAwesomeIcon icon={faBuildingColumns} className="me-3" />
-                          <Link to="nystai-solution-banking" className={` ${isActive('/nystai-solution-banking')}`}>BANKING</Link></a>
+                            <Link to="nystai-solution-banking" className={` ${isActive('/nystai-solution-banking')}`}>BANKING</Link></a>
                           <div class="dropdown-divider ms-3 me-3"></div>
                           <a className="dropdown-content-a" > <FontAwesomeIcon icon={faCircleInfo} className="me-3" />
-                          <Link to="nystai-solution-retail" className={` ${isActive('/nystai-solution-retail')}`}>RETAIL</Link></a>
+                            <Link to="nystai-solution-retail" className={` ${isActive('/nystai-solution-retail')}`}>RETAIL</Link></a>
                           <div class="dropdown-divider ms-3 me-3"></div>
                           <a className="dropdown-content-a" ><FontAwesomeIcon icon={faHandshake} className="me-3" />
                             <Link to="nystai-solution-parking" className={` ${isActive('/nystai-solution-parking')}`}>PARKING IOT SOLUTION</Link></a>
@@ -240,15 +239,15 @@ const Layout = () => {
           <div className="col-lg-2 col-md-2 col-sm-2 right-ssl-icon-nystai ">
             <div className="right-ssl-icon-nystai-number d-flex align-items-center justify-content-center">
 
-              <p href="https://wa.me/+918189977700" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/+918189977700" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   icon={faPhone}
                   shake
                   style={{ color: '#000' }}
                   className="me-2"
                 />
-              </p>
-              <p className="text-number-nystai" href="tel:+91 81899 77700">+91 81899 77700</p>
+              </a>
+              <a className="text-number-nystai" href="tel:+91 81899 77700">+91 81899 77700</a>
             </div>
             <div className="right-ssl-icon-nystai-login" >
               <div className="div-2-icon ">
@@ -304,6 +303,7 @@ const Layout = () => {
                       {isOpen && (
                         <>
                           <div className="dropdown-content pt-3 pb-3" onClick={closeDropdown} >
+                            
                             <a className="dropdown-content-a" ><FontAwesomeIcon icon={faHouseSignal} className="me-3" />
                               <Link to="nystai-solution-home" className={` ${isActive('/nystai-solution-education')}`}>SMARTHOME</Link>
                             </a>
@@ -330,10 +330,10 @@ const Layout = () => {
                             <a className="dropdown-content-a" ><FontAwesomeIcon icon={faIndustry} className="me-3" />  <Link to="nystai-solution-Hospital" className={` ${isActive('/nystai-solution-Hospital')}`}>HOSPITAL</Link></a>
                             <div class="dropdown-divider ms-3 me-3"></div>
                             <a className="dropdown-content-a"><FontAwesomeIcon icon={faBuildingColumns} className="me-3" />
-                            <Link to="nystai-solution-banking" className={` ${isActive('/nystai-solution-banking')}`}>BANKING</Link></a>
+                              <Link to="nystai-solution-banking" className={` ${isActive('/nystai-solution-banking')}`}>BANKING</Link></a>
                             <div class="dropdown-divider ms-3 me-3"></div>
                             <a className="dropdown-content-a" ><FontAwesomeIcon icon={faCircleInfo} className="me-3" />
-                            <Link to="nystai-solution-retail" className={` ${isActive('/nystai-solution-retail')}`}>RETAIL</Link></a>
+                              <Link to="nystai-solution-retail" className={` ${isActive('/nystai-solution-retail')}`}>RETAIL</Link></a>
                             <div class="dropdown-divider ms-3 me-3"></div>
                             <a className="dropdown-content-a" ><FontAwesomeIcon icon={faHandshake} className="me-3" />
                               <Link to="nystai-solution-parking" className={` ${isActive('/nystai-solution-parking')}`}>PARKING IOT SOLUTION</Link></a>
@@ -350,17 +350,17 @@ const Layout = () => {
                   >SUPPORT</Link></h6>
                 </div>
               </div>
-              <div className="col-lg-1  d-flex justify-content-around Second-Nav-bar-icon-nys" style={{ borderLeft: "2px solid grey" }}>
+              {/* <div className="col-lg-1  d-flex justify-content-around Second-Nav-bar-icon-nys" style={{ borderLeft: "2px solid grey" }}>
                 <div className="ms-3"  >
                   <FontAwesomeIcon icon={faMagnifyingGlass} style={{ color: "grey", fontSize: "20px" }} />
                 </div>
                 <div className="ms-1"  >
                   <FontAwesomeIcon icon={faBagShopping} style={{ color: "grey", fontSize: "20px" }} />
                 </div>
-              </div>
+              </div> */}
               <div className="col-lg-2 Second-Nav-bar-button-nys ms-2"  >
                 <div id="btn-keren">
-                  <a class="btn-keren1" target="_blank">
+                  <a href="https://wa.me/+918189977700" target="_blank" rel="noopener noreferrer" class="btn-keren1"  >
                     <span class="circle"><FontAwesomeIcon icon={faPhone} /></span>
                     <span class="title">CONTACT US</span>
                     <span class="title-hover">Click here</span>

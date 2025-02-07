@@ -37,7 +37,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.295);
     opacity: 0.5;
     z-index: 1;
   }
@@ -46,9 +46,10 @@
   /* LEFT RIGHT CARDS */
   .parallal-text-card-nys {
     background-color: #f5f5f5;
+    border-radius: 50px;
+
 
     .parallal-text-card-heading-nys h2 {
-      font-size: 2.75rem;
       font-weight: bolder;
       color: #1b676352;
     }
@@ -59,11 +60,10 @@
     }
 
     .text-left-nys h6 {
-      font-size: 1.1rem;
       color: #8c8c8c;
       text-align: justify;
       margin-top: 2%;
-      line-height: 25px;
+
     }
 
     .img-right-nys {
@@ -72,12 +72,18 @@
   }
 
   @media (max-width: 600px) {
+    .parallal-text-card-nys {
+      padding: 10% 0;
+    }
+
     .parallal-text-card-heading-nys h2 {
-      font-size: 1.75rem;
+      font-size: 1.8rem;
     }
 
     .text-left-nys h6 {
-      font-size: 0.85rem;
+      font-size: 1rem;
+      line-height: 20px;
+      margin-bottom: 20px;
     }
 
     .img-right-nys {
@@ -86,12 +92,18 @@
   }
 
   @media (min-width: 601px) {
+    .parallal-text-card-nys {
+      padding: 4% 0;
+    }
+
     .parallal-text-card-heading-nys h2 {
       font-size: 2.75rem;
     }
 
     .text-left-nys h6 {
       font-size: 1.1rem;
+      line-height: 25px;
+      margin-bottom: 25px;
     }
 
     .img-right-nys {
@@ -99,7 +111,7 @@
     }
   }
 
-  
+
 
   .adatable-head {
     margin: 40px 0px;

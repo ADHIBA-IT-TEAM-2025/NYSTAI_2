@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './sample.css'
 import { products } from './datass.js';
 import Footerproduct from "../A-LAYOUT/footer.js";
-import laningbanner from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/Nystai-icons & resize images/ai-vms.png'
+import laningbanner from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/Nystai-icons & resize images/Alarm-and-automation.png'
 import icon1 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/cloud-storage.png'
 import icon2 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/download.png'
 import icon3 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/hd_subscription.png'
@@ -15,12 +15,12 @@ import icon10 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/record_live.png'
 import icon11 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/simultaneous_viewing.png'
 import { Link } from 'react-router-dom';
 
-export default function AIVMS() {
+export default function Alarmautomation() {
 
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState(null);
 
-    const filteredProducts = products.filter(product => [9].includes(product.category));
+    const filteredProducts = products.filter(product => [3].includes(product.category));
 
     const handleCardClick = (product) => {
         setSelectedProduct(product);
@@ -34,12 +34,12 @@ export default function AIVMS() {
     return (
         <>
 
-            <section className='mt-4'>
+            <section className='mt-2'>
                 <img src={laningbanner} className="img-fluid" />
             </section>
 
             <div className="mt-4 mb-5">
-                <h3 className='mb-4' style={{ color: "#1b6763", fontWeight: "bolder" }}>AI-VMS</h3>
+                <h3 className='mb-4' style={{ color: "#1b6763", fontWeight: "bolder" }}>ALARM & AUTOMATION</h3>
                 <div className="prod-row-card-nys">
                     {filteredProducts.map((product) => (
                         <div className="prod-column-card-nys mb-2" key={product.id}>

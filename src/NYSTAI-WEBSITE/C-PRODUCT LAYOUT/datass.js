@@ -1,4 +1,4 @@
-import { faBolt, faBoxesStacked, faBroadcastTower, faCarBurst, faFireExtinguisher, faGem, faHandHoldingDroplet, faIndustry, faLandmark, faVideo, faWarehouse } from "@fortawesome/free-solid-svg-icons";
+import { faBell, faBolt, faBoxesStacked, faBroadcastTower, faCarBurst, faFireExtinguisher, faGem, faHandHoldingDroplet, faIndustry, faLandmark, faVideo, faWarehouse } from "@fortawesome/free-solid-svg-icons";
 import { faWandSparkles, faTowerBroadcast, faHouseSignal, faUsersViewfinder } from '@fortawesome/free-solid-svg-icons';
 
 export const categories = [
@@ -26,7 +26,7 @@ export const categories = [
         id: 3,
         name: 'ALARM & AUTOMATION',
         category: 3,
-        icons: faIndustry,
+        icons: faBell,
         subcategories: [
             { id: 1, name: 'INDUSTRIAL' }
 

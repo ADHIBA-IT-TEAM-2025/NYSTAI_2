@@ -8,7 +8,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import {  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // Register ScrollTrigger with GSAP
 
 // images
@@ -144,7 +144,7 @@ export default function Vms() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
 
-                        <Nav className="me-auto">
+                        <Nav className="m-auto">
                             <Nav.Link >
                                 <a className={`menu-item-link ${activeSection === 'Overview' ? 'active' : ''}`}
                                     onClick={() => handleScrollToSection('Overview')}>
@@ -164,55 +164,19 @@ export default function Vms() {
                                 </a>
                             </Nav.Link>
                             <Nav.Link >
-                                <a className={`menu-item-link ${activeSection === 'Where we use' ? 'active' : ''}`}
-                                    onClick={() => handleScrollToSection('Where we use')}>
-                                    Where we use
-                                </a>
-                            </Nav.Link>
-                            <Nav.Link >
                                 <a className={`menu-item-link ${activeSection === 'Product display' ? 'active' : ''}`}
                                     onClick={() => handleScrollToSection('Product display')}>
                                     Product display
                                 </a>
                             </Nav.Link>
                         </Nav>
-
-
-                        <Nav className='brodcrumbs-text-solu'>
-                            <Nav.Link className='text-brod' ><FontAwesomeIcon icon={faHome} /></Nav.Link>
-                            <Nav.Link > <FontAwesomeIcon icon={faAngleRight} /></Nav.Link>
-                            <NavDropdown title="INTEGRATED SOLUTIONS" id="collapsible-nav-dropdown">
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faHouseSignal} className="me-3" /><Link to="/nystai-solution-home" >SMARTHOME</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faIndustry} className="me-3" />   <Link to="/nystai-solution-Industrial" >INDUSTRIAL</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faSchool} className="me-3" />   <Link to="/nystai-solution-education" >EDUCATION</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faPlaceOfWorship} className="me-3" />WORSHIP</NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faCarBurst} className="me-3" /> <Link to="/nystai-solution-vms" >VMS</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faWarehouse} className="me-3" />  <Link to="/nystai-solution-Warehouse" c>WAREHOUSE</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faIndustry} className="me-3" />HOSPITAL</NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faBuildingColumns} className="me-3" />BANKING</NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faCircleInfo} className="me-3" />RETAIL</NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faHandshake} className="me-3" /><Link to="/nystai-solution-parking" >PARKING IOT SOLUTION</Link></NavDropdown.Item>
-                            </NavDropdown>
-                            <Nav.Link >  <FontAwesomeIcon icon={faAngleRight} /></Nav.Link>
-                            <Nav.Link className='text-brod'>VMS</Nav.Link>
-                        </Nav>
-
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
 
             <section id="main-content" className="page-sections">
 
-                <section className="page-section mt-5 mb-5" id="Overview">
+                <section className="container page-section mt-5 mb-5" id="Overview">
 
                     <div className="mini-block-statement w-clearfix">
                         <h3 className="heading-34">NYSTAI’S AI VMS</h3>
@@ -221,32 +185,32 @@ export default function Vms() {
                         </p>
                     </div>
 
-                    <div class="card-deck " >
-                        <div class="card">
+                    <div class="card-deck row" >
+                              <div class="card col-lg-3">
                             <center>
                                 <img class="card-img-top" src={icon1} alt="Card image cap" style={{ height: "85px", width: "fit-content" }} />
                             </center>
                             <div class="card-body">
-                                <h5 class="card-title">Safety</h5>
-                                <p class="card-text">Monitor vehicles in real time.</p>
+                                <h5 class="card-title" style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>Safety</h5>
+                                <p class="card-text" style={{ color: "#8c8c8c" }}>Monitor vehicles in real time.</p>
                             </div>
                         </div>
-                        <div class="card">
+                              <div class="card col-lg-3">
                             <center>
                                 <img class="card-img-top" src={icon7} alt="Card image cap" style={{ height: "85px", width: "fit-content" }} />
                             </center>
                             <div class="card-body">
-                                <h5 class="card-title">Tracking</h5>
-                                <p class="card-text"> Ensure driver safety and accountability. </p>
+                                <h5 class="card-title" style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>Tracking</h5>
+                                <p class="card-text" style={{ color: "#8c8c8c" }}> Ensure driver safety and accountability. </p>
                             </div>
                         </div>
-                        <div class="card">
+                              <div class="card col-lg-3">
                             <center>
                                 <img class="card-img-top" src={icon3} alt="Card image cap" style={{ height: "85px", width: "fit-content" }} />
                             </center>
                             <div class="card-body">
-                                <h5 class="card-title">Optimization</h5>
-                                <p class="card-text">Optimize fleet management efficiency. </p>
+                                <h5 class="card-title" style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>Optimization</h5>
+                                <p class="card-text" style={{ color: "#8c8c8c" }}>Optimize fleet management efficiency. </p>
                             </div>
                         </div>
                     </div>
@@ -257,7 +221,6 @@ export default function Vms() {
                         <h3 class="rrmc-article-desc-title" >What we offer</h3>
                     </div>
 
-
                     <section className='container'>
                         <div class="card mb-3 " style={{ maxWidth: "540px;", border: "none" }}>
                             <div class="row g-0 vms-card-circlr-img">
@@ -266,8 +229,8 @@ export default function Vms() {
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
-                                        <h5 class="card-title">Challenges Without VMS:</h5>
-                                        <p class="card-text">Without advanced vehicle management systems, businesses struggle with poor visibility into driver behavior, increased risks of accidents, and inefficient fleet monitoring. Manual oversight fails to provide real-time data, leaving vehicles vulnerable to theft, damage, and misuse. Lack of monitoring leads to higher operational costs and reduced productivity. </p>
+                                        <h5 class="card-title" style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>Challenges Without VMS:</h5>
+                                        <p class="card-text" style={{ color: "#8c8c8c" }}>Without advanced vehicle management systems, businesses struggle with poor visibility into driver behavior, increased risks of accidents, and inefficient fleet monitoring. Manual oversight fails to provide real-time data, leaving vehicles vulnerable to theft, damage, and misuse. Lack of monitoring leads to higher operational costs and reduced productivity. </p>
 
                                     </div>
                                 </div>
@@ -277,8 +240,8 @@ export default function Vms() {
                             <div class="row g-0 vms-card-circlr-img">
                                 <div class="col-md-8">
                                     <div class="card-body">
-                                        <h5 class="card-title">Solutions Provided by VMS:</h5>
-                                        <p class="card-text">Vehicle management systems like our dashboard cameras, AI MDVR, and 360-degree monitors provide comprehensive surveillance and driver analysis. Real-time alerts, video recording, and AI-powered insights allow businesses to monitor fleet operations effectively. These solutions improve safety, prevent accidents, and offer immediate feedback, ensuring optimal vehicle usage and driver accountability. </p>
+                                        <h5 class="card-title" style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>Solutions Provided by VMS:</h5>
+                                        <p class="card-text" style={{ color: "#8c8c8c" }}>Vehicle management systems like our dashboard cameras, AI MDVR, and 360-degree monitors provide comprehensive surveillance and driver analysis. Real-time alerts, video recording, and AI-powered insights allow businesses to monitor fleet operations effectively. These solutions improve safety, prevent accidents, and offer immediate feedback, ensuring optimal vehicle usage and driver accountability. </p>
 
                                     </div>
                                 </div>
@@ -294,8 +257,8 @@ export default function Vms() {
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
-                                        <h5 class="card-title">How Nystai Products Resolve These Issues:</h5>
-                                        <p class="card-text">Nystai’s VMS integrates dashboard cameras, AI MDVR, and 360-degree monitors into a unified platform, providing real-time monitoring and AI-based analysis. Businesses receive instant alerts, live video feeds, and data insights for improved decision-making. This proactive solution helps prevent accidents, reduces risks, and optimizes vehicle and driver performance. </p>
+                                        <h5 class="card-title" style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>How Nystai Products Resolve These Issues:</h5>
+                                        <p class="card-text" style={{ color: "#8c8c8c" }}>Nystai’s VMS integrates dashboard cameras, AI MDVR, and 360-degree monitors into a unified platform, providing real-time monitoring and AI-based analysis. Businesses receive instant alerts, live video feeds, and data insights for improved decision-making. This proactive solution helps prevent accidents, reduces risks, and optimizes vehicle and driver performance. </p>
 
                                     </div>
                                 </div>
@@ -305,20 +268,20 @@ export default function Vms() {
 
                 </section>
 
-                <section className=" mt-5 mb-5" id="Where we use"  >
-                <div className="mini-block-statement w-clearfix">
+                <section className="page-section mt-5 mb-5" id="Features"  >
+                    <div className="mini-block-statement w-clearfix">
                         <h3 className="heading-34">Features Provided By Our
-                        VMS</h3>
+                            VMS</h3>
                     </div>
                     <img src={vmsbanner2} alt='vms-banner' className='img-fluid col-12' />
 
                     <div className='vms-card-bg-img'    >
-                        <section class="container-fluid row row-cols-1 row-cols-md-5 g-4 " style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+                        <section class="container-fluid row row-cols-1 row-cols-md-5 g-4 " style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                             <div class=" col vms-card-bottom col-md-4 col-lg-2" >
                                 <div class="card  ">
                                     <img src={cardcircleimg1} class="img-fluid card-img-top" alt="..." />
                                     <div class="card-body">
-                                        <h5 class="card-title">Dashboard Cameras</h5>
+                                        <h5 class="card-title" style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>Dashboard Cameras</h5>
                                         <p class="card-text">Record real-time video of vehicle operations for enhanced safety. </p>
                                     </div>
                                 </div>
@@ -327,8 +290,8 @@ export default function Vms() {
                                 <center class="card  ">
                                     <img src={cardcircleimg3} class="img-fluid card-img-top" alt="..." />
                                     <div class="card-body">
-                                        <h5 class="card-title">AI MDVR</h5>
-                                        <p class="card-text"> Advanced AI-powered video recording and data analytics for comprehensive monitoring. </p>
+                                        <h5 class="card-title" style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>AI MDVR</h5>
+                                        <p class="card-text" > Advanced AI-powered video recording and data analytics for comprehensive monitoring. </p>
                                     </div>
                                 </center>
                             </div>
@@ -336,8 +299,8 @@ export default function Vms() {
                                 <div class="card  ">
                                     <img src={cardcircleimg2} class="img-fluid card-img-top" alt="..." />
                                     <div class="card-body">
-                                        <h5 class="card-title">360-Degree Monitors</h5>
-                                        <p class="card-text"> Full view of vehicle surroundings to prevent accidents. </p>
+                                        <h5 class="card-title" style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>360-Degree Monitors</h5>
+                                        <p class="card-text" > Full view of vehicle surroundings to prevent accidents. </p>
                                     </div>
                                 </div>
                             </div>
@@ -345,8 +308,8 @@ export default function Vms() {
                                 <div class="card  ">
                                     <img src={cardcircleimg5} class="img-fluid card-img-top" alt="..." />
                                     <div class="card-body">
-                                        <h5 class="card-title">Real-Time Alerts</h5>
-                                        <p class="card-text"> Immediate notifications for potential safety incidents.  </p>
+                                        <h5 class="card-title" style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>Real-Time Alerts</h5>
+                                        <p class="card-text" > Immediate notifications for potential safety incidents.  </p>
                                     </div>
                                 </div>
                             </div>
@@ -354,8 +317,8 @@ export default function Vms() {
                                 <div class="card  ">
                                     <img src={cardcircleimg4} class="img-fluid card-img-top" alt="..." />
                                     <div class="card-body">
-                                        <h5 class="card-title">Data Insights</h5>
-                                        <p class="card-text"> AI-driven reports for driver behavior and fleet optimization.   </p>
+                                        <h5 class="card-title" style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>Data Insights</h5>
+                                        <p class="card-text" > AI-driven reports for driver behavior and fleet optimization.   </p>
                                     </div>
                                 </div>
                             </div>
@@ -363,10 +326,9 @@ export default function Vms() {
                     </div>
                 </section>
 
-                <main className="container-fluid page-section Product-display mb-5" id="Product display">
+                <main className="container page-section Product-display mb-5" id="Product display">
                     <div className="text-center">
-                        <h3 class="rrmc-article-desc-title" >PRODUCT DISPLAY</h3>
-                        <p class="rrmc-article-desc-intro">Our innovative IFPDs (Interactive Flat Panel Displays) provide crystal-clear visuals, intuitive touch functionality, and seamless integration,<br /> revolutionizing presentations, learning, and collaboration across various industries.</p>
+                        <h3 class="rrmc-article-desc-title mb-5" >PRODUCT DISPLAY</h3>
                     </div>
                     <div className="prod-row-card-nys">
                         {filteredProducts.map((product) => (
@@ -392,17 +354,17 @@ export default function Vms() {
                     </div>
 
 
-
                     {modalOpen && selectedProduct && (
                         <div className="modal-overlay" onClick={handleCloseModal}>
                             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-
                                 <section className='modal-pro'>
                                     <div class="card-wrapper " onClick={handleCloseModal}>
                                         <div class="card">
                                             <div class="product-imgs">
                                                 <div class="img-display">
-                                                    <div class="img-Features">
+                                                    <div class="img-showcase">
+                                                        <img src={selectedProduct.modalimage1} alt="shoe image /" />
+                                                        <img src={selectedProduct.modalimage1} alt="shoe image /" />
                                                         <img src={selectedProduct.modalimage1} alt="shoe image /" />
                                                     </div>
                                                 </div>
@@ -427,14 +389,16 @@ export default function Vms() {
 
                                             <div class="product-content">
                                                 <h2 class="product-title">{selectedProduct.title}</h2>
-                                                <h5 className='mt-4'>Smart Features: </h5>
-                                                <div class="social-links">
-                                                    <a><img src={icon1} className='img-fluid' /></a>
-                                                    <a><img src={icon8} className='img-fluid' /></a>
-                                                    <a><img src={icon3} className='img-fluid' /></a>
-                                                    <a><img src={icon7} className='img-fluid' /></a>
-                                                    <a><img src={icon9} className='img-fluid' /></a>
+                                                <h5 className='mb-4'>Smart Features: </h5>
+                                                <div className="social-links text-center mt-3">
+                                                    <div className="d-flex flex-row align-items-center">
+                                                        <a className='d-flex flex-column align-items-center'><img src={icon1} className="img-fluid mb-1" /><p>CLOUD </p></a>
+                                                        <a className='d-flex flex-column align-items-center ms-3'><img src={icon8} className="img-fluid mb-1" /><p>MOTION</p></a>
+                                                        <a className='d-flex flex-column align-items-center ms-3'><img src={icon7} className="img-fluid mb-1" /><p>WIFI</p></a>
+                                                        <a className='d-flex flex-column align-items-center ms-3'><img src={icon9} className="img-fluid mb-1" /><p>SENSOR</p></a>
+                                                    </div>
                                                 </div>
+
                                                 <div class="product-detail">
                                                     <p>{selectedProduct.modalDescriptionp}</p>
 
@@ -447,8 +411,11 @@ export default function Vms() {
                                                     </ul>
                                                 </div>
                                                 <div class="purchase-info ">
-                                                    <button type="button me-2" class="btn ">Add to Cart <i class="fas fa-shopping-cart"></i></button>
-                                                    <button type="button" class="btn ms-3">Shop now <i class="fas fa-shopping-cart"></i></button>
+                                                    <Link to="/vmsde">
+                                                        <button type="button" class="btn ms-3">
+                                                            Know More<i class="fas fa-shopping-cart"></i>
+                                                        </button>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>

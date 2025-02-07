@@ -39,7 +39,7 @@ export default function WORSHIP() {
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState(null);
 
-    const filteredProducts = products.filter(product => [8].includes(product.category));
+    const filteredProducts = products.filter(product => [1,3,4,5].includes(product.category));
 
     const handleCardClick = (product) => {
         setSelectedProduct(product);
@@ -103,7 +103,7 @@ export default function WORSHIP() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
 
-                        <Nav className="me-auto">
+                        <Nav className="m-auto">
                             <Nav.Link >
                                 <a className={`menu-item-link ${activeSection === 'Overview' ? 'active' : ''}`}
                                     onClick={() => handleScrollToSection('Overview')}>
@@ -123,91 +123,53 @@ export default function WORSHIP() {
                                 </a>
                             </Nav.Link>
                             <Nav.Link >
-                                <a className={`menu-item-link ${activeSection === 'Where we use' ? 'active' : ''}`}
-                                    onClick={() => handleScrollToSection('Where we use')}>
-                                    Where we use
-                                </a>
-                            </Nav.Link>
-                            <Nav.Link >
                                 <a className={`menu-item-link ${activeSection === 'Product display' ? 'active' : ''}`}
                                     onClick={() => handleScrollToSection('Product display')}>
                                     Product display
                                 </a>
                             </Nav.Link>
                         </Nav>
-
-
-                        <Nav className='brodcrumbs-text-solu'>
-                            <Nav.Link className='text-brod' ><FontAwesomeIcon icon={faHome} /></Nav.Link>
-                            <Nav.Link > <FontAwesomeIcon icon={faAngleRight} /></Nav.Link>
-                            <NavDropdown title="INTEGRATED SOLUTIONS" id="collapsible-nav-dropdown">
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faHouseSignal} className="me-3" /><Link to="/nystai-solution-home" >SMARTHOME</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faIndustry} className="me-3" />   <Link to="/nystai-solution-Industrial" >INDUSTRIAL</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faSchool} className="me-3" />   <Link to="/nystai-solution-education" >EDUCATION</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faPlaceOfWorship} className="me-3" />
-                                <Link to="/nystai-solution-worship" >WORSHIP</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faCarBurst} className="me-3" /> <Link to="/nystai-solution-vms" >VMS</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faWarehouse} className="me-3" />  <Link to="/nystai-solution-Warehouse" c>WAREHOUSE</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faIndustry} className="me-3" />HOSPITAL</NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faBuildingColumns} className="me-3" />BANKING</NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faCircleInfo} className="me-3" />RETAIL</NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faHandshake} className="me-3" /><Link to="/nystai-solution-parking" >PARKING IOT SOLUTION</Link></NavDropdown.Item>
-                            </NavDropdown>
-                            <Nav.Link >  <FontAwesomeIcon icon={faAngleRight} /></Nav.Link>
-                            <Nav.Link className='text-brod'>WORSHIP</Nav.Link>
-                        </Nav>
-
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
 
             <section id="main-content" className="page-sections">
 
-                <section className="container page-section mt-5 mb-5" id="Overview">
+                <section className="container page-section mt-3 mb-5" id="Overview">
 
                     <div className="mini-block-statement w-clearfix">
-                    <p class="rrmc-article-desc-intro" >overview </p>
-                        <h3 className="heading-34">Nystai’s Interactive Flat-Panel Display</h3>
+                        <h3 className="heading-34">Nystai’s&nbsp;<span style={{color:"#1b6763"}}>worship</span>&nbsp;solution</h3>
                         <p className="text-block-60" >
-                            NYSTAI transforms places of worship into modern, secure, and efficient spaces. With advanced surveillance systems, energy optimization tools, and digital management platforms, we address security concerns, reduce energy inefficiencies, and simplify operations. Our cutting-edge solutions ensure safety, streamline processes, and enhance community engagement, delivering a seamless and connected worship experience for all.
+                        NYSTAI transforms places of worship into modern, secure, and efficient spaces. With advanced surveillance systems, energy optimization tools, and digital management platforms, we address security concerns, reduce energy inefficiencies, and simplify operations. Our cutting-edge solutions ensure safety, streamline processes, and enhance community engagement, delivering a seamless and connected worship experience for all.
                         </p>
                     </div>
 
-                    <div class="card-deck " >
-                        <div class="card">
+                    <div class="card-deck row" >
+                               <div class="card col-lg-3">
                             <center>
                                 <img class="card-img-top" src={overicon1} alt="Card image cap" style={{ height: "85px", width: "fit-content" }} />
                             </center>
                             <div class="card-body">
-                                <h5 class="card-title">Safety</h5>
-                                <p class="card-text">Advanced surveillance and access control systems ensure a secure environment for worshippers. </p>
+                                <h4 class="card-title " style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>Safety</h4>
+                                <p class="card-text" style={{ color: "#8c8c8c" }}>Advanced surveillance and access control systems ensure a secure environment for worshippers. </p>
                             </div>
                         </div>
-                        <div class="card">
+                               <div class="card col-lg-3">
                             <center>
                                 <img class="card-img-top" src={overicon2} alt="Card image cap" style={{ height: "85px", width: "fit-content" }} />
                             </center>
                             <div class="card-body">
-                                <h5 class="card-title">Efficiency</h5>
-                                <p class="card-text">Smart energy and crowd management solutions streamline day-to-day operations. </p>
+                                <h4 class="card-title " style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>Efficiency</h4>
+                                <p class="card-text" style={{ color: "#8c8c8c" }}>Smart energy and crowd management solutions streamline day-to-day operations. </p>
                             </div>
                         </div>
-                        <div class="card">
+                               <div class="card col-lg-3">
                             <center>
                                 <img class="card-img-top" src={overicon3} alt="Card image cap" style={{ height: "85px", width: "fit-content" }} />
                             </center>
                             <div class="card-body">
-                                <h5 class="card-title">Connectivity</h5>
-                                <p class="card-text">Digital tools enhance communication, organization, and engagement with the congregation. </p>
+                                <h4 class="card-title " style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>Connectivity</h4>
+                                <p class="card-text" style={{ color: "#8c8c8c" }}>Digital tools enhance communication, organization, and engagement with the congregation. </p>
                             </div>
                         </div>
                     </div>
@@ -218,36 +180,36 @@ export default function WORSHIP() {
                         <h3 class="rrmc-article-desc-title" >What we offer</h3>
                     </div>
 
-                    <div class="row row-cols-1 row-cols-md-2 g-4 mt-5 mb-5" style={{ alignItems: "center", textAlign: "justify" }}>
+                    <div class="row row-cols-1 row-cols-md-2 g-4 mt-2 mb-5" style={{ alignItems: "center", textAlign: "justify", }}>
                         <div class="col">
-                            <div class="card">
+                            <div class="card" style={{border:"none",outline:"none"}}>
                                 <img src={dividediv1} class="card-img-top" alt="..." />
                                 <div class="card-body">
-                                    <h2 class="card-title">Challenges</h2>
-                                    <p class="card-text">Temples, churches, and mosques encounter challenges like managing large crowds, ensuring safety, and handling energy wastage. Additionally, administrative burdens, such as organizing donations, volunteer scheduling, and event planning, complicate operations. Without efficient solutions, these issues can hinder the smooth functioning of these sacred spaces, impacting both worshippers and administrators alike. </p>
+                                    <h2 class="card-title" style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>Challenges</h2>
+                                    <p class="card-text" style={{ color: "#8c8c8c" }}>Temples, churches, and mosques encounter challenges like managing large crowds, ensuring safety, and handling energy wastage. Additionally, administrative burdens, such as organizing donations, volunteer scheduling, and event planning, complicate operations. Without efficient solutions, these issues can hinder the smooth functioning of these sacred spaces, impacting both worshippers and administrators alike. </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card">
+                            <div class="card" style={{border:"none",outline:"none"}}>
                                 <img src={dividediv2} class="card-img-top" alt="..." />
                                 <div class="card-body">
-                                    <h2 class="card-title">Solution</h2>
-                                    <p class="card-text">Innovative technologies can address these challenges effectively. Advanced surveillance systems enhance security, while smart lighting and climate control solutions reduce energy wastage. Digital platforms simplify operations by streamlining donations, volunteer management, and event planning. Together, these tools create a safe, efficient, and harmonious environment for worshippers and administrators to focus on their spiritual goals. </p>
+                                    <h2 class="card-title" style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>Solution</h2>
+                                    <p class="card-text" style={{ color: "#8c8c8c" }}>Innovative technologies can address these challenges effectively. Advanced surveillance systems enhance security, while smart lighting and climate control solutions reduce energy wastage. Digital platforms simplify operations by streamlining donations, volunteer management, and event planning. Together, these tools create a safe, efficient, and harmonious environment for worshippers and administrators to focus on their spiritual goals. </p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card  mt-5 mb-5">
+                    <div class="card  mt-5 mb-5" style={{border:"none",outline:"none"}}>
                         <div class="row g-0" style={{ display: "flex", justifyContent: "center", alignItems: "center", textAlign: "justify" }}>
                             <div class="col-md-4">
                                 <img src={dividediv3} class="img-fluid rounded-start" alt="..." />
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8" style={{padding:"2.5%"}}>
                                 <div class="card-body">
-                                    <h2 class="card-title">How NYSTAI Solves These Problems </h2>
-                                    <p class="card-text">NYSTAI transforms places of worship with advanced, all-encompassing solutions designed to tackle security, energy, and operational challenges. By integrating our smart technologies, temples, churches, and mosques can modernize their operations, ensuring safety, efficiency, and stronger connections with their communities. Let NYSTAI help you create a secure, efficient, and welcoming environment for all worshippers.</p>
+                                    <h2 class="card-title" style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>How NYSTAI Solves These Problems </h2>
+                                    <p class="card-text" style={{ color: "#8c8c8c" }}>NYSTAI transforms places of worship with advanced, all-encompassing solutions designed to tackle security, energy, and operational challenges. By integrating our smart technologies, temples, churches, and mosques can modernize their operations, ensuring safety, efficiency, and stronger connections with their communities. Let NYSTAI help you create a secure, efficient, and welcoming environment for all worshippers.</p>
                                 </div>
                             </div>
                         </div>
@@ -268,7 +230,7 @@ export default function WORSHIP() {
                                         <div class="col-lg-4">
                                             <div class="card shadow p-5 d-flex flex-column justify-content-center align-items-center">
                                                 <div class="anim-layer"></div>
-                                                <i class="fa-solid fa-users display-5 mb-3"> <img src={worshipcard1}/></i>
+                                                <i class="fa-solid fa-users display-5 mb-3"> <img src={worshipcard1} /></i>
                                                 <h4>Advanced Surveillance</h4>
                                                 <p class="text-center mb-0">Ensure safety with real-time monitoring, intelligent CCTV, and access control systems. </p>
                                             </div>
@@ -276,7 +238,7 @@ export default function WORSHIP() {
                                         <div class="col-lg-4">
                                             <div class="card shadow p-5 d-flex flex-column justify-content-center align-items-center">
                                                 <div class="anim-layer"></div>
-                                                <i class="fa-solid fa-users display-5 mb-3"> <img src={worshipcard2}/></i>
+                                                <i class="fa-solid fa-users display-5 mb-3"> <img src={worshipcard2} /></i>
                                                 <h4>Energy Efficiency</h4>
                                                 <p class="text-center mb-0">Reduce costs using smart lighting and automated climate control technologies. </p>
                                             </div>
@@ -284,7 +246,7 @@ export default function WORSHIP() {
                                         <div class="col-lg-4">
                                             <div class="card shadow p-5 d-flex flex-column justify-content-center align-items-center">
                                                 <div class="anim-layer"></div>
-                                                <i class="fa-solid fa-users display-5 mb-3"> <img src={worshipcard3}/></i>
+                                                <i class="fa-solid fa-users display-5 mb-3"> <img src={worshipcard3} /></i>
                                                 <h5>Digital Donation Management</h5>
                                                 <p class="text-center mb-0">Track and manage contributions seamlessly with secure, user-friendly digital platforms</p>
                                             </div>
@@ -294,7 +256,7 @@ export default function WORSHIP() {
                                         <div class="col-lg-4 mt-5">
                                             <div class="card shadow p-5 d-flex flex-column justify-content-center align-items-center">
                                                 <div class="anim-layer"></div>
-                                                <i class="fa-solid fa-users display-5 mb-3"> <img src={worshipcard4}/></i>
+                                                <i class="fa-solid fa-users display-5 mb-3"> <img src={worshipcard4} /></i>
                                                 <h4>Smart Crowd Control</h4>
                                                 <p class="text-center mb-0"> Monitor and manage large gatherings effectively with innovative crowd management tools. </p>
                                             </div>
@@ -302,12 +264,12 @@ export default function WORSHIP() {
                                         <div class="col-lg-4 mt-5">
                                             <div class="card shadow p-5 d-flex flex-column justify-content-center align-items-center">
                                                 <div class="anim-layer"></div>
-                                                <i class="fa-solid fa-users display-5 mb-3"> <img src={worshipcard5}/></i>
+                                                <i class="fa-solid fa-users display-5 mb-3"> <img src={worshipcard5} /></i>
                                                 <h4>Streamlined Administration</h4>
                                                 <p class="text-center mb-0">Simplify volunteer scheduling, event planning, and reporting with comprehensive digital management .</p>
                                             </div>
                                         </div>
-                                       
+
                                     </div>
                                 </div>
                             </section>
@@ -316,11 +278,9 @@ export default function WORSHIP() {
                     </div>
                 </section>
 
-
                 <main className="container page-section Product-display mb-5" id="Product display">
-                    <div className="card-heading-nys mt-5">
-                        <h2>PRODUCT DISPLAY</h2>
-                        <p>Our innovative IFPD (Interactive Flat Panel Displays) provide crystal-clear visuals, intuitive touch functionality, and seamless integration,<br /> revolutionizing presentations, learning, and collaboration across various industries.</p>
+                    <div className="text-center">
+                        <h3 class="rrmc-article-desc-title mb-5" >PRODUCT DISPLAY</h3>
                     </div>
                     <div className="prod-row-card-nys">
                         {filteredProducts.map((product) => (
@@ -346,17 +306,17 @@ export default function WORSHIP() {
                     </div>
 
 
-
                     {modalOpen && selectedProduct && (
                         <div className="modal-overlay" onClick={handleCloseModal}>
                             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-
                                 <section className='modal-pro'>
                                     <div class="card-wrapper " onClick={handleCloseModal}>
                                         <div class="card">
                                             <div class="product-imgs">
                                                 <div class="img-display">
-                                                    <div class="img-Features">
+                                                    <div class="img-showcase">
+                                                        <img src={selectedProduct.modalimage1} alt="shoe image /" />
+                                                        <img src={selectedProduct.modalimage1} alt="shoe image /" />
                                                         <img src={selectedProduct.modalimage1} alt="shoe image /" />
                                                     </div>
                                                 </div>
@@ -381,14 +341,16 @@ export default function WORSHIP() {
 
                                             <div class="product-content">
                                                 <h2 class="product-title">{selectedProduct.title}</h2>
-                                                <h5 className='mt-4'>Smart Features: </h5>
-                                                <div class="social-links">
-                                                    <a><img src={icon1} className='img-fluid' /></a>
-                                                    <a><img src={icon8} className='img-fluid' /></a>
-                                                    <a><img src={icon3} className='img-fluid' /></a>
-                                                    <a><img src={icon7} className='img-fluid' /></a>
-                                                    <a><img src={icon9} className='img-fluid' /></a>
+                                                <h5 className='mb-4'>Smart Features: </h5>
+                                                <div className="social-links text-center mt-3">
+                                                    <div className="d-flex flex-row align-items-center">
+                                                        <a className='d-flex flex-column align-items-center'><img src={icon1} className="img-fluid mb-1" /><p>CLOUD </p></a>
+                                                        <a className='d-flex flex-column align-items-center ms-3'><img src={icon8} className="img-fluid mb-1" /><p>MOTION</p></a>
+                                                        <a className='d-flex flex-column align-items-center ms-3'><img src={icon7} className="img-fluid mb-1" /><p>WIFI</p></a>
+                                                        <a className='d-flex flex-column align-items-center ms-3'><img src={icon9} className="img-fluid mb-1" /><p>SENSOR</p></a>
+                                                    </div>
                                                 </div>
+
                                                 <div class="product-detail">
                                                     <p>{selectedProduct.modalDescriptionp}</p>
 
@@ -401,8 +363,11 @@ export default function WORSHIP() {
                                                     </ul>
                                                 </div>
                                                 <div class="purchase-info ">
-                                                    <button type="button me-2" class="btn ">Add to Cart <i class="fas fa-shopping-cart"></i></button>
-                                                    <button type="button" class="btn ms-3">Shop now <i class="fas fa-shopping-cart"></i></button>
+                                                    <Link to="/hybriddet">
+                                                        <button type="button" class="btn ms-3">
+                                                            Know More<i class="fas fa-shopping-cart"></i>
+                                                        </button>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>

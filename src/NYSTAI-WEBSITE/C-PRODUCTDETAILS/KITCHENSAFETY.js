@@ -3,6 +3,7 @@ import "./A-detailspage.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBlog, faCompass, faHeadset, faMicrochip, faPeopleArrows, faServer, faShieldVirus } from "@fortawesome/free-solid-svg-icons";
 import Footerproduct from "../A-LAYOUT/footer"
+import banner from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/Nystai-icons & resize images/Kitchen Safety Banner.png"
 import Blogimg1 from "../IMAGES-VIDEOS/A-IMG-HOME-LAYOUT/common/blog-img-1.png"
 import singleproimg from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/singleproimg.png"
 
@@ -17,24 +18,12 @@ export default function Kitchendet() {
             <body className="design1details">
 
                 <section>
-                    {/* <!-- Background video --> */}
-                    <div class="video-background-holder">
-                        <div class="video-background-overlay"></div>
-                        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                            <source src="https://huykhong.com/codepen/landing.video.mp4" type="video/mp4" />
-                        </video>
-                        <div class="video-background-content container h-100">
-                            <div class="d-flex h-100 text-center align-items-center">
-                                <div class="w-100 text-white">
-                                    <h1 class="display-4">Landing Page with video background</h1>
-                                    <p class="lead mb-0">Made with HTML5 and Bootstrap 4</p>
-                                    <p class="lead">
-                                        <a href="#" class="btn btn-light">Click Here to Enter</a>
-                                    </p>
-                                </div>
-                            </div>
+                    <section>
+                        <div class="video-background-holder">
+                            <div class="video-background-overlay"></div>
+                            <img src={banner} class="img-fluid w-100" alt="Banner Image" />
                         </div>
-                    </div>
+                    </section>
                 </section>
 
                 <div class="flex-container-nystai-scroll">
@@ -83,15 +72,20 @@ export default function Kitchendet() {
                     </div>
                 </div>
 
-                <div className="mt-5 mb-5">
-                    <h1 style={{ textAlign: "center" }}>KITCHEN   <span style={{ color: "#1b6763" }}> SAFETY</span></h1>
+                <div className="common-top-div">
+                    <h6 className="head-h-divtopic" >
+                        <span style={{ color: "#1b6763" }}>KITCHEN</span>SAFETY
+                    </h6>
+                    <h6 className="sechead-h-divtop"  style={{color:"#8c8c8c"}} >
+                        Efficient valve control, enhanced safety, seamless integration, reliable operation.
+                    </h6>
                 </div>
 
-                <section className="parallal-text-card-nys pt-5 pb-3">
+                <section className=" container-fluid parallal-text-card-nys pt-5 pb-3">
 
                     <div className="container">
-                        <div className="col-9 parallal-text-card-heading-nys">
-                            <h2><span>Precise control for  </span> enhanced safety.</h2>
+                        <div className=" col-lg-9 col-md-12 col-sm-12  parallal-text-card-heading-nys">
+                            <h2><span>Precise control for</span> enhanced safety.</h2>
                         </div>
                         <div className="text-img-nys">
                             <div className="row">
@@ -100,7 +94,7 @@ export default function Kitchendet() {
                                         <h6>The "FIRE SAFETY" category includes the E-Valve Manipulator, E-Valve, and Kitchen Automation systems. These products ensure precise valve control, efficient operation, and enhanced safety in critical applications. With user-friendly interfaces, durability, and seamless system integration, they provide reliable solutions for fire safety, kitchen automation, and overall operational safety.   </h6>
                                     </div>
                                 </div>
-                                <div className="col-lg-6 img-right-nys">
+                                <div className="col-lg-6 img-right-nys" style={{ marginTop: 0 }} >
                                     <img src={singleproimg} className="img-fluid w-100" />
                                 </div>
                             </div>
@@ -120,21 +114,21 @@ export default function Kitchendet() {
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Cloud storage</h5>
+                                        <h5 class="card-title">Smart Smoke & Gas Detection</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Full HD video</h5>
+                                        <h5 class="card-title">Automatic Fire Suppression</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">In built device alarm</h5>
+                                        <h5 class="card-title">Childproof Safety Locks</h5>
                                     </div>
                                 </div>
                             </div>
@@ -143,21 +137,21 @@ export default function Kitchendet() {
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Motion senstivity control</h5>
+                                        <h5 class="card-title">Temperature Monitoring</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Perimeter Alarm</h5>
+                                        <h5 class="card-title">Smart Lighting & Motion Sensors</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Person detection</h5>
+                                        <h5 class="card-title">Water Leak Detection</h5>
                                     </div>
                                 </div>
                             </div>
@@ -167,7 +161,7 @@ export default function Kitchendet() {
                                 <div className="col-lg-4">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h5 class="card-title">Record live</h5>
+                                            <h5 class="card-title">Remote Control & Monitoring</h5>
                                         </div>
                                     </div>
                                 </div>

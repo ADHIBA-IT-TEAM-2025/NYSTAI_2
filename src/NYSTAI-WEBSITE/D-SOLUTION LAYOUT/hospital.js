@@ -11,6 +11,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
 // images
 import edubannerlanding from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/hospital-banner-landing.png';
+import overlaycard1 from "../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/solution (2)/image-1.png"
+import overlaycard2 from "../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/solution (2)/image-2.png"
+import overlaycard3 from "../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/solution (2)/image.png"
 import icon1 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/cloud-storage.png'
 import icon3 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/hd_subscription.png'
 import icon7 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/motion_senstivity_control.png'
@@ -34,7 +37,7 @@ export default function Hospital() {
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState(null);
 
-    const filteredProducts = products.filter(product => [2].includes(product.category));
+    const filteredProducts = products.filter(product => [2, 3, 4].includes(product.category));
 
     const handleCardClick = (product) => {
         setSelectedProduct(product);
@@ -97,7 +100,7 @@ export default function Hospital() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
 
-                        <Nav className="me-auto">
+                        <Nav className="m-auto">
                             <Nav.Link >
                                 <a className={`menu-item-link ${activeSection === 'Overview' ? 'active' : ''}`}
                                     onClick={() => handleScrollToSection('Overview')}>
@@ -117,105 +120,119 @@ export default function Hospital() {
                                 </a>
                             </Nav.Link>
                             <Nav.Link >
-                                <a className={`menu-item-link ${activeSection === 'Where we use' ? 'active' : ''}`}
-                                    onClick={() => handleScrollToSection('Where we use')}>
-                                    Where we use
-                                </a>
-                            </Nav.Link>
-                            <Nav.Link >
                                 <a className={`menu-item-link ${activeSection === 'Product display' ? 'active' : ''}`}
                                     onClick={() => handleScrollToSection('Product display')}>
                                     Product display
                                 </a>
                             </Nav.Link>
                         </Nav>
-
-
-                        <Nav className='brodcrumbs-text-solu'>
-                            <Nav.Link className='text-brod' ><FontAwesomeIcon icon={faHome} /></Nav.Link>
-                            <Nav.Link > <FontAwesomeIcon icon={faAngleRight} /></Nav.Link>
-                            <NavDropdown title="INTEGRATED SOLUTIONS" id="collapsible-nav-dropdown">
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faHouseSignal} className="me-3" /><Link to="/nystai-solution-home" >SMARTHOME</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faIndustry} className="me-3" />   <Link to="/nystai-solution-Industrial" >INDUSTRIAL</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faSchool} className="me-3" />   <Link to="/nystai-solution-education" >EDUCATION</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faPlaceOfWorship} className="me-3" />WORSHIP</NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faCarBurst} className="me-3" /> <Link to="/nystai-solution-vms" >VMS</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faWarehouse} className="me-3" />  <Link to="/nystai-solution-Warehouse" c>WAREHOUSE</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faIndustry} className="me-3" />HOSPITAL</NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faBuildingColumns} className="me-3" />BANKING</NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faCircleInfo} className="me-3" />RETAIL</NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faHandshake} className="me-3" /><Link to="/nystai-solution-parking" >PARKING IOT SOLUTION</Link></NavDropdown.Item>
-                            </NavDropdown>
-                            <Nav.Link >  <FontAwesomeIcon icon={faAngleRight} /></Nav.Link>
-                            <Nav.Link className='text-brod'>HOSPITAL</Nav.Link>
-                        </Nav>
-
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
 
             <section id="main-content" className="page-sections">
 
-                <section className="page-section  mb-5" id="Overview">
+                <section className="container page-section mt-4 mb-3" id="Overview">
 
                     <div className="mini-block-statement w-clearfix">
-                        <p className="text-block-60" >
-                            Overview
-                        </p>
-                        <h3 className="heading-34">NYSTAI’S Hospital solution  </h3>
+                        <h3 className="heading-34">NYSTAI’S&nbsp;<span style={{ color: "#1b6763" }}>Hospital</span>&nbsp;solution</h3>
                         <p className="text-block-60" >
                             The NYSTAI product offers cutting-edge healthcare solutions to address the technological challenges faced by hospitals. With advanced patient monitoring systems, AI-powered diagnostic tools, and seamless communication platforms, NYSTAI enhances patient care and improves operational efficiency. It integrates telemedicine for remote consultations and streamlines the management of electronic health records (EHR), ensuring accuracy and easy access to patient data. By modernizing hospital technology, NYSTAI empowers healthcare teams to deliver better, faster care while reducing administrative burdens. This all-in-one solution is designed to optimize hospital workflows and support proactive, data-driven medical decisions.
                         </p>
                     </div>
 
-                    <div class="card-deck " >
-                        <div class="card">
+                    <div class="card-deck row">
+                        <div class="card col-lg-3">
                             <center>
                                 <img class="card-img-top" src={overicon2} alt="Card image cap" style={{ height: "85px", width: "fit-content" }} />
                             </center>
                             <div class="card-body">
-                                <h5 class="card-title">Real-Time Monitoring  </h5>
+                                <h5 class="card-title" style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>Real-Time Monitoring  </h5>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card col-lg-3">
                             <center>
                                 <img class="card-img-top" src={overicon3} alt="Card image cap" style={{ height: "85px", width: "fit-content" }} />
                             </center>
                             <div class="card-body">
-                                <h5 class="card-title">AI Diagnosis </h5>
+                                <h5 class="card-title" style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>AI Diagnosis </h5>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card col-lg-3">
                             <center>
                                 <img class="card-img-top" src={overicon1} alt="Card image cap" style={{ height: "85px", width: "fit-content" }} />
                             </center>
                             <div class="card-body">
-                                <h5 class="card-title">Seamless Communication  </h5>
+                                <h5 class="card-title" style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>Seamless Communication  </h5>
                             </div>
                         </div>
                     </div>
                 </section>
 
                 <section className="page-section Whatweoffer " id="What we offer">
-                    <section className='tab-indut-solu'>
-                    </section>
+                    <div className='text-center mb-5' >
+                        <h3 class="rrmc-article-desc-title" >What we offer</h3>
+                    </div>
+                    <div className='mb-5 three-overlay-cards-nys'>
+                        <div className='container'>
+                            <div className='row'>
+                                <div className='col-lg-6'>
+                                    <div class="card">
+                                        <div>
+                                            <img class="card-img" src={overlaycard1} alt="Card image" />
+                                        </div>
+                                        <div class="card-img-overlay ">
+                                            <div>
+                                                <h5 class="card-title">Hospitals Lack Innovation</h5>
+                                                <p class="card-text">Many hospitals struggle without access to new technology, facing challenges such as outdated record-keeping systems and inefficient patient care processes. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='col-lg-6'>
+                                    <div class="card">
+                                        <div>
+                                            <img class="card-img" src={overlaycard3} alt="Card image" />
+                                        </div>
+                                        <div class="card-img-overlay">
+                                            <div>
+                                                <h5 class="card-title"> Solving the Problem</h5>
+                                                <p class="card-text">To address these challenges, hospitals can invest in modernizing their technology infrastructure, implementing electronic health records, and adopting telemedicine solutions. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className='mt-4'>
+                                <div class="card">
+                                    <div>
+                                        <img class="card-img" src={overlaycard2} alt="Card image" />
+                                    </div>
+                                    <div class="card-img-overlay col-lg-7">
+                                        <div>
+                                            <h5 class="card-title">How NYSTAI Products Resolve These Issue?</h5>
+                                            <p class="card-text">Our NYSTAI product offers innovative healthcare and nursing solutions, including advanced patient monitoring systems, AI-powered diagnosis tools, and streamlined communication platforms for healthcare teams.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </section>
 
-                <center className="page-section container  mb-4" id="Where we use">
-                    <img src={indusvideo} className='col-12 img-fluid' />
-                </center>
-
                 <section className="page-section mt-5 mb-5 Features-education" id="Features">
-                    <section class="container hospital-features-solu">
+                    <div class="container hospital-features-solu">
+
+                        <div className='text-center mb-5' >
+                            <h3 class="rrmc-article-desc-title">Features</h3>
+                        </div>
+
+                        <center className="page-section container  mb-4" id="Where we use">
+                            <img src={indusvideo} className='col-12 img-fluid' />
+                        </center>
+
                         <div class="grid-container">
                             <div class="item1">
                                 <div >
@@ -262,13 +279,12 @@ export default function Hospital() {
                                 <div className='hospital-text-div-circle'><FontAwesomeIcon icon={faAnglesRight} className="m" /></div>
                             </div>
                         </div>
-                    </section>
+                    </div>
                 </section>
 
                 <main className="container page-section Product-display mb-5" id="Product display">
                     <div className="text-center">
-                        <h3 class="rrmc-article-desc-title" >PRODUCT DISPLAY</h3>
-                        <p class="rrmc-article-desc-intro">Our innovative IFPDs (Interactive Flat Panel Displays) provide crystal-clear visuals, intuitive touch functionality, and seamless integration,<br /> revolutionizing presentations, learning, and collaboration across various industries.</p>
+                        <h3 class="rrmc-article-desc-title mb-5" >PRODUCT DISPLAY</h3>
                     </div>
                     <div className="prod-row-card-nys">
                         {filteredProducts.map((product) => (
@@ -294,17 +310,17 @@ export default function Hospital() {
                     </div>
 
 
-
                     {modalOpen && selectedProduct && (
                         <div className="modal-overlay" onClick={handleCloseModal}>
                             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-
                                 <section className='modal-pro'>
                                     <div class="card-wrapper " onClick={handleCloseModal}>
                                         <div class="card">
                                             <div class="product-imgs">
                                                 <div class="img-display">
-                                                    <div class="img-Features">
+                                                    <div class="img-showcase">
+                                                        <img src={selectedProduct.modalimage1} alt="shoe image /" />
+                                                        <img src={selectedProduct.modalimage1} alt="shoe image /" />
                                                         <img src={selectedProduct.modalimage1} alt="shoe image /" />
                                                     </div>
                                                 </div>
@@ -329,14 +345,16 @@ export default function Hospital() {
 
                                             <div class="product-content">
                                                 <h2 class="product-title">{selectedProduct.title}</h2>
-                                                <h5 className='mt-4'>Smart Features: </h5>
-                                                <div class="social-links">
-                                                    <a><img src={icon1} className='img-fluid' /></a>
-                                                    <a><img src={icon8} className='img-fluid' /></a>
-                                                    <a><img src={icon3} className='img-fluid' /></a>
-                                                    <a><img src={icon7} className='img-fluid' /></a>
-                                                    <a><img src={icon9} className='img-fluid' /></a>
+                                                <h5 className='mb-4'>Smart Features: </h5>
+                                                <div className="social-links text-center mt-3">
+                                                    <div className="d-flex flex-row align-items-center">
+                                                        <a className='d-flex flex-column align-items-center'><img src={icon1} className="img-fluid mb-1" /><p>CLOUD </p></a>
+                                                        <a className='d-flex flex-column align-items-center ms-3'><img src={icon8} className="img-fluid mb-1" /><p>MOTION</p></a>
+                                                        <a className='d-flex flex-column align-items-center ms-3'><img src={icon7} className="img-fluid mb-1" /><p>WIFI</p></a>
+                                                        <a className='d-flex flex-column align-items-center ms-3'><img src={icon9} className="img-fluid mb-1" /><p>SENSOR</p></a>
+                                                    </div>
                                                 </div>
+
                                                 <div class="product-detail">
                                                     <p>{selectedProduct.modalDescriptionp}</p>
 
@@ -349,8 +367,11 @@ export default function Hospital() {
                                                     </ul>
                                                 </div>
                                                 <div class="purchase-info ">
-                                                    <button type="button me-2" class="btn ">Add to Cart <i class="fas fa-shopping-cart"></i></button>
-                                                    <button type="button" class="btn ms-3">Shop now <i class="fas fa-shopping-cart"></i></button>
+                                                    <Link to="/hybriddet">
+                                                        <button type="button" class="btn ms-3">
+                                                            Know More<i class="fas fa-shopping-cart"></i>
+                                                        </button>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>

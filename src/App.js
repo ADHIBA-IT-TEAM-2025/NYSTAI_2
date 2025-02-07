@@ -64,7 +64,7 @@ function App() {
           <Route path="nystai-PLAN" element={<Protectplan />} />
           <Route path="nystai-SERVICE" element={<Services />} />
           <Route path="nystai-support" element={<Support />} />
-          <Route path="faqs" element={<Faqs />} />
+          <Route path="faqs" element={<Faqs/>} />
           <Route path="nystai-privacy-policy" element={<Privacypolicy />} />
           <Route path="nystai-warrenty" element={<Warrenty />} />
           <Route path="nystai-terms-condition" element={<Termspolicys />} />
@@ -83,6 +83,9 @@ function App() {
           <Route path="swichdet" element={<Smartdet />} />
           <Route path="waredet" element={<Waredet />} />
           <Route path="waterdet" element={<Waterdet />} />
+          {/* <footer */}
+          <Route path="SUPPORT" element={<Support/>} />
+          <Route path="footblog" element={<Nystaiblogs/>} />
         </Route>
         <Route path="nystai-product" element={<AdminHub />} />
       </Routes>

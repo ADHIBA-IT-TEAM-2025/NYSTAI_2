@@ -35,7 +35,7 @@ export default function ACCESSORIES() {
     return (
         <>
 
-            <section className='mt-4'>
+            <section className='mt-2'>
                 <img src={laningbannerACC} className="img-fluid" />
             </section>
 

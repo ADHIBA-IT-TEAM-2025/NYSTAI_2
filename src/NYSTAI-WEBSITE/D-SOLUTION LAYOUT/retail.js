@@ -5,44 +5,30 @@ import { products } from '../C-PRODUCT LAYOUT/datass.js';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
-// Register ScrollTrigger with GSAP
-
-// images
 import edubannerlanding from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/retail images/banner.png';
 import icon1 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/cloud-storage.png'
-import icon3 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/hd_subscription.png'
 import icon7 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/motion_senstivity_control.png'
 import icon8 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/peri-zoning.png'
 import icon9 from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/person_detection.png'
-
-import overicon1 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/smarthome -1 (2).jpg'
-import overicon2 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/smarthome -1 (1).jpg'
-import overicon3 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/smarthome -1 (1).webp'
-import retbannerlanding from '../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/icons/person_detection.png'
+import overicon1 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/wareicon2.jpg'
+import overicon2 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/wareicon.jpg'
+import overicon3 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/wareicon3.jpg'
 import retailimg2 from '../IMAGES-VIDEOS/C-IMG-SOLUTION-LAYOUT/retail images/1.png'
-
 import Accordion from 'react-bootstrap/Accordion';
-
-
-// icons
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight, faBuildingColumns, faCarBurst, faCircleInfo, faHandshake, faHome, faHouseSignal, faIndustry, faPlaceOfWorship, faSchool, faWarehouse } from '@fortawesome/free-solid-svg-icons';
-
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Retailcategory() {
-    // useEffect(() => {
-    //     window.scrollTo(0, 0);
-    // }, []);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState(null);
 
-    const filteredProducts = products.filter(product => [1].includes(product.category));
+    const filteredProducts = products.filter(product => [1,3,4].includes(product.category));
 
     const handleCardClick = (product) => {
         setSelectedProduct(product);
@@ -126,7 +112,6 @@ export default function Retailcategory() {
     return (
         <>
 
-
             <header className="placeholder-section">
                 <div class=" card ">
                     <img class="card-img" src={edubannerlanding} alt="Card image" />
@@ -139,7 +124,7 @@ export default function Retailcategory() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
 
-                        <Nav className="me-auto">
+                        <Nav className="m-auto">
                             <Nav.Link >
                                 <a className={`menu-item-link ${activeSection === 'Overview' ? 'active' : ''}`}
                                     onClick={() => handleScrollToSection('Overview')}>
@@ -159,89 +144,53 @@ export default function Retailcategory() {
                                 </a>
                             </Nav.Link>
                             <Nav.Link >
-                                <a className={`menu-item-link ${activeSection === 'Where we use' ? 'active' : ''}`}
-                                    onClick={() => handleScrollToSection('Where we use')}>
-                                    Where we use
-                                </a>
-                            </Nav.Link>
-                            <Nav.Link >
                                 <a className={`menu-item-link ${activeSection === 'Product display' ? 'active' : ''}`}
                                     onClick={() => handleScrollToSection('Product display')}>
                                     Product display
                                 </a>
                             </Nav.Link>
                         </Nav>
-
-
-                        <Nav className='brodcrumbs-text-solu'>
-                            <Nav.Link className='text-brod' ><FontAwesomeIcon icon={faHome} /></Nav.Link>
-                            <Nav.Link > <FontAwesomeIcon icon={faAngleRight} /></Nav.Link>
-                            <NavDropdown title="INTEGRATED SOLUTIONS" id="collapsible-nav-dropdown">
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faHouseSignal} className="me-3" /><Link to="/nystai-solution-home" >SMARTHOME</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faIndustry} className="me-3" />   <Link to="/nystai-solution-Industrial" >INDUSTRIAL</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faSchool} className="me-3" />   <Link to="/nystai-solution-education" >EDUCATION</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faPlaceOfWorship} className="me-3" />WORSHIP</NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faCarBurst} className="me-3" /> <Link to="/nystai-solution-vms" >VMS</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faWarehouse} className="me-3" />  <Link to="/nystai-solution-Warehouse" c>WAREHOUSE</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faIndustry} className="me-3" />HOSPITAL</NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faBuildingColumns} className="me-3" />BANKING</NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faCircleInfo} className="me-3" />RETAIL</NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faHandshake} className="me-3" /><Link to="/nystai-solution-parking" >PARKING IOT SOLUTION</Link></NavDropdown.Item>
-                            </NavDropdown>
-                            <Nav.Link >  <FontAwesomeIcon icon={faAngleRight} /></Nav.Link>
-                            <Nav.Link className='text-brod'>HOME AUTOMATION</Nav.Link>
-                        </Nav>
-
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
 
             <section id="main-content" className="page-sections">
 
-                <section className="page-section mt-5 mb-5" id="Overview">
+                <section className=" container page-section mt-4 mb-5" id="Overview">
 
                     <div className="mini-block-statement w-clearfix">
-                        <h3 className="heading-34">Nystai’s Retail Business</h3>
+                        <h3 className="heading-34">Nystai’s&nbsp;<span style={{color:"#1b6763"}}>Retail</span>&nbsp;Business</h3>
                         <p className="text-block-60" >
                             Retail businesses face challenges in managing operations, ensuring security, and optimizing efficiency. NYSTAI offers advanced electronic and security solutions tailored for retail environments. From smart surveillance to automated systems, our solutions enhance store management, reduce losses, and improve customer experiences, empowering retailers to focus on growth and satisfaction.
                         </p>
                     </div>
 
-                    <div class="card-deck " >
-                        <div class="card">
+                    <div class="card-deck row">
+                    <div class="card col-lg-4">
                             <center>
                                 <img class="card-img-top" src={overicon1} alt="Card image cap" style={{ height: "85px", width: "fit-content" }} />
                             </center>
                             <div class="card-body">
-                                <h5 class="card-title"> Security</h5>
-                                <p class="card-text">Advanced surveillance and theft prevention</p>
+                                <h5 class="card-title" style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}> Security</h5>
+                                <p class="card-text" style={{ color: "#8c8c8c" }}>Advanced surveillance and access control systems ensure a secure environment for worshippers. </p>
                             </div>
                         </div>
-                        <div class="card">
-                            <center>
-                                <img class="card-img-top" src={overicon3} alt="Card image cap" style={{ height: "85px", width: "fit-content" }} />
-                            </center>
-                            <div class="card-body">
-                                <h5 class="card-title">Efficiency</h5>
-                                <p class="card-text">Automated systems for seamless store management</p>
-                            </div>
-                        </div>
-                        <div class="card">
+                        <div class="card col-lg-4">
                             <center>
                                 <img class="card-img-top" src={overicon2} alt="Card image cap" style={{ height: "85px", width: "fit-content" }} />
                             </center>
                             <div class="card-body">
-                                <h5 class="card-title">Innovation</h5>
-                                <p class="card-text">AI-powered tools for smarter, data-driven decision-making. </p>
+                                <h5 class="card-title" style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>Efficiency</h5>
+                                <p class="card-text" style={{ color: "#8c8c8c" }}>Smart energy and crowd management solutions streamline day-to-day operations. </p>
+                            </div>
+                        </div>
+                        <div class="card col-lg-4">
+                            <center>
+                                <img class="card-img-top" src={overicon3} alt="Card image cap" style={{ height: "85px", width: "fit-content" }} />
+                            </center>
+                            <div class="card-body">
+                                <h5 class="card-title" style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>Innovation</h5>
+                                <p class="card-text" style={{ color: "#8c8c8c" }}>Digital tools enhance communication, organization, and engagement with the congregation. </p>
                             </div>
                         </div>
                     </div>
@@ -249,15 +198,17 @@ export default function Retailcategory() {
                 </section>
 
                 {/* ACCORDION */}
-                <div className='accordion-nys pt-5 pb-5'>
+                <div className='accordion-nys pt-5 pb-5' id="What we offer">
                     <div className='container '>
                         <div className='row'>
                             <div className='col-lg-6'>
-
+                                <div className="col-lg-10">
+                                    <h3>What We Offer ?</h3>
+                                </div>
                                 {/* Heading */}
                                 <div className='accordion-heading-nys'>
-                                    <h3>Get Clarity about Your <span>Mobile App Development</span></h3>
-                                    <p>Gain confidence in the mobile app development process. Obtain clarity on timelines, costs, and key features to drive your mobile app forward for your business’s  success.</p>
+                                    <h3>Smart Solutions for Retail Security and Efficiency !</h3>
+                                    <p>NYSTAI’s AI-powered technology enhances security, prevents theft, optimizes inventory, and streamlines operations, ensuring a seamless shopping experience and improved efficiency for retailers.</p>
                                 </div>
 
                                 <div className='accordion-contents-nys'>
@@ -294,7 +245,7 @@ export default function Retailcategory() {
                 </div>
 
                 {/* Key Features */}
-                <div className='key-features-nys'>
+                <div className='key-features-nys' id="Features">
                     <div className='container key-features-fullcont-nys'>
                         <div className='row'>
                             <div className='col-lg-6 key-features-left-nys'>
@@ -359,10 +310,9 @@ export default function Retailcategory() {
                     </div>
                 </div>
 
-                <main className=" page-section container-fluid Product-display pt-5 pb-5" id="Product display">
+                <main className="container page-section Product-display mb-5" id="Product display">
                     <div className="text-center">
-                        <h3 class="rrmc-article-desc-title" >PRODUCT DISPLAY</h3>
-                        <p class="rrmc-article-desc-intro">Our innovative IFPDs (Interactive Flat Panel Displays) provide crystal-clear visuals, intuitive touch functionality, and seamless integration,<br /> revolutionizing presentations, learning, and collaboration across various industries.</p>
+                        <h3 class="rrmc-article-desc-title mt-5 mb-5" >PRODUCT DISPLAY</h3>
                     </div>
                     <div className="prod-row-card-nys">
                         {filteredProducts.map((product) => (
@@ -387,6 +337,7 @@ export default function Retailcategory() {
                         ))}
                     </div>
 
+
                     {modalOpen && selectedProduct && (
                         <div className="modal-overlay" onClick={handleCloseModal}>
                             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -395,7 +346,9 @@ export default function Retailcategory() {
                                         <div class="card">
                                             <div class="product-imgs">
                                                 <div class="img-display">
-                                                    <div class="img-Features">
+                                                    <div class="img-showcase">
+                                                        <img src={selectedProduct.modalimage1} alt="shoe image /" />
+                                                        <img src={selectedProduct.modalimage1} alt="shoe image /" />
                                                         <img src={selectedProduct.modalimage1} alt="shoe image /" />
                                                     </div>
                                                 </div>
@@ -420,14 +373,16 @@ export default function Retailcategory() {
 
                                             <div class="product-content">
                                                 <h2 class="product-title">{selectedProduct.title}</h2>
-                                                <h5 className='mt-4'>Smart Features: </h5>
-                                                <div class="social-links">
-                                                    <a><img src={icon1} className='img-fluid' /></a>
-                                                    <a><img src={icon8} className='img-fluid' /></a>
-                                                    <a><img src={icon3} className='img-fluid' /></a>
-                                                    <a><img src={icon7} className='img-fluid' /></a>
-                                                    <a><img src={icon9} className='img-fluid' /></a>
+                                                <h5 className='mb-4'>Smart Features: </h5>
+                                                <div className="social-links text-center mt-3">
+                                                    <div className="d-flex flex-row align-items-center">
+                                                        <a className='d-flex flex-column align-items-center'><img src={icon1} className="img-fluid mb-1" /><p>CLOUD </p></a>
+                                                        <a className='d-flex flex-column align-items-center ms-3'><img src={icon8} className="img-fluid mb-1" /><p>MOTION</p></a>
+                                                        <a className='d-flex flex-column align-items-center ms-3'><img src={icon7} className="img-fluid mb-1" /><p>WIFI</p></a>
+                                                        <a className='d-flex flex-column align-items-center ms-3'><img src={icon9} className="img-fluid mb-1" /><p>SENSOR</p></a>
+                                                    </div>
                                                 </div>
+
                                                 <div class="product-detail">
                                                     <p>{selectedProduct.modalDescriptionp}</p>
 
@@ -440,8 +395,11 @@ export default function Retailcategory() {
                                                     </ul>
                                                 </div>
                                                 <div class="purchase-info ">
-                                                    <button type="button me-2" class="btn ">Add to Cart <i class="fas fa-shopping-cart"></i></button>
-                                                    <button type="button" class="btn ms-3">Shop now <i class="fas fa-shopping-cart"></i></button>
+                                                    <Link to="/hybriddet">
+                                                        <button type="button" class="btn ms-3">
+                                                            Know More<i class="fas fa-shopping-cart"></i>
+                                                        </button>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>

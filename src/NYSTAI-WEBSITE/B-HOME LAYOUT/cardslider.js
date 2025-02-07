@@ -85,11 +85,11 @@ export default function Slickcard() {
         <>
             <div className="common-top-div">
                 <h6 className="head-h-divtopic ">
-                    <span style={{ color: "#1b6763" }}>NYST</span>AI-IoT
+                    <span style={{ color: "#1b6763" }}>NYST</span>AI-IoT SOLUTIONS
                 </h6>
 
                 <h6 className="sechead-h-divtop ">
-                    The Maiden Unified platform for Video + Alarm and Access control Solutions
+                Maiden Unified All-in-One Video, Alarm & Access Control Platform
                 </h6>
             </div>
 

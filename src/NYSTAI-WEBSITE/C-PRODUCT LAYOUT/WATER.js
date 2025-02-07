@@ -34,7 +34,7 @@ export default function WATER() {
     return (
         <>
 
-            <section className='mt-4'>
+            <section className='mt-2'>
                 <img src={laningbanner} className="img-fluid" />
             </section>
 

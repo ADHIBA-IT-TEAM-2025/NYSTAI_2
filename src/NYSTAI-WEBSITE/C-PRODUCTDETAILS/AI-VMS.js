@@ -6,6 +6,7 @@ import 'swiper/css/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBlog, faCompass, faHeadset, faMicrochip, faPeopleArrows, faServer, faShieldVirus } from "@fortawesome/free-solid-svg-icons";
 import Footerproduct from "../A-LAYOUT/footer"
+import banner from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/Nystai-icons & resize images/AIVMS-PRODCAT-BANNER.png"
 import Blogimg1 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/Truck.png"
 import Blogimg2 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/School-bus.png"
 import Prodcatimg1 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/prod-cate-img-1.png"
@@ -25,23 +26,9 @@ export default function Aivmsdet() {
             <body className="design1details">
 
                 <section>
-                    {/* <!-- Background video --> */}
                     <div class="video-background-holder">
                         <div class="video-background-overlay"></div>
-                        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                            <source src="https://huykhong.com/codepen/landing.video.mp4" type="video/mp4" />
-                        </video>
-                        <div class="video-background-content container h-100">
-                            <div class="d-flex h-100 text-center align-items-center">
-                                <div class="w-100 text-white">
-                                    <h1 class="display-4">Landing Page with video background</h1>
-                                    <p class="lead mb-0">Made with HTML5 and Bootstrap 4</p>
-                                    <p class="lead">
-                                        <a href="#" class="btn btn-light">Click Here to Enter</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        <img src={banner} class="img-fluid w-100" alt="Banner Image" />
                     </div>
                 </section>
 
@@ -91,30 +78,17 @@ export default function Aivmsdet() {
                     </div>
                 </div>
 
-                {/* <section className="mt-5 mb-5 ">
-                <div style={{maxWidth: "70rem;"}} class="u-mb-96 px-5 mt-5 mb-3"><h2 class="h0">Smart video storage, <br/>AI powered surveillance </h2></div>
-                    <div class="vhcf-section">
-                        <div class="vhcf-row">
-                            <div class="vhcf-column">
-                                <div class="container vhcf-module px-5">
-                                    <div class="vhcf-promo_description">
-                                    <h2 class="h0">Smart video storage, <br/>AI powered surveillance </h2>
-                                        <p>The NYSTAI AI-IoT Hybrid NVR combines NVR and alarm functionality into an affordable, integrated security system. It supports video surveillance, AI video analysis, intercom, one-click alarms, access control, attendance, fire alarms, and more, with applications spanning security, fire safety, and digital classrooms. </p>
-                                    </div>
-                                </div> 
-                                <div class="vhcf-module">
-                                    <img src={rigimghyb} alt=""/>
-                                </div>
-                            </div>
-                        </div> 
-                    </div> 
-                </section> */}
-
                 {/* 4 CARDS PARALLEL */}
                 <section className="container four-cards-parallal-section-cards-nys ">
 
-                    <div className="mt-5 mb-5">
-                        <h1 style={{ textAlign: "center" }}>AI-VMS  <span style={{ color: "#1b6763" }}> </span></h1>
+
+                    <div className="common-top-div">
+                        <h6 className="head-h-divtopic" >
+                            <span style={{ color: "#1b6763" }}> AI-VMS </span>
+                        </h6>
+                        <h6 className="sechead-h-divtop" >
+                            Centralized monitoring, real-time video streaming, intelligent analysis, secure storage.
+                        </h6>
                     </div>
 
                     <div className="four-cards-parallal-main-cards mt-5">
@@ -122,11 +96,9 @@ export default function Aivmsdet() {
                             <div className="col-lg-6">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">AI-Powered Cameras:</h5>
+                                        <h5 class="card-title">Video Management & Recording Systems</h5>
                                         <p class="card-text">
-                                            AI-powered cameras offer motion detection, real-time alerts, and
-                                            intelligent analysis, providing smart, reliable security for indoor and
-                                            outdoor environments.
+                                        Efficient, secure, scalable, durable, weatherproof, high-res, multi-channel, networked, cloud-supported, AI-enabled, real-time, encrypted, smart-alerts, customizable, centralized, seamless, user-friendly, low-latency. 
                                         </p>
                                     </div>
                                     <div class="image-container">
@@ -137,8 +109,8 @@ export default function Aivmsdet() {
                             <div className="col-lg-6" style={{ marginTop: "8%" }}>
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Specialized Cameras: </h5>
-                                        <p class="card-text">Specialized cameras offer wide-angle coverage, infrared vision, and solar power, providing advanced security for residential and commercial spaces. </p>
+                                        <h5 class="card-title">Cameras & Vision Systems</h5>
+                                        <p class="card-text">Wide-angle, HD, night-vision, wireless, AI, auto-tracking, rugged, vehicle-mounted, panoramic, infrared, motion-detect, anti-glare, weatherproof, remote, vibration-resistant, compact, power-efficient, real-time. </p>
                                     </div>
                                     <div>
                                         <img src={Prodcatimg2} class="Parallal-img-nys w-100" />
@@ -150,8 +122,8 @@ export default function Aivmsdet() {
                             <div className="col-lg-6">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Outdoor & Wireless Cameras: </h5>
-                                        <p class="card-text">Outdoor and wireless cameras provide flexible, weather-resistant surveillance for remote areas, offering reliable performance without complicated wiring. </p>
+                                        <h5 class="card-title">Wireless Transmission & Accessories</h5>
+                                        <p class="card-text">Long-range, interference-resistant, encrypted, low-latency, high-bandwidth, auto-sync, plug-and-play, power-efficient, dual-frequency, stable, multi-device, real-time, smart-config, portable, adaptive, cloud-supported, versatile, secure. </p>
                                     </div>
                                     <div>
                                         <img src={Prodcatimg3} class="Parallal-img-nys w-100" />
@@ -161,8 +133,8 @@ export default function Aivmsdet() {
                             <div className="col-lg-6" style={{ marginTop: "8%" }}>
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Pan-Tilt-Zoom (PTZ) Cameras: </h5>
-                                        <p class="card-text">PTZ cameras offer flexible coverage with pan, tilt, and zoom features, ideal for large properties and sensitive zones. </p>
+                                        <h5 class="card-title">Specialty Surveillance Equipment</h5>
+                                        <p class="card-text">Innovative, AI-integrated, interactive, customizable, multi-functional, real-time, vehicle-adaptive, energy-efficient, intuitive, privacy-focused, weatherproof, seamless, remote-access, HD, enhanced-safety, ultra-responsive, rugged, immersive, advanced.  </p>
                                     </div>
                                     <div>
                                         <img src={Prodcatimg4} class="Parallal-img-nys w-100" />
@@ -174,8 +146,8 @@ export default function Aivmsdet() {
                             <div className="col-lg-6">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Battery-Powered Cameras: </h5>
-                                        <p class="card-text">Battery-powered cameras offer wireless, flexible security solutions with motion detection, ideal for indoor and outdoor use in remote areas. </p>
+                                        <h5 class="card-title">Storage & Data Management</h5>
+                                        <p class="card-text">High-capacity, redundant, cloud-integrated, encrypted, low-latency, scalable, SSD-optimized, secure-access, AI-indexed, real-time backup, failover-protected, energy-efficient, seamless retrieval, automated archiving, multi-format. </p>
                                     </div>
                                     <div>
                                         <img src={Prodcatimg5} class="Parallal-img-nys w-100" />
@@ -270,7 +242,7 @@ export default function Aivmsdet() {
                                     <img src={Blogimg2} class="card-img-top" alt="..." />
                                 </div>
                             </div>
-                
+
                         </div>
                     </div>
                 </section>

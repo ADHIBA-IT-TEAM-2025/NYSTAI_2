@@ -115,7 +115,7 @@ export default function Industrial() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
 
-                        <Nav className="me-auto">
+                        <Nav className="m-auto">
                             <Nav.Link >
                                 <a className={`menu-item-link ${activeSection === 'Overview' ? 'active' : ''}`}
                                     onClick={() => handleScrollToSection('Overview')}>
@@ -135,89 +135,53 @@ export default function Industrial() {
                                 </a>
                             </Nav.Link>
                             <Nav.Link >
-                                <a className={`menu-item-link ${activeSection === 'Where we use' ? 'active' : ''}`}
-                                    onClick={() => handleScrollToSection('Where we use')}>
-                                    Where we use
-                                </a>
-                            </Nav.Link>
-                            <Nav.Link >
                                 <a className={`menu-item-link ${activeSection === 'Product display' ? 'active' : ''}`}
                                     onClick={() => handleScrollToSection('Product display')}>
                                     Product display
                                 </a>
                             </Nav.Link>
                         </Nav>
-
-
-                        <Nav className='brodcrumbs-text-solu'>
-                            <Nav.Link className='text-brod' ><FontAwesomeIcon icon={faHome} /></Nav.Link>
-                            <Nav.Link > <FontAwesomeIcon icon={faAngleRight} /></Nav.Link>
-                            <NavDropdown title="INTEGRATED SOLUTIONS" id="collapsible-nav-dropdown">
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faHouseSignal} className="me-3" /><Link to="/nystai-solution-home" >SMARTHOME</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faIndustry} className="me-3" />   <Link to="/nystai-solution-Industrial" >INDUSTRIAL</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faSchool} className="me-3" />   <Link to="/nystai-solution-education" >EDUCATION</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faPlaceOfWorship} className="me-3" />WORSHIP</NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faCarBurst} className="me-3" /> <Link to="/nystai-solution-vms" >VMS</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faWarehouse} className="me-3" />  <Link to="/nystai-solution-Warehouse" c>WAREHOUSE</Link></NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faIndustry} className="me-3" />HOSPITAL</NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faBuildingColumns} className="me-3" />BANKING</NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faCircleInfo} className="me-3" />RETAIL</NavDropdown.Item>
-                                <div class="dropdown-divider ms-3 me-3"></div>
-                                <NavDropdown.Item className="dropdown-content-a" ><FontAwesomeIcon icon={faHandshake} className="me-3" /><Link to="/nystai-solution-parking" >PARKING IOT SOLUTION</Link></NavDropdown.Item>
-                            </NavDropdown>
-                            <Nav.Link >  <FontAwesomeIcon icon={faAngleRight} /></Nav.Link>
-                            <Nav.Link className='text-brod'>INDUSTRY</Nav.Link>
-                        </Nav>
-
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
 
             <section id="main-content" className="page-sections">
 
-                <section className="page-section mt-5 mb-5" id="Overview">
+                <section className="container page-section mt-5 mb-5" id="Overview">
 
                     <div className="mini-block-statement w-clearfix">
-                        <h3 className="heading-34">NYSTAI’S INDUSTRY SOLUTIONS</h3>
+                        <h3 className="heading-34"><span style={{color:"#1b6763"}}> NYSTAI’S&nbsp;</span>  INDUSTRY SOLUTIONS</h3>
                         <p className="text-block-60" >
                             In industries, automation, security, and energy efficiency are critical for smooth operations and safeguarding assets. NYSTAI’s industrial solutions integrate CCTV cameras, alarms, and automation systems into a wired setup, ensuring reliable performance in large-scale environments. Coupled with solar-powered options, our solutions not only enhance security but also improve energy efficiency and sustainability. With real-time monitoring and proactive systems, businesses can maintain control, prevent issues, and optimize their operations, all from a central platform.
                         </p>
                     </div>
 
-                    <div class="card-deck" >
-                        <div class="card">
+                    <div class="card-deck row">
+                        <div class="card col-lg-4">
                             <center>
                                 <img class="card-img-top" src={overicon1} alt="Card image cap" style={{ height: "85px", width: "fit-content" }} />
                             </center>
                             <div class="card-body">
-                                <h5 class="card-title">Resilience</h5>
-                                <p class="card-text">Reliable security for industrial operations</p>
+                                  <h4 class="card-title " style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>Resilience</h4>
+                                 <p class="card-text" style={{ color: "#8c8c8c" }}>Reliable security for industrial operations</p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card col-lg-4">
                             <center>
                                 <img class="card-img-top" src={overicon3} alt="Card image cap" style={{ height: "85px", width: "fit-content" }} />
                             </center>
                             <div class="card-body">
-                                <h5 class="card-title">Efficiency</h5>
-                                <p class="card-text">Centralized control for efficient management</p>
+                                  <h4 class="card-title " style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>Efficiency</h4>
+                                 <p class="card-text" style={{ color: "#8c8c8c" }}>Centralized control for efficient management</p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card col-lg-4">
                             <center>
                                 <img class="card-img-top" src={overicon2} alt="Card image cap" style={{ height: "85px", width: "fit-content" }} />
                             </center>
                             <div class="card-body">
-                                <h5 class="card-title">Eco-friendly</h5>
-                                <p class="card-text">Solar-powered for sustainable performance</p>
+                                  <h4 class="card-title " style={{ textTransform: "uppercase", fontWeight: "bolder", color: "#1b6763" }}>Eco-friendly</h4>
+                                 <p class="card-text" style={{ color: "#8c8c8c" }}>Solar-powered for sustainable performance</p>
                             </div>
                         </div>
                     </div>
@@ -273,7 +237,7 @@ export default function Industrial() {
                                             </div>
                                             <div className="col-lg-6 tab-contents-nys">
                                                 <h1>Challenges Without CCTV, Alarms, and Automation in Industries</h1>
- 
+
                                                 <div className="">
                                                     <p><span><FontAwesomeIcon icon={faHouse} style={{ color: "#000" }} className="me-4" /></span>Industries without advanced CCTV, alarms, and automation face security and operational inefficiencies.</p>
                                                     <hr />
@@ -284,12 +248,12 @@ export default function Industrial() {
                                                     <p><span><FontAwesomeIcon icon={faThunderstorm} style={{ color: "#000" }} className="me-4" /></span> Without real-time alerts and centralized control, businesses react to problems <br /> instead of preventing them, resulting in downtime, safety hazards,<br /> and reduced productivity.</p>
                                                     <hr />
                                                 </div>
- 
+
                                             </div>
                                         </div>
                                     </div>
                                 )}
- 
+
                                 {activeTab === 2 && (
                                     <div className="container">
                                         <div className='row'>
@@ -298,7 +262,7 @@ export default function Industrial() {
                                             </div>
                                             <div className="col-lg-6 tab-contents-nys">
                                                 <h1>How These Solutions Provide Benefits for Industries</h1>
- 
+
                                                 <div className="">
                                                     <p><span><FontAwesomeIcon icon={faHouse} style={{ color: "#000" }} className="me-4" /></span>Industrial CCTV cameras, wired alarms, and automation ensure consistent monitoring and control.</p>
                                                     <hr />
@@ -311,7 +275,7 @@ export default function Industrial() {
                                         </div>
                                     </div>
                                 )}
- 
+
                                 {activeTab === 3 && (
                                     <div className="container">
                                         <div className='row'>
@@ -337,23 +301,17 @@ export default function Industrial() {
                     </section>
                 </section>
 
-                <center className="page-section mt-5 mb-5" id="Where we use">
-                    <video src={indusvideo} loop muted autoPlay className='img-fluid' />
-                </center>
-
                 <section className="page-section mt-5 mb-5 Features-education" id="Features">
                     <section class="creative-cards style-one">
-                        <div className='text-center ' style={{ color: "#f5f5f5" }}>
-                            <h3 class="rrmc-article-desc-title" >Features</h3>
-                            <p class="rrmc-article-desc-intro" >Features provided by our Home Automation </p>
-                        </div>
+                        <center className="page-section mt-5 mb-5">
+                            <video src={indusvideo} loop muted autoPlay className='img-fluid' />
+                        </center>
                     </section>
                 </section>
 
                 <main className="container page-section Product-display mb-5" id="Product display">
                     <div className="text-center">
-                        <h3 class="rrmc-article-desc-title" >PRODUCT DISPLAY</h3>
-                        <p class="rrmc-article-desc-intro">Our innovative IFPDs (Interactive Flat Panel Displays) provide crystal-clear visuals, intuitive touch functionality, and seamless integration,<br /> revolutionizing presentations, learning, and collaboration across various industries.</p>
+                        <h3 class="rrmc-article-desc-title mb-5" >PRODUCT DISPLAY</h3>
                     </div>
                     <div className="prod-row-card-nys">
                         {filteredProducts.map((product) => (
@@ -378,6 +336,7 @@ export default function Industrial() {
                         ))}
                     </div>
 
+
                     {modalOpen && selectedProduct && (
                         <div className="modal-overlay" onClick={handleCloseModal}>
                             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -386,7 +345,9 @@ export default function Industrial() {
                                         <div class="card">
                                             <div class="product-imgs">
                                                 <div class="img-display">
-                                                    <div class="img-Features">
+                                                    <div class="img-showcase">
+                                                        <img src={selectedProduct.modalimage1} alt="shoe image /" />
+                                                        <img src={selectedProduct.modalimage1} alt="shoe image /" />
                                                         <img src={selectedProduct.modalimage1} alt="shoe image /" />
                                                     </div>
                                                 </div>
@@ -411,14 +372,16 @@ export default function Industrial() {
 
                                             <div class="product-content">
                                                 <h2 class="product-title">{selectedProduct.title}</h2>
-                                                <h5 className='mt-4'>Smart Features: </h5>
-                                                <div class="social-links">
-                                                    <a><img src={icon1} className='img-fluid' /></a>
-                                                    <a><img src={icon8} className='img-fluid' /></a>
-                                                    <a><img src={icon3} className='img-fluid' /></a>
-                                                    <a><img src={icon7} className='img-fluid' /></a>
-                                                    <a><img src={icon9} className='img-fluid' /></a>
+                                                <h5 className='mb-4'>Smart Features: </h5>
+                                                <div className="social-links text-center mt-3">
+                                                    <div className="d-flex flex-row align-items-center">
+                                                        <a className='d-flex flex-column align-items-center'><img src={icon1} className="img-fluid mb-1" /><p>CLOUD </p></a>
+                                                        <a className='d-flex flex-column align-items-center ms-3'><img src={icon8} className="img-fluid mb-1" /><p>MOTION</p></a>
+                                                        <a className='d-flex flex-column align-items-center ms-3'><img src={icon7} className="img-fluid mb-1" /><p>WIFI</p></a>
+                                                        <a className='d-flex flex-column align-items-center ms-3'><img src={icon9} className="img-fluid mb-1" /><p>SENSOR</p></a>
+                                                    </div>
                                                 </div>
+
                                                 <div class="product-detail">
                                                     <p>{selectedProduct.modalDescriptionp}</p>
 
@@ -431,8 +394,11 @@ export default function Industrial() {
                                                     </ul>
                                                 </div>
                                                 <div class="purchase-info ">
-                                                    <button type="button me-2" class="btn ">Add to Cart <i class="fas fa-shopping-cart"></i></button>
-                                                    <button type="button" class="btn ms-3">Shop now <i class="fas fa-shopping-cart"></i></button>
+                                                    <Link to="/indudet">
+                                                        <button type="button" class="btn ms-3">
+                                                            Know More<i class="fas fa-shopping-cart"></i>
+                                                        </button>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>

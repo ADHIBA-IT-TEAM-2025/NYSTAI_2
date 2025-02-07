@@ -13,6 +13,7 @@ import Prodcatimg2 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/pr
 import Prodcatimg3 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/prod-cate-img-3.png"
 import Prodcatimg4 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/prod-cate-img-4.png"
 import Prodcatimg5 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/prod-cate-img-5.png"
+import banner from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/Nystai-icons & resize images/IOE-Communiation-Banner.png"
 
 export default function Ioedet() {
 
@@ -25,24 +26,12 @@ export default function Ioedet() {
             <body className="design1details">
 
                 <section>
-                    {/* <!-- Background video --> */}
-                    <div class="video-background-holder">
-                        <div class="video-background-overlay"></div>
-                        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                            <source src="https://huykhong.com/codepen/landing.video.mp4" type="video/mp4" />
-                        </video>
-                        <div class="video-background-content container h-100">
-                            <div class="d-flex h-100 text-center align-items-center">
-                                <div class="w-100 text-white">
-                                    <h1 class="display-4">Landing Page with video background</h1>
-                                    <p class="lead mb-0">Made with HTML5 and Bootstrap 4</p>
-                                    <p class="lead">
-                                        <a href="#" class="btn btn-light">Click Here to Enter</a>
-                                    </p>
-                                </div>
-                            </div>
+                    <section>
+                        <div class="video-background-holder">
+                            <div class="video-background-overlay"></div>
+                            <img src={banner} class="img-fluid w-100" alt="Banner Image" />
                         </div>
-                    </div>
+                    </section>
                 </section>
 
                 <div class="flex-container-nystai-scroll">
@@ -91,30 +80,17 @@ export default function Ioedet() {
                     </div>
                 </div>
 
-                {/* <section className="mt-5 mb-5 ">
-                <div style={{maxWidth: "70rem;"}} class="u-mb-96 px-5 mt-5 mb-3"><h2 class="h0">Smart video storage, <br/>AI powered surveillance </h2></div>
-                    <div class="vhcf-section">
-                        <div class="vhcf-row">
-                            <div class="vhcf-column">
-                                <div class="container vhcf-module px-5">
-                                    <div class="vhcf-promo_description">
-                                    <h2 class="h0">Smart video storage, <br/>AI powered surveillance </h2>
-                                        <p>The NYSTAI AI-IoT Hybrid NVR combines NVR and alarm functionality into an affordable, integrated security system. It supports video surveillance, AI video analysis, intercom, one-click alarms, access control, attendance, fire alarms, and more, with applications spanning security, fire safety, and digital classrooms. </p>
-                                    </div>
-                                </div> 
-                                <div class="vhcf-module">
-                                    <img src={rigimghyb} alt=""/>
-                                </div>
-                            </div>
-                        </div> 
-                    </div> 
-                </section> */}
-
                 {/* 4 CARDS PARALLEL */}
                 <section className="container four-cards-parallal-section-cards-nys ">
 
-                    <div className="mt-5 mb-5">
-                        <h1 style={{ textAlign: "center" }}>IOE -   <span style={{ color: "#1b6763" }}> COMMUNICATION</span></h1>
+
+                    <div className="common-top-div">
+                        <h6 className="head-h-divtopic" >
+                            <span style={{ color: "#1b6763" }}>IOE - </span>COMMUNICATION
+                        </h6>
+                        <h6 className="sechead-h-divtop" style={{ color: "#8c8c8c" }} >
+                            Efficient data transfer, real-time communication, IoT integration, reliable performance.
+                        </h6>
                     </div>
 
                     <div className="four-cards-parallal-main-cards mt-5">
@@ -122,11 +98,9 @@ export default function Ioedet() {
                             <div className="col-lg-6">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">AI-Powered Cameras:</h5>
+                                        <h5 class="card-title">Door & Window Sensors</h5>
                                         <p class="card-text">
-                                            AI-powered cameras offer motion detection, real-time alerts, and
-                                            intelligent analysis, providing smart, reliable security for indoor and
-                                            outdoor environments.
+                                            Door and window sensors detect unauthorized entry, providing reliable, wireless security with easy installation for homes and businesses.
                                         </p>
                                     </div>
                                     <div class="image-container">
@@ -137,8 +111,8 @@ export default function Ioedet() {
                             <div className="col-lg-6" style={{ marginTop: "8%" }}>
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Specialized Cameras: </h5>
-                                        <p class="card-text">Specialized cameras offer wide-angle coverage, infrared vision, and solar power, providing advanced security for residential and commercial spaces. </p>
+                                        <h5 class="card-title">Gas & Environmental Sensors </h5>
+                                        <p class="card-text">Gas and environmental sensors detect hazards like leaks and smoke, providing early warnings to ensure safety and prevent damage. </p>
                                     </div>
                                     <div>
                                         <img src={Prodcatimg2} class="Parallal-img-nys w-100" />
@@ -150,8 +124,9 @@ export default function Ioedet() {
                             <div className="col-lg-6">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Outdoor & Wireless Cameras: </h5>
-                                        <p class="card-text">Outdoor and wireless cameras provide flexible, weather-resistant surveillance for remote areas, offering reliable performance without complicated wiring. </p>
+                                        <h5 class="card-title"> Perimeter & Beam Sensors </h5>
+                                        <p class="card-text">Perimeter and beam sensors enhance security by monitoring boundaries with infrared beams, detecting movement and intrusions in large areas.
+                                        </p>
                                     </div>
                                     <div>
                                         <img src={Prodcatimg3} class="Parallal-img-nys w-100" />
@@ -161,8 +136,8 @@ export default function Ioedet() {
                             <div className="col-lg-6" style={{ marginTop: "8%" }}>
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Pan-Tilt-Zoom (PTZ) Cameras: </h5>
-                                        <p class="card-text">PTZ cameras offer flexible coverage with pan, tilt, and zoom features, ideal for large properties and sensitive zones. </p>
+                                        <h5 class="card-title">Motion & Radar Sensors</h5>
+                                        <p class="card-text">Motion and radar sensors detect movement, providing real-time alerts for continuous security in indoor and outdoor environments. </p>
                                     </div>
                                     <div>
                                         <img src={Prodcatimg4} class="Parallal-img-nys w-100" />
@@ -174,8 +149,8 @@ export default function Ioedet() {
                             <div className="col-lg-6">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Battery-Powered Cameras: </h5>
-                                        <p class="card-text">Battery-powered cameras offer wireless, flexible security solutions with motion detection, ideal for indoor and outdoor use in remote areas. </p>
+                                        <h5 class="card-title">Specialized Sensors: </h5>
+                                        <p class="card-text">Specialized sensors offer tailored security solutions, including rolling shutter sensors, for precise protection in various environments. </p>
                                     </div>
                                     <div>
                                         <img src={Prodcatimg5} class="Parallal-img-nys w-100" />
@@ -270,7 +245,7 @@ export default function Ioedet() {
                                     <img src={Blogimg2} class="card-img-top" alt="..." />
                                 </div>
                             </div>
-                         
+
                         </div>
                     </div>
                 </section>

@@ -3,6 +3,7 @@ import "./A-detailspage.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBlog, faCompass, faHeadset, faMicrochip, faPeopleArrows, faServer, faShieldVirus } from "@fortawesome/free-solid-svg-icons";
 import Footerproduct from "../A-LAYOUT/footer"
+import banner from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/Nystai-icons & resize images/Water-Leakage.png"
 import Blogimg1 from "../IMAGES-VIDEOS/A-IMG-HOME-LAYOUT/common/blog-img-1.png"
 import singleproimg from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/singleproimg.png"
 
@@ -18,23 +19,9 @@ export default function Waterdet() {
             <body className="design1details">
 
                 <section>
-                    {/* <!-- Background video --> */}
                     <div class="video-background-holder">
                         <div class="video-background-overlay"></div>
-                        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                            <source src="https://huykhong.com/codepen/landing.video.mp4" type="video/mp4" />
-                        </video>
-                        <div class="video-background-content container h-100">
-                            <div class="d-flex h-100 text-center align-items-center">
-                                <div class="w-100 text-white">
-                                    <h1 class="display-4">Landing Page with video background</h1>
-                                    <p class="lead mb-0">Made with HTML5 and Bootstrap 4</p>
-                                    <p class="lead">
-                                        <a href="#" class="btn btn-light">Click Here to Enter</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        <img src={banner} class="img-fluid w-100" alt="Banner Image" />
                     </div>
                 </section>
 
@@ -84,17 +71,18 @@ export default function Waterdet() {
                     </div>
                 </div>
 
-                {/* 4 CARDS PARALLEL */}
-
-                <div className="mt-5 mb-5">
-                    <h1 style={{ textAlign: "center" }}>WATER<span style={{ color: "#1b6763" }}> MANAGEMENT</span></h1>
+                <div className="common-top-div">
+                    <h6 className="head-h-divtopic" >
+                        <span style={{ color: "#1b6763" }}>MANAGEMENT</span>
+                    </h6>
+                    <h6 className="sechead-h-divtop" style={{color:"#8c8c8c"}} >Real-time monitoring, leak detection, automated alerts, efficient water management.
+                    </h6>
                 </div>
 
-                <section className="parallal-text-card-nys pt-5 pb-3">
-
+                <section className="container-fluid parallal-text-card-nys">
                     <div className="container">
-                        <div className="col-9 parallal-text-card-heading-nys">
-                            <h2><span>Efficient water management,   . </span> no leaks.</h2>
+                        <div className="col-lg-9 col-md-12 col-sm-12  parallal-text-card-heading-nys">
+                            <h2><span>Efficient water management</span></h2>
                         </div>
                         <div className="text-img-nys">
                             <div className="row">
@@ -103,7 +91,7 @@ export default function Waterdet() {
                                         <h6>The "WATER MANAGEMENT" category includes the Tank Manager, Water Leak Detector, and Water Leak Detector. These systems offer real-time monitoring, early leak detection, and automated alerts, ensuring optimal water resource management and protection against damage. With user-friendly interfaces and compatibility across various environments, they offer efficient and reliable solutions for water management.   </h6>
                                     </div>
                                 </div>
-                                <div className="col-lg-6 img-right-nys">
+                                <div className="col-lg-6 img-right-nys"style={{ marginTop: 0 }} >
                                     <img src={singleproimg} className="img-fluid w-100" />
                                 </div>
                             </div>
@@ -123,21 +111,21 @@ export default function Waterdet() {
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Cloud storage</h5>
+                                        <h5 class="card-title">Automatic Water Level Monitoring</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Full HD video</h5>
+                                        <h5 class="card-title">Real-Time Alerts</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">In built device alarm</h5>
+                                        <h5 class="card-title">Smart Pump Control</h5>
                                     </div>
                                 </div>
                             </div>
@@ -146,21 +134,21 @@ export default function Waterdet() {
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Motion senstivity control</h5>
+                                        <h5 class="card-title">Wireless Connectivity</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Perimeter Alarm</h5>
+                                        <h5 class="card-title">Energy Efficiency</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Person detection</h5>
+                                        <h5 class="card-title">Manual Override</h5>
                                     </div>
                                 </div>
                             </div>
@@ -170,7 +158,7 @@ export default function Waterdet() {
                                 <div className="col-lg-4">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h5 class="card-title">Record live</h5>
+                                            <h5 class="card-title">Durable & Weatherproof Design</h5>
                                         </div>
                                     </div>
                                 </div>

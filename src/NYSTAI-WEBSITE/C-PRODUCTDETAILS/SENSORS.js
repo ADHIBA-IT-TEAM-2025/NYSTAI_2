@@ -10,11 +10,12 @@ import Blogimg1 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/Bank.
 import Blogimg2 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/Jewelry.png"
 import Blogimg3 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/Farmhouse.png"
 import Blogimg4 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/House.png"
-import Prodcatimg1 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/prod-cate-img-1.png"
-import Prodcatimg2 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/prod-cate-img-2.png"
-import Prodcatimg3 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/prod-cate-img-3.png"
-import Prodcatimg4 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/prod-cate-img-4.png"
-import Prodcatimg5 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/prod-cate-img-5.png"
+import Prodcatimg1 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/SENSOR-CATEGORY-IMAGES/Door-&-Window-Sensors.png"
+import Prodcatimg2 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/SENSOR-CATEGORY-IMAGES/Gas-Sensors.png"
+import Prodcatimg3 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/SENSOR-CATEGORY-IMAGES/Perimeter-&-Beam-Sensors.png"
+import Prodcatimg4 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/SENSOR-CATEGORY-IMAGES//Motion-and-Radar-Sensor.png"
+import Prodcatimg5 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/SENSOR-CATEGORY-IMAGES/Specialised-sensors.png"
+import banner from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/Nystai-icons & resize images/fac2bc83-50c1-4b68-afb7-7035dd7389a9.jpg"
 
 export default function Sensordet() {
 
@@ -27,24 +28,12 @@ export default function Sensordet() {
             <body className="design1details">
 
                 <section>
-                    {/* <!-- Background video --> */}
-                    <div class="video-background-holder">
-                        <div class="video-background-overlay"></div>
-                        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                            <source src="https://huykhong.com/codepen/landing.video.mp4" type="video/mp4" />
-                        </video>
-                        <div class="video-background-content container h-100">
-                            <div class="d-flex h-100 text-center align-items-center">
-                                <div class="w-100 text-white">
-                                    <h1 class="display-4">Landing Page with video background</h1>
-                                    <p class="lead mb-0">Made with HTML5 and Bootstrap 4</p>
-                                    <p class="lead">
-                                        <a href="#" class="btn btn-light">Click Here to Enter</a>
-                                    </p>
-                                </div>
-                            </div>
+                    <section>
+                        <div class="video-background-holder">
+                            <div class="video-background-overlay"></div>
+                            <img src={banner} class="img-fluid w-100" alt="Banner Image" />
                         </div>
-                    </div>
+                    </section>
                 </section>
 
                 <div class="flex-container-nystai-scroll">
@@ -96,8 +85,13 @@ export default function Sensordet() {
                 {/* 4 CARDS PARALLEL */}
                 <section className="container four-cards-parallal-section-cards-nys ">
 
-                    <div className="mt-5 mb-5">
-                        <h1 style={{ textAlign: "center" }}>  <span style={{ color: "#1b6763" }}> SENSORS</span></h1>
+                    <div className="common-top-div">
+                        <h6 className="head-h-divtopic" >
+                            <span style={{ color: "#1b6763" }}>SENSORS</span>
+                        </h6>
+                        <h6 className="sechead-h-divtop" >
+                            Detect motion, intrusion, gas leaks, environmental hazards, and perimeter breaches.
+                        </h6>
                     </div>
 
                     <div className="four-cards-parallal-main-cards mt-5">
@@ -107,7 +101,7 @@ export default function Sensordet() {
                                     <div class="card-body">
                                         <h5 class="card-title">Door & Window Sensors: </h5>
                                         <p class="card-text">
-                                        Door and window sensors detect unauthorized entry, providing reliable, wireless security with easy installation for homes and businesses. 
+                                            Door and window sensors detect unauthorized entry, providing reliable, wireless security with easy installation for homes and businesses.
                                         </p>
                                     </div>
                                     <div class="image-container">
@@ -179,21 +173,21 @@ export default function Sensordet() {
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Cloud storage</h5>
+                                        <h5 class="card-title">Multi-Type Detection</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Full HD video</h5>
+                                        <h5 class="card-title">AI-Enhanced Accuracy</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">In built device alarm</h5>
+                                        <h5 class="card-title">Wireless & Wired Options</h5>
                                     </div>
                                 </div>
                             </div>
@@ -202,21 +196,21 @@ export default function Sensordet() {
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Motion senstivity control</h5>
+                                        <h5 class="card-title">Real-Time Alerts</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Perimeter Alarm</h5>
+                                        <h5 class="card-title">Long Battery Life</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Person detection</h5>
+                                        <h5 class="card-title">Tamper Protection</h5>
                                     </div>
                                 </div>
                             </div>
@@ -226,7 +220,7 @@ export default function Sensordet() {
                                 <div className="col-lg-4">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h5 class="card-title">Record live</h5>
+                                            <h5 class="card-title">Seamless Integration</h5>
                                         </div>
                                     </div>
                                 </div>

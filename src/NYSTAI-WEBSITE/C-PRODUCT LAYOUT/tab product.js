@@ -1,8 +1,10 @@
 import React from "react";
 import './sample.css'
 import { useState, useEffect } from "react";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
+
 
 export default function Tabsliderpro() {
 
@@ -109,6 +111,7 @@ export default function Tabsliderpro() {
                                     </p>
                                     <p class="h6 fw-bold">Nystai Solution</p>
                                 </label>
+
                                 <div className="line-tab-solu"></div>
                             </div>
                         </div>

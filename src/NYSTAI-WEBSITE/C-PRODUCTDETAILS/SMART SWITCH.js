@@ -8,6 +8,7 @@ import Blogimg2 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/Jewel
 import Blogimg3 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/House.png"
 import Blogimg4 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/Corporates.png"
 import singleproimg from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/singleproimg.png"
+import banner from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/Nystai-icons & resize images/8a98b857-97af-40a4-b5a8-52b487d976ee.jpg"
 
 
 export default function Smartdet() {
@@ -21,25 +22,14 @@ export default function Smartdet() {
             <body className="design1details">
 
                 <section>
-                    {/* <!-- Background video --> */}
-                    <div class="video-background-holder">
-                        <div class="video-background-overlay"></div>
-                        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                            <source src="https://huykhong.com/codepen/landing.video.mp4" type="video/mp4" />
-                        </video>
-                        <div class="video-background-content container h-100">
-                            <div class="d-flex h-100 text-center align-items-center">
-                                <div class="w-100 text-white">
-                                    <h1 class="display-4">Landing Page with video background</h1>
-                                    <p class="lead mb-0">Made with HTML5 and Bootstrap 4</p>
-                                    <p class="lead">
-                                        <a href="#" class="btn btn-light">Click Here to Enter</a>
-                                    </p>
-                                </div>
-                            </div>
+                    <section>
+                        <div class="video-background-holder">
+                            <div class="video-background-overlay"></div>
+                            <img src={banner} class="img-fluid w-100" alt="Banner Image" />
                         </div>
-                    </div>
+                    </section>
                 </section>
+
 
                 <div class="flex-container-nystai-scroll">
                     <div class="slider-container">
@@ -87,15 +77,20 @@ export default function Smartdet() {
                     </div>
                 </div>
 
-                <div className="mt-5 mb-5">
-                    <h1 style={{ textAlign: "center" }}>SMART<span style={{ color: "#1b6763" }}> SWITCH</span></h1>
+                <div className="common-top-div">
+                    <h6 className="head-h-divtopic" >
+                        <span style={{ color: "#1b6763" }}>SMART</span> SWITCH
+                    </h6>
+                    <h6 className="sechead-h-divtop" style={{color:"#8c8c8c"}}  >
+                        Remote control, energy efficiency, scheduling, voice activation, modern convenience.
+                    </h6>
                 </div>
 
                 {/* LEFT RIGHT CARDS */}
-                <section className="parallal-text-card-nys pt-5 pb-3">
-                    <div className="container">
-                        <div className="col-9 parallal-text-card-heading-nys">
-                            <h2><span>Upgrade your home  </span>with smart switches.</h2>
+                <section className="container-fluid  parallal-text-card-nys">
+                    <div className="col-lg-9 col-md-12 col-sm-12 container">
+                        <div className="  parallal-text-card-heading-nys">
+                            <h2><span>Upgrade your home </span>with smart switches.</h2>
                         </div>
                         <div className="text-img-nys">
                             <div className="row">
@@ -104,14 +99,13 @@ export default function Smartdet() {
                                         <h6>The "SMARTSWITCH" category offers innovative solutions like the Gang Switch - Retrofit, Smart Plug, Touch Wall Switch 2M, and Wireless Bell. These smart devices enable easy home automation with features such as remote control, energy monitoring, scheduling, and voice activation, enhancing convenience, energy efficiency, and modern home aesthetics.  </h6>
                                     </div>
                                 </div>
-                                <div className="col-lg-6 img-right-nys">
+                                <div className="col-lg-6 img-right-nys" style={{ marginTop: 0 }} >
                                     <img src={singleproimg} className="img-fluid w-100" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-
 
                 <section className="mt-5 mb-5 container key-features-products-section-nys">
 
@@ -125,21 +119,21 @@ export default function Smartdet() {
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Cloud storage</h5>
+                                        <h5 class="card-title">Remote Control</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Full HD video</h5>
+                                        <h5 class="card-title">AI-Powered Automation</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">In built device alarm</h5>
+                                        <h5 class="card-title">Wireless Connectivity</h5>
                                     </div>
                                 </div>
                             </div>
@@ -148,21 +142,21 @@ export default function Smartdet() {
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Motion senstivity control</h5>
+                                        <h5 class="card-title">Energy Monitoring</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Perimeter Alarm</h5>
+                                        <h5 class="card-title">Multi-Device Compatibility</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Person detection</h5>
+                                        <h5 class="card-title">Touch & Voice Contro</h5>
                                     </div>
                                 </div>
                             </div>
@@ -172,7 +166,7 @@ export default function Smartdet() {
                                 <div className="col-lg-4">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h5 class="card-title">Record live</h5>
+                                            <h5 class="card-title">Overload Protection</h5>
                                         </div>
                                     </div>
                                 </div>

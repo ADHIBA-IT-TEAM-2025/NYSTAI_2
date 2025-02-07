@@ -4,6 +4,8 @@ import gsap from "gsap";
 import { Power2 } from 'gsap';
 import leftimg from '../IMAGES-VIDEOS/A-IMG-HOME-LAYOUT/common/textcard1-1-6683ef8e4e735.png';
 import rightimg from '../IMAGES-VIDEOS/A-IMG-HOME-LAYOUT/common/Smart-secutoy.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleLeft, faAngleRight, faArrowRight, faCheck, faPlus, faPlusCircle } from "@fortawesome/free-solid-svg-icons";
 
 export default function Rightleft() {
     const lineRef = useRef();
@@ -63,7 +65,7 @@ export default function Rightleft() {
     return (
         <>
             <section className="testi-moni-nystai mt-3">
-                <div>
+                <div class="" >
                     <div class="row g-0 ">
                         <div class="col-md-6">
                             <div className="App test02">
@@ -74,25 +76,25 @@ export default function Rightleft() {
                                 <div ref={box02Ref}></div>
                             </div>
                         </div>
-                        <div class="col-md-6 d-flex align-items-center justify-content-center" >
-                            <div className="">
+                        <div class="col-md-6 d-flex align-items-center justify-content-center" style={{ backgroundColor: "#f5f5f5" }}>
+                            <div className="left-right-cards-nystai">
                                 <div class="card-body m-5">
-                                    <p style={{ textTransform: "uppercase" }}>Unified Platform</p>
-                                    <h5 style={{ textTransform: "uppercase" }} class="card-title "> Integrated Video, Alarm,<br /> Access Control</h5>
-                                    <p class="card-text">NYSTAI-IoT offers a seamless solution by unifying video surveillance, alarms, and access control for streamlined, secure management.</p>
+                                    <p class="card-title1">Unified Platform</p>
+                                    <h5 class="card-title2"> Integrated Video <FontAwesomeIcon icon={faPlus} style={{ fontSize: "15px", color: "#8c8c8c" }} className="m-1" /> Alarm <FontAwesomeIcon icon={faPlus} style={{ fontSize: "15px", color: "#8c8c8c" }} className="m-1" /> Access Control</h5>
+                                    <p class="card-text"><FontAwesomeIcon icon={faArrowRight} style={{ color: "#1b6763", fontSize: "16px", fontWeight: "bold" }} className="me-3 ms-2" />NYSTAI-IoT offers a seamless solution by unifying video surveillance, alarms, and access control for streamlined, secure management.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div class="row g-0">
-                        <div class="col-md-6 d-flex align-items-center justify-content-center order-2 order-lg-1" >
-                            <div className="">
+                <div class=" " >
+                    <div class="row g-0 ">
+                        <div class="col-md-6 d-flex align-items-center justify-content-center order-2 order-lg-1" style={{ backgroundColor: "#f5f5f5" }} >
+                            <div className="left-right-cards-nystai">
                                 <div class="card-body imtext-card-ist-ser m-5" >
-                                    <p style={{ textTransform: "uppercase" }}>Smart Security</p>
-                                    <h5 style={{ textTransform: "uppercase" }} class="card-title "> Complete Video, Alarm, <br />Access Integration</h5>
-                                    <p class="card-text">NYSTAI-IoT simplifies your security setup by integrating alarms, video monitoring, and access control into one efficient, unified platform.</p>
+                                    <p class="card-title1">Smart Security</p>
+                                    <h5 class="card-title2"> Complete Video <FontAwesomeIcon icon={faPlus} style={{ fontSize: "15px", color: "#8c8c8c" }} className="m-1" /> Alarm <FontAwesomeIcon icon={faPlus} style={{ fontSize: "15px", color: "#8c8c8c" }} className="m-1" /> Access Integration</h5>
+                                    <p class="card-text"><FontAwesomeIcon icon={faArrowRight} style={{ color: "#1b6763", fontSize: "16px", fontWeight: "bold" }} className="me-3 ms-2" />NYSTAI-IoT simplifies your security setup by integrating alarms, video monitoring, and access control into one efficient, unified platform.</p>
                                 </div>
                             </div>
                         </div>

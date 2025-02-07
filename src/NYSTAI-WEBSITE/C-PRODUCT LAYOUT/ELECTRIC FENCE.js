@@ -56,11 +56,11 @@ export default function ELECTRICFENCE() {
     return (
         <>
 
-            <section className='mt-4'>
+            <section className='mt-2'>
                 <img src={laningbanner} className="img-fluid" />
             </section>
 
-            <section className="icons-pro-des">
+            {/* <section className="icons-pro-des">
                 <h1>Smart features included</h1>
                 <div className="rrmc-rich-text-divider-line"></div>
                 <div className="mb-5 mt-4">
@@ -169,11 +169,10 @@ export default function ELECTRICFENCE() {
 
                     </div>
                 </div>
-            </section>
-
+            </section> */}
 
             <div className="mt-4 mb-5">
-                <h3 className='mb-4' style={{ color: "#1b6763", fontWeight: "bolder" }}>ELECTRICFENCE</h3>
+                <h3 className='mb-4' style={{ color: "#1b6763", fontWeight: "bolder" }}>ELECTRIC FENCE</h3>
                 <div className="prod-row-card-nys">
                     {filteredProducts.map((product) => (
                         <div className="prod-column-card-nys mb-2" key={product.id}>

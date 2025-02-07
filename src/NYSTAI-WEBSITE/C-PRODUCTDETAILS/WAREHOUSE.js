@@ -6,6 +6,7 @@ import Footerproduct from "../A-LAYOUT/footer"
 import Blogimg1 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/Warehouse.png"
 import Blogimg2 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/forklift.png"
 import singleproimg from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/singleproimg.png"
+import banner from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/Nystai-icons & resize images/ware-details.jpg"
 
 export default function Waredet() {
 
@@ -18,24 +19,12 @@ export default function Waredet() {
             <body className="design1details">
 
                 <section>
-                    {/* <!-- Background video --> */}
-                    <div class="video-background-holder">
-                        <div class="video-background-overlay"></div>
-                        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                            <source src="https://huykhong.com/codepen/landing.video.mp4" type="video/mp4" />
-                        </video>
-                        <div class="video-background-content container h-100">
-                            <div class="d-flex h-100 text-center align-items-center">
-                                <div class="w-100 text-white">
-                                    <h1 class="display-4">Landing Page with video background</h1>
-                                    <p class="lead mb-0">Made with HTML5 and Bootstrap 4</p>
-                                    <p class="lead">
-                                        <a href="#" class="btn btn-light">Click Here to Enter</a>
-                                    </p>
-                                </div>
-                            </div>
+                    <section>
+                        <div class="video-background-holder">
+                            <div class="video-background-overlay"></div>
+                            <img src={banner} class="img-fluid w-100" alt="Banner Image" />
                         </div>
-                    </div>
+                    </section>
                 </section>
 
                 <div class="flex-container-nystai-scroll">
@@ -84,21 +73,26 @@ export default function Waredet() {
                     </div>
                 </div>
 
-                <div className="mt-5 mb-5">
-                    <h1 style={{ textAlign: "center" }}><span style={{ color: "#1b6763" }}> WAREHOUSE</span></h1>
+                <div className="common-top-div">
+                    <h6 className="head-h-divtopic" >
+                        <span style={{ color: "#1b6763" }}>WAREHOUSE</span>
+                    </h6>
+                    <h6 className="sechead-h-divtop" style={{color:"#8c8c8c"}}>
+                        Automated tracking, real-time monitoring, enhanced security, optimized storage.
+                    </h6>
                 </div>
 
-                <section className="parallal-text-card-nys pt-5 pb-3">
+                <section className="parallal-text-card-nys">
                     <div className="container">
-                      
+
                         <div className="text-img-nys">
                             <div className="row">
                                 <div className="col-lg-6">
-                                <div className="parallal-text-card-heading-nys">
-                            <h2><span>Precise control for </span>enhanced safety.</h2>
-                        </div>
+                                    <div className="parallal-text-card-heading-nys">
+                                        <h2><span>Precise control for </span>enhanced safety.</h2>
+                                    </div>
                                     <div className="text-left-nys">
-                                        <h6>The "FIRE SAFETY" category includes the E-Valve Manipulator, E-Valve, and Kitchen Automation systems. These products ensure precise valve control, efficient operation, and enhanced safety in critical applications. With user-friendly interfaces, durability, and seamless system integration, they provide reliable solutions for fire safety, kitchen automation, and overall operational safety.  </h6>
+                                        <h6>The "WAREHOUSE" category offers advanced safety solutions, including the Anti Collision Alarm, Fork Lift Camera, Smart Helmet, and Fire Detection Camera. These products enhance operational safety through real-time alerts, video monitoring, environmental tracking, and early fire detection. Ideal for warehouses, industrial sites, and hazardous environments, they ensure safety and efficiency. </h6>
                                     </div>
                                 </div>
                                 <div className="col-lg-6 img-right-nys">
@@ -121,21 +115,21 @@ export default function Waredet() {
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Cloud storage</h5>
+                                        <h5 class="card-title">Real-Time Inventory Tracking </h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Full HD video</h5>
+                                        <h5 class="card-title">AI-Powered Surveillance</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">In built device alarm</h5>
+                                        <h5 class="card-title">Environmental Monitoring</h5>
                                     </div>
                                 </div>
                             </div>
@@ -144,21 +138,21 @@ export default function Waredet() {
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Motion senstivity control</h5>
+                                        <h5 class="card-title">Automated Material Handling</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Perimeter Alarm</h5>
+                                        <h5 class="card-title">Access Control</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Person detection</h5>
+                                        <h5 class="card-title">Emergency Alert System</h5>
                                     </div>
                                 </div>
                             </div>
@@ -168,7 +162,7 @@ export default function Waredet() {
                                 <div className="col-lg-4">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h5 class="card-title">Record live</h5>
+                                            <h5 class="card-title">Smart Lighting & Energy Management </h5>
                                         </div>
                                     </div>
                                 </div>

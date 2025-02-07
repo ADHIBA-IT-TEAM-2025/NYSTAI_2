@@ -11,11 +11,11 @@ import Blogimg1 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/Bank.
 import Blogimg2 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/Jewelry.png"
 import Blogimg3 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/Farmhouse.png"
 import Blogimg4 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/House.png"
-import Prodcatimg1 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/prod-cate-img-1.png"
-import Prodcatimg2 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/prod-cate-img-2.png"
-import Prodcatimg3 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/prod-cate-img-3.png"
-import Prodcatimg4 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/prod-cate-img-4.png"
-import Prodcatimg5 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/prod-cate-img-5.png"
+import Prodcatimg1 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/CAMERA-CATEGORY-IMAGES/AI-Powered-Cameras.png"
+import Prodcatimg2 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/CAMERA-CATEGORY-IMAGES/Specialized-cameras.png"
+import Prodcatimg3 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/CAMERA-CATEGORY-IMAGES/Outdoor-and-wireless-cameras.png"
+import Prodcatimg4 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/CAMERA-CATEGORY-IMAGES/Pan-tilt-zoom-cameras.png"
+import Prodcatimg5 from "../IMAGES-VIDEOS/B-IMG-PRODUCT-LAYOUT/PRODUCTDETAILS/CAMERA-CATEGORY-IMAGES/Battery-powered-cameras.png"
 
 export default function Cameradet() {
 
@@ -85,8 +85,13 @@ export default function Cameradet() {
                 {/* 4 CARDS PARALLEL */}
                 <section className="container four-cards-parallal-section-cards-nys ">
 
-                    <div className="mt-5 mb-5">
-                        <h1 style={{ textAlign: "center" }}>  <span style={{ color: "#1b6763" }}> CAMERA</span></h1>
+                    <div className="common-top-div">
+                        <h6 className="head-h-divtopic" >
+                            <span style={{ color: "#1b6763" }}>CAMERA</span>
+                        </h6>
+                        <h6 className="sechead-h-divtop" >
+                        AI detection, real-time alerts, night vision, wireless, PTZ, and more.
+                        </h6>
                     </div>
 
                     <div className="four-cards-parallal-main-cards mt-5">
@@ -170,21 +175,21 @@ export default function Cameradet() {
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Cloud storage</h5>
+                                        <h5 class="card-title">AI-Powered Video Analytics</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Full HD video</h5>
+                                        <h5 class="card-title">High-Resolution Imaging</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">In built device alarm</h5>
+                                        <h5 class="card-title">Low-Light & Night Vision</h5>
                                     </div>
                                 </div>
                             </div>
@@ -193,21 +198,21 @@ export default function Cameradet() {
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Motion senstivity control</h5>
+                                        <h5 class="card-title">Wide Dynamic Range (WDR)</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Perimeter Alarm</h5>
+                                        <h5 class="card-title">Weatherproof & Durable</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Person detection</h5>
+                                        <h5 class="card-title">Wireless & PoE Support</h5>
                                     </div>
                                 </div>
                             </div>
@@ -217,7 +222,7 @@ export default function Cameradet() {
                                 <div className="col-lg-4">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h5 class="card-title">Record live</h5>
+                                            <h5 class="card-title">Seamless NVR & IoT Integration</h5>
                                         </div>
                                     </div>
                                 </div>

@@ -73,15 +73,19 @@ export default function Accessdet() {
                     </div>
                 </div>
 
-
-                <div className="mt-5 mb-5">
-                    <h1 style={{ textAlign: "center" }}><span style={{ color: "#1b6763" }}> ACCESS </span>CONTROL</h1>
+                <div className="common-top-div">
+                    <h6 className="head-h-divtopic" >
+                        <span style={{ color: "#1b6763" }}> ACCESS</span> CONTROL
+                    </h6>
+                    <h6 className="sechead-h-divtop" style={{color:"#8c8c8c"}} >
+                        Multi-factor, facial recognition, card, PIN, seamless integration.
+                    </h6>
                 </div>
 
-                <section className="parallal-text-card-nys pt-5 pb-3">
+                <section className="container-fluid parallal-text-card-nys ">
 
                     <div className="container">
-                        <div className="col-9 parallal-text-card-heading-nys">
+                        <div className="col-lg-9 col-md-12 col-sm-12  parallal-text-card-heading-nys">
                             <h2><span>Secure, flexible access control</span> Empowering your spaces with advanced multi-factor authentication. </h2>
                         </div>
                         <div className="text-img-nys">
@@ -91,7 +95,7 @@ export default function Accessdet() {
                                         <h6>The "ACCESS CONTROL" category offers multi-factor authentication systems, including <b>FACE+CARD+PIN, FACE+CARD+PIN (Linux), and WIFI+CARD+PIN.</b> These solutions feature facial recognition, card reading, and PIN entry for secure, flexible access. With Android and Linux platforms, they ensure seamless integration and reliable performance, ideal for both local and remote management needs. </h6>
                                     </div>
                                 </div>
-                                <div className="col-lg-6 img-right-nys">
+                                <div className="col-lg-6 img-right-nys"style={{ marginTop: 0 }} >
                                     <img src={singleproimg} className="img-fluid w-100" />
                                 </div>
                             </div>
@@ -108,21 +112,21 @@ export default function Accessdet() {
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Cloud storage</h5>
+                                        <h5 class="card-title">Multi-Level Authentication</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Full HD video</h5>
+                                        <h5 class="card-title">AI-Powered Security</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">In built device alarm</h5>
+                                        <h5 class="card-title">Real-Time Monitoring</h5>
                                     </div>
                                 </div>
                             </div>
@@ -131,21 +135,21 @@ export default function Accessdet() {
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Motion senstivity control</h5>
+                                        <h5 class="card-title">Remote Access Management</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Perimeter Alarm</h5>
+                                        <h5 class="card-title">Seamless Integration</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Person detection</h5>
+                                        <h5 class="card-title">Customizable Access Rights</h5>
                                     </div>
                                 </div>
                             </div>
@@ -155,7 +159,7 @@ export default function Accessdet() {
                                 <div className="col-lg-4">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h5 class="card-title">Record live</h5>
+                                            <h5 class="card-title">Tamper & Fail-Safe Protection</h5>
                                         </div>
                                     </div>
                                 </div>

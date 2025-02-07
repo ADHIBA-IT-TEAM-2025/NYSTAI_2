@@ -127,5 +127,201 @@
   color: grey;
 }
 
-
-/* ///video */
+/* plan comparision */
+.proComparisionTable {
+  overflow-x: auto;
+}
+ 
+.comparisionTable {
+  width: 100%;
+  border-collapse: collapse;
+ 
+}
+ 
+.comparisionTable th,
+.comparisionTable td {
+  padding: 8px;
+  text-align: center;
+  /* border: 1px solid #ddd; */
+  border-bottom: 1px solid #dddddd75;
+ 
+}
+ 
+.comparisionTable th.proHeading {
+  background-color: #f2f2f2;
+}
+ 
+.comparisionTable th.no-bdr {
+  border: none;
+}
+ 
+.proSelectBtn a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1b6763;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+ 
+#vehicle-details .proComparisionContainer {
+  width: 100%;
+}
+ 
+#vehicle-details .proComparisionContainer .comparisionTable {
+  font-size: 14px;
+  margin: 0 !important;
+  width: 100%;
+  /* border-right: 1px solid #ececec; */
+}
+ 
+#vehicle-details .proComparisionContainer .comparisionTable td {
+  min-width: 199px;
+  padding: 18px;
+  text-align: center;
+  font-size: 13px;
+  color: grey;
+  /* background-color: #ffffff; */
+  /* border: 1px solid #ececec; */
+  vertical-align: middle;
+}
+ 
+#vehicle-details .proComparisionContainer .comparisionTable .pro-img {
+  vertical-align: bottom;
+}
+ 
+#vehicle-details .proComparisionContainer .comparisionTable th div {
+  color: #231f20;
+  padding: 10px 0px;
+}
+ 
+#vehicle-details .proComparisionContainer .comparisionTable thead tr th:last-child {
+  border-right: 2px solid #ffffff !important;
+}
+ 
+#vehicle-details .proComparisionContainer .comparisionTable tbody tr:last-child td:last-of-type {
+  border-right: 2px solid #ffffff !important;
+}
+ 
+#vehicle-details .proComparisionContainer .comparisionTable tbody tr th:first-child {
+  width: 400px;
+  text-align: left;
+}
+ 
+#vehicle-details .proComparisionContainer .comparisionTable tbody tr td.proSelectBtn {
+  position: relative;
+  border: none;
+}
+ 
+#vehicle-details .proComparisionContainer .comparisionTable tbody tr td.proSelectBtn a {
+  text-transform: uppercase;
+  font-size: 14px;
+  display: inline-block;
+  padding: 9px 27px;
+  border-radius: 5px;
+  color: #fff;
+  margin: 15px 5px 5px 5px;
+}
+ 
+#vehicle-details .proComparisionContainer .comparisionTable tbody tr td.proSelectBtn a:hover {
+  background-color: #f5f5f5;
+  color: #1b6763;
+}
+ 
+#vehicle-details .proComparisionContainer .comparisionTable tbody tr td.terminalImg img {
+  max-width: 100px;
+}
+ 
+#vehicle-details .proComparisionContainer .comparisionTable .proHeading {
+  /* background-color: #fff; */
+  padding: 22px;
+  font-size: 14px;
+  color: #5a5a5a;
+  font-weight: normal;
+}
+ 
+#vehicle-details .proComparisionContainer .proComparisionBtn {
+  display: none;
+  position: relative;
+}
+ 
+#vehicle-details .proComparisionContainer .proComparisionBtn span {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  position: absolute;
+  top: 120px;
+  z-index: 100;
+}
+ 
+#vehicle-details .proComparisionContainer .proComparisionBtn span#left_scroll_tbl {
+  left: 250px;
+}
+ 
+#vehicle-details .proComparisionContainer .proComparisionBtn span#right_scroll_tbl {
+  right: -40px;
+}
+ 
+ 
+ 
+@media (max-width: 576px) {
+ 
+  .comparisionTable th,
+  .comparisionTable td {
+    padding: 4px;
+  }
+ 
+  .proSelectBtn a {
+    padding: 6px 12px;
+  }
+}
+ 
+@media (max-width: 767px) {
+  #vehicle-details .proComparisionContainer .comparisionTable tbody tr th:first-child {
+    min-width: 165px;
+  }
+ 
+  .proComparisionContainer {
+    padding: 0 10px;
+  }
+ 
+  .proSelectBtn a {
+    padding: 8px 16px;
+  }
+ 
+  .comparisionTable th,
+  .comparisionTable td {
+    padding: 6px;
+  }
+ 
+  #vehicle-details .proComparisionContainer .comparisionTable td,
+  #vehicle-details .proComparisionContainer .comparisionTable th {
+    min-width: 165px;
+  }
+ 
+  #vehicle-details .proComparisionContainer .proComparisionBtn span#left_scroll_tbl {
+    left: 10px;
+  }
+ 
+  #vehicle-details .proComparisionContainer .proComparisionBtn span#right_scroll_tbl {
+    left: 135px;
+  }
+}
+ 
+@media (max-width: 991px) {
+  #vehicle-details .proComparisionContainer .proComparisionBtn span#left_scroll_tbl {
+    left: 30px;
+  }
+ 
+  #vehicle-details .proComparisionContainer .proComparisionBtn span#right_scroll_tbl {
+    right: auto;
+    left: 250px;
+  }
+}
+ 

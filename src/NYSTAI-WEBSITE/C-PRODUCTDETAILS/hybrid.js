@@ -20,7 +20,7 @@ export default function Hybriddetails() {
         <>
             <body className="design1details">
 
-            <section>
+                <section>
                     <section>
                         <div class="video-background-holder">
                             <div class="video-background-overlay"></div>
@@ -75,24 +75,29 @@ export default function Hybriddetails() {
                     </div>
                 </div>
 
-                <div className="mt-5 mb-5">
-                    <h1 style={{ textAlign: "center" }}>HYBRID<span style={{ color: "#1b6763" }}> AI-IoT NVR</span></h1>
+                <div className="common-top-div">
+                    <h6 className="head-h-divtopic" >
+                        <span style={{ color: "#1b6763" }}>HYBRID</span> AI-IoT NVR
+                    </h6>
+                    <h6 className="sechead-h-divtop" style={{color:"#8c8c8c"}} >
+                        AI-powered surveillance, video storage, alarms, access control, fire safety, intercom.
+                    </h6>
                 </div>
 
                 {/* LEFT RIGHT CARDS */}
-                <section className="parallal-text-card-nys pt-5 pb-3">
+                <section className="container-fluid parallal-text-card-nys">
                     <div className="container">
-                        <div className="col-9 parallal-text-card-heading-nys">
-                            <h2><span>Smart video storage </span>AI powered surveillance </h2>
+                        <div className="col-lg-9 col-md-12 col-sm-12 parallal-text-card-heading-nys">
+                            <h2><span>Smart video storage</span>&nbsp;AI powered surveillance </h2>
                         </div>
                         <div className="text-img-nys">
                             <div className="row">
                                 <div className="col-lg-6">
                                     <div className="text-left-nys">
-                                        <h6>The NYSTAI AI-IoT Hybrid NVR combines NVR and alarm functionality into an affordable, integrated security system. It supports video surveillance, AI video analysis, intercom, one-click alarms, access control, attendance, fire alarms, and more, with applications spanning security, fire safety, and digital classrooms.  </h6>
+                                        <h6>The NYSTAI AI-IoT Hybrid NVR combines NVR and alarm functionality into an affordable, integrated security system. It supports video surveillance, AI video analysis, intercom, one-click alarms, access control, attendance, fire alarms, and more, with applications spanning security, fire safety, and digital classrooms.</h6>
                                     </div>
                                 </div>
-                                <div className="col-lg-6 img-right-nys">
+                                <div className="col-lg-6 img-right-nys" style={{ marginTop: 0 }}>
                                     <img src={singleproimg} className="img-fluid w-100" />
                                 </div>
                             </div>
@@ -112,21 +117,21 @@ export default function Hybriddetails() {
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Cloud storage</h5>
+                                        <h5 class="card-title"> Intelligent Analysis</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Full HD video</h5>
+                                        <h5 class="card-title">Facial Recognition</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">In built device alarm</h5>
+                                        <h5 class="card-title">Video Analytics</h5>
                                     </div>
                                 </div>
                             </div>
@@ -135,21 +140,21 @@ export default function Hybriddetails() {
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Motion senstivity control</h5>
+                                        <h5 class="card-title"> Wireless Sensors</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Perimeter Alarm</h5>
+                                        <h5 class="card-title"> Customized Linkage</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Person detection</h5>
+                                        <h5 class="card-title"> 4K Ultra HD Support</h5>
                                     </div>
                                 </div>
                             </div>
@@ -159,7 +164,7 @@ export default function Hybriddetails() {
                                 <div className="col-lg-4">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h5 class="card-title">Record live</h5>
+                                            <h5 class="card-title">Remote Access & Control</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -203,4 +208,4 @@ export default function Hybriddetails() {
             </body >
         </>
     )
-}
+}   

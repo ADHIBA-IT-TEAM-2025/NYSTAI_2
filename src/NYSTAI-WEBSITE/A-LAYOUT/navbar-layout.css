@@ -45,7 +45,7 @@ a:active {
 .logo-nystai {
     width: 100%; /* Adjust as necessary */
     height: auto; /* Maintains aspect ratio */
-    max-width: 150px; /* Add a max-width to prevent excessive scaling */
+    max-width: 200px; /* Add a max-width to prevent excessive scaling */
     display: block; /* Ensures proper layout */
     object-fit: contain; /* Prevents stretching */
   }

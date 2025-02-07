@@ -20,7 +20,7 @@ export default function Digitaldet() {
         <>
             <body className="design1details">
 
-            <section>
+                <section>
                     <section>
                         <div class="video-background-holder">
                             <div class="video-background-overlay"></div>
@@ -75,17 +75,19 @@ export default function Digitaldet() {
                     </div>
                 </div>
 
-                {/* 4 CARDS PARALLEL */}
-
-                <div className="mt-5 mb-5">
-                    <h1 style={{ textAlign: "center" }}>DIGITAL<span style={{ color: "#1b6763" }}> CLASS</span></h1>
+                <div className="common-top-div">
+                    <h6 className="head-h-divtopic" >
+                        <span style={{ color: "#1b6763" }}>DIGITAL </span>CLASS
+                    </h6>
+                    <h6 className="sechead-h-divtop" style={{color:"#8c8c8c"}} >
+                    High-definition touchscreen, wireless connectivity, digital whiteboarding, enhanced communication.
+                    </h6>
                 </div>
 
-                <section className="parallal-text-card-nys pt-5 pb-3">
-
-                    <div className="container">
-                        <div className="col-9 parallal-text-card-heading-nys">
-                            <h2><span>Elevate collaboration . </span> with interactive displays</h2>
+                <section className="container-fluid parallal-text-card-nys">
+                    <div className=" container">
+                        <div className=" col-lg-9 col-md-12 col-sm-12 parallal-text-card-heading-nys">
+                            <h2><span>Elevate collaboration </span> with interactive displays</h2>
                         </div>
                         <div className="text-img-nys">
                             <div className="row">
@@ -94,7 +96,7 @@ export default function Digitaldet() {
                                         <h6>The INTERACTIVE FLAT PANEL DISPLAY (IFPD) enhances presentations and collaboration with a high-definition touchscreen, digital whiteboarding, and annotation tools. Featuring multiple connectivity options like HDMI, USB, and wireless, it’s perfect for educational institutions, corporate environments, or any space that values interactive, seamless teamwork and effective communication.  </h6>
                                     </div>
                                 </div>
-                                <div className="col-lg-6 img-right-nys">
+                                <div className="col-lg-6 img-right-nys" style={{ marginTop: 0 }}>
                                     <img src={singleproimg} className="img-fluid w-100" />
                                 </div>
                             </div>
@@ -114,21 +116,21 @@ export default function Digitaldet() {
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Cloud storage</h5>
+                                        <h5 class="card-title">AI-Powered Learning Analytics</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Full HD video</h5>
+                                        <h5 class="card-title">Interactive Smart Board</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">In built device alarm</h5>
+                                        <h5 class="card-title">Seamless Video Conferencing</h5>
                                     </div>
                                 </div>
                             </div>
@@ -137,21 +139,21 @@ export default function Digitaldet() {
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Motion senstivity control</h5>
+                                        <h5 class="card-title">Cloud-Based Content Management</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Perimeter Alarm</h5>
+                                        <h5 class="card-title">Multi-Device Compatibility</h5>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Person detection</h5>
+                                        <h5 class="card-title">Automated Attendance & Assessment</h5>
                                     </div>
                                 </div>
                             </div>
@@ -161,7 +163,7 @@ export default function Digitaldet() {
                                 <div className="col-lg-4">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h5 class="card-title">Record live</h5>
+                                            <h5 class="card-title">Secure & Scalable Integration</h5>
                                         </div>
                                     </div>
                                 </div>
